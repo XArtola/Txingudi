@@ -98,7 +98,7 @@
         </div>
 
        <a href="lista">Lista</a>
-
+<?php phpinfo();?>
 
        <form method="POST" action="">
 

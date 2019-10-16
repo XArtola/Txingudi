@@ -14,9 +14,9 @@ class Txingudi extends Migration
     public function up()
     {
         Schema::create('tiendas', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('nombre');
-            $table->string('descripcion');
+            $table->longText('descripcion');
             $table->string('logo');
             $table->string('foto');
             $table->string('hapertura');
@@ -24,15 +24,20 @@ class Txingudi extends Migration
             $table->timestamps();
         });
         Schema::create('productos', function (Blueprint $table) {
-            $table->bigIncrements('idproducto');
+            $table->increments('idproducto');
             $table->string('idtienda');
             $table->string('nombre');
-            $table->string('descripcion');
-            $table->number('stock');
-            $table->number('precio');
+            $table->longText('descripcion');
+            $table->integer('stock');
+            $table->float('precio',5,2);
             $table->string('foto');
             $table->string('link');
             $table->timestamps();
+
+            $table->foreign('idtienda')
+            ->references('id')
+            ->on('tiendas')
+            ->onDelete('cascade');
         });
     }
 
