@@ -16,9 +16,10 @@ class productosSeeder extends Seeder
             'nombre' => 'Zapatos negrs',
             'descripcion' => 'Zapatos negros de cuero',
             'stock' => '15',
-            'precio' => '39,95',
+            'precio' => '39.95',
             'foto' => 'img/fotoTienda/zara.png',
-            'link' => 'www.aasdads.com'
+            'link' => 'www.aasdads.com',
+            'idtienda' => '1'
             ]);
     }
 }
