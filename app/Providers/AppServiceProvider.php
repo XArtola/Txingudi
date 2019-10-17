@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+//He añadido esta ruta para arreglar un problema
+use Illuminate\Support\Facades\Schema;//////////
+//He añadido esta ruta para arreglar un problema
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +26,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Schema::defaultStringLength(191);
     }
 }

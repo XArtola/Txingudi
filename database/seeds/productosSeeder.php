@@ -12,7 +12,7 @@ class productosSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        DB::table('productos')->insert([
+        DB::table('products')->insert([
             'nombre' => 'Zapatos negrs',
             'descripcion' => 'Zapatos negros de cuero',
             'stock' => '15',
