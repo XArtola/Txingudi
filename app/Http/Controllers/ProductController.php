@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class PrductController extends Controller
+use DB;
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -45,7 +45,11 @@ class PrductController extends Controller
      */
     public function show($id)
     {
-        //
+    
+        $info = DB::table('products')->where('idProducto', '=','1')->first();
+
+        return view('producto', ['infoProducto' => $info]);
+
     }
 
     /**
