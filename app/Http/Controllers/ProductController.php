@@ -37,9 +37,14 @@ class ProductController extends Controller
     {
         $product = new Products;
         
-        $product ->name = $request->input('name');
+        $product ->name = $request->name;
+        $product ->description = 'Zapatos negros de cuero';
         $product ->stock = $request->input('stock');
-        $product ->shopId = $request->input('shopId');
+        $product ->price = '39.95';
+        $product ->photo = 'img/fotoTienda/zara.png';
+        $product ->price = '39.95'; 
+        $product ->link = 'www.aasdads.com';
+        $product ->shopId = $request->input('shopId');       
         $product ->save();
     }
 

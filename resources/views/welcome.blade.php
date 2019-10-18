@@ -93,17 +93,20 @@
     </div>
 
     <a href="lista">Lista</a>
+    <h1>Mostrar producto</h1>
     <a href="/producto/1">Producto</a>
     <h1>Formulario de insert</h1>
-        <form method="POST" action="/producto">
-
+        <form action="/producto" method="POST">
+          {{ csrf_field() }}
             <label>Producto</label>
-            <input type="text" min="1" max="5" step="1" name="name">
-            <input type="number" min="1" max="5" step="1" name="stock">
-            <input type="number" min="1" max="5" step="1" name="shopId">
+            <input type="text" min="1" max="5" step="1" name="name"><br>
+            <label>stock</label>
+            <input type="number" min="1" max="20" step="1" name="stock"><br>
+            <label>Id tienda</label>
+            <input type="number" min="1" max="5" step="1" name="shopId"><br>
             <input type="submit">
         </form>
-
+ <?php //echo Form::token()?>
 </body>
 
 </html>
