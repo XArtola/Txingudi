@@ -15,30 +15,22 @@ class CreateProductsTable extends Migration
     {
         Schema::enableForeignKeyConstraints();
         Schema::create('products', function (Blueprint $table) {
-            $table->increments('idproducto');
-            $table->string('nombre');
-            $table->longText('descripcion');
+            $table->increments('id');
+            $table->string('name');
+            $table->longText('description');
             $table->integer('stock');
-            $table->float('precio', 5, 2);
-            $table->string('foto');
+            $table->float('price', 5, 2);
+            $table->string('photo');
             $table->string('link');
 
-            $table->integer('idtienda')->unsigned();
-            $table->foreign('idtienda')
+            $table->integer('shopId')->unsigned();
+            $table->foreign('shopId')
                 ->references('id')
                 ->on('shops')
                 ->onDelete('cascade');
 
             $table->timestamps();
         });
-        /*
-        Schema::table('products', function ($table) {
-            $table->foreign('idtienda')
-                ->references('id')
-                ->on('shops')
-                ->onDelete('cascade');
-        });
-        */
     }
 
     /**

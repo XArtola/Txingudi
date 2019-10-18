@@ -21,9 +21,9 @@
     <ul>
         <?php
 
-        foreach ($infoProducto as $campo => $info)
+        foreach ($infoProducto as $Producto)
 
-            echo "<li>" . $campo . ": " . $info . "</li>";
+            echo "<li> Nombre: " .$Producto->name. "</li>";
         ?>
     </ul>
 
