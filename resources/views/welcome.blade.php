@@ -114,6 +114,12 @@
 
     -->
     <a href="/producto/1">Producto</a>
+<h1>
+    <form method="POST" action="/producto/">
+
+<label>Producto</label>
+<input type="number" min="1" max="5" step="1" id="numProd">
+</form>
 
 </body>
 

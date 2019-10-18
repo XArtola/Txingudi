@@ -15,12 +15,12 @@ class CreateShopsTable extends Migration
     {
         Schema::create('shops', function (Blueprint $table) {
             $table->increments('id')->unsigned();;
-            $table->string('nombre');
-            $table->longText('descripcion');
+            $table->string('name');
+            $table->longText('description');
             $table->string('logo');
-            $table->string('foto');
-            $table->string('hapertura');
-            $table->string('hcierre');
+            $table->string('photo');
+            $table->string('openh');
+            $table->string('closeh');
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Products;
 use DB;
 class ProductController extends Controller
 {
@@ -34,7 +35,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = new Products;
+        $product ->name = $request->name;
+        $product ->save();
     }
 
     /**
@@ -46,7 +49,8 @@ class ProductController extends Controller
     public function show($id)
     {
     
-        $info = DB::table('products')->where('idProducto', '=','1')->first();
+        $info = Products::where('id',1)->get();
+        //$info = DB::table('products')->where('id', '=','1')->first(); ESTA ES OTRA FORMA DE GESTIONAR LA BASE DE DATOS
 
         return view('producto', ['infoProducto' => $info]);
 
