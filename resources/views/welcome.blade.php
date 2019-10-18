@@ -21,28 +21,35 @@
             height: 100vh;
             margin: 0;
         }
+
         .full-height {
             height: 100vh;
         }
+
         .flex-center {
             align-items: center;
             display: flex;
             justify-content: center;
         }
+
         .position-ref {
             position: relative;
         }
+
         .top-right {
             position: absolute;
             right: 10px;
             top: 18px;
         }
+
         .content {
             text-align: center;
         }
+
         .title {
             font-size: 84px;
         }
+
         .links>a {
             color: #636b6f;
             padding: 0 25px;
@@ -52,6 +59,7 @@
             text-decoration: none;
             text-transform: uppercase;
         }
+
         .m-b-md {
             margin-bottom: 30px;
         }
@@ -96,17 +104,38 @@
     <h1>Mostrar producto</h1>
     <a href="/producto/1">Producto</a>
     <h1>Formulario de insert</h1>
-        <form action="/producto" method="POST">
-          {{ csrf_field() }}
-            <label>Producto</label>
-            <input type="text" min="1" max="5" step="1" name="name"><br>
-            <label>stock</label>
-            <input type="number" min="1" max="20" step="1" name="stock"><br>
-            <label>Id tienda</label>
-            <input type="number" min="1" max="5" step="1" name="shopId"><br>
-            <input type="submit">
-        </form>
- <?php //echo Form::token()?>
+    <form action="/producto" method="POST">
+        @csrf_field()
+        <label>Producto</label>
+        <input type="text" min="1" max="5" step="1" name="name"><br>
+        <label>stock</label>
+        <input type="number" min="1" max="20" step="1" name="stock"><br>
+        <label>Id tienda</label>
+        <input type="number" min="1" max="5" step="1" name="shopId"><br>
+        <input type="submit">
+    </form>
+
+    <h1>Formulario update</h1>
+    <form action="/producto/2" method='POST'>
+        @method('PUT')
+        @csrf
+        <label>stock</label>
+        <input type="number" min="1" max="20" step="1" name="stock"><br>
+        <input type="submit">
+    </form>
+    <h1>Formulario delete</h1>
+    <form action="/producto/3" method="POST">
+        @method('DELETE')
+        @csrf
+        <label>stock</label>
+        <input type="number" min="1" max="20" step="1" name="stock"><br>
+        <input type="submit">
+    </form>
+
+
+
+    <?php //echo Form::token()
+    ?>
 </body>
 
 </html>

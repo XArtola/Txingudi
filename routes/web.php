@@ -37,6 +37,8 @@ PRODUCTOS
 */
 Route::get('producto/{idProducto}', 'ProductController@show');
 Route::post('/producto', 'ProductController@store');
+Route::put('producto/{idProducto}', 'ProductController@update');
+Route::delete('producto/{idProducto}', 'ProductController@destroy');
 /*
 Route::update('/producto/{idProducto}', 'ProductController@update');
 */

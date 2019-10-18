@@ -84,7 +84,8 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Products::where('id',$id)
+        ->update(['stock'=>$request->stock]);
     }
 
     /**
@@ -95,6 +96,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Products::where('id',$id)
+        ->delete();
     }
 }
