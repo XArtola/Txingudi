@@ -101,8 +101,8 @@
     </div>
 
     <a href="lista">Lista</a>
-   
-<!-- PRUEBA
+
+    <!-- PRUEBA
 
 <?php phpinfo(); ?>
 
@@ -114,12 +114,15 @@
 
     -->
     <a href="/producto/1">Producto</a>
-<h1>
-    <form method="POST" action="/producto/">
+    <h1>Formulario de insert</h1>
+        <form method="POST" action="/producto">
 
-<label>Producto</label>
-<input type="number" min="1" max="5" step="1" id="numProd">
-</form>
+            <label>Producto</label>
+            <input type="text" min="1" max="5" step="1" name="name">
+            <input type="number" min="1" max="5" step="1" name="stock">
+            <input type="number" min="1" max="5" step="1" name="shopId">
+            <input type="submit">
+        </form>
 
 </body>
 

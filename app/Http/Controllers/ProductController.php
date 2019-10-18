@@ -36,7 +36,10 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $product = new Products;
-        $product ->name = $request->name;
+        
+        $product ->name = $request->input('name');
+        $product ->stock = $request->input('stock');
+        $product ->shopId = $request->input('shopId');
         $product ->save();
     }
 
@@ -49,7 +52,7 @@ class ProductController extends Controller
     public function show($id)
     {
     
-        $info = Products::where('id',1)->get();
+        $info = Products::where('id',$id)->get();
         //$info = DB::table('products')->where('id', '=','1')->first(); ESTA ES OTRA FORMA DE GESTIONAR LA BASE DE DATOS
 
         return view('producto', ['infoProducto' => $info]);
