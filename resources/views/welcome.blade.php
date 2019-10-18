@@ -21,35 +21,28 @@
             height: 100vh;
             margin: 0;
         }
-
         .full-height {
             height: 100vh;
         }
-
         .flex-center {
             align-items: center;
             display: flex;
             justify-content: center;
         }
-
         .position-ref {
             position: relative;
         }
-
         .top-right {
             position: absolute;
             right: 10px;
             top: 18px;
         }
-
         .content {
             text-align: center;
         }
-
         .title {
             font-size: 84px;
         }
-
         .links>a {
             color: #636b6f;
             padding: 0 25px;
@@ -59,7 +52,6 @@
             text-decoration: none;
             text-transform: uppercase;
         }
-
         .m-b-md {
             margin-bottom: 30px;
         }
@@ -101,18 +93,6 @@
     </div>
 
     <a href="lista">Lista</a>
-
-    <!-- PRUEBA
-
-<?php phpinfo(); ?>
-
-    <form method="POST" action="/producto/">
-
-        <label>Producto</label>
-        <input type="number" min="1" max="5" step="1" id="numProd">
-    </form>
-
-    -->
     <a href="/producto/1">Producto</a>
     <h1>Formulario de insert</h1>
         <form method="POST" action="/producto">
