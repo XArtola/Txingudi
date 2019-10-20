@@ -1,4 +1,4 @@
 @extends('layouts.master')
 @section('content')
-    Esto es la tienda
+<?php echo $infoShop ?>
 @stop
