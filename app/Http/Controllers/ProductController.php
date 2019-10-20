@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Products;
+use App\Models\Shops;
 //use DB;
 
 class ProductController extends Controller
@@ -57,9 +58,9 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-
-        $info = Products::where('id', $id)->get();
-        return view('producto', ['infoProducto' => $info]);
+        $info = Products::where('id', $id)->first();
+        $shops = Shops::select('id','name')->get();
+        return view('pages.product', ['info' => $info,'shops'=>$shops]);
         /* ESTA ES OTRA FORMA DE GESTIONAR LA BASE DE DATOS
          $info = DB::table('products')->where('id', '=','1')->first();
          s*/

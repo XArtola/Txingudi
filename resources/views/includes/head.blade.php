@@ -8,9 +8,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
 
 <head>
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/CSS/estilos.css') }}" />
-    <script type="text/javascript">
-        sessionStorage.setItem("language", "en");
-    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="{{asset('assets/lib/jquery-3.4.1.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/lib/jquery.translate.js')}}" type="text/javascript"></script>
     <script type="text/javascript">
