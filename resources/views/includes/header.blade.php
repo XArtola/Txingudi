@@ -2,23 +2,24 @@
 <div class="navbar">
     <a href="#"><img src="{{asset('assets/images/txingudi_color.png')}}"></a>
     <ul class="nav">
-        <li>Inicio</li>
+        <li class="trn" data-trn-key="menuHome">Inicio</li>
         <li>
             <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
+                <button class="dropbtn trn" data-trn-key="menuShops">Tiendas</button>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <?php 
+                    
+                    foreach ($shops as $shop )
+                    echo  "<a href='tienda/".$shop->id."'>".$shop->name."</a>";
+                    ?>
                 </div>
             </div>
         </li>
-        <li>Contacto</li>
+        <li class="trn" data-trn-key="menuContact">Contacto</li>
     </ul>
     <ul class="languages">
-        <li>Eu</li>
-        <li>Es</li>
-        <li>En</li>
+        <li data-lang="eu" class="language">Eu</li>
+        <li data-lang="es" class="language">Es</li>
+        <li data-lang="en" class="language">En</li>
     </ul>
-
 </div>

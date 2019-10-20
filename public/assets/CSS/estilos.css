@@ -20,11 +20,18 @@ HEADER
 .navbar {
     display: flex;
     height: 100px;
-    background-color: #009A8C;
+    background-color:  #004587;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
     align-items: center;
+}
+
+.nav{
+
+
+cursor:pointer;
+
 }
 
 logo {
@@ -37,25 +44,28 @@ li {
 }
 
 img {
-    background-color: white;
+    background-color: #004587;
 }
 
+/*-----------------------------------------------------------------
+Menu desplegable de las tiendas
+----------------------------------------------------------------*/
 
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
 /* Style The Dropdown Button */
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    background-color:  #004587;
+    color: #fccb34;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -88,7 +98,13 @@ img {
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
   }
+/*seletor de idiomas*/
 
+.languages li:hover{
+
+background-color: black;
+cursor: pointer;
+}
 
 /*--------------------------------------------------
 LANDING PAGE

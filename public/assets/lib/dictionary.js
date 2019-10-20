@@ -2,7 +2,23 @@ var dictionary = {
     /*--------------------------------------------------
     HEADER
     ---------------------------------------------------*/
+    "menuHome": {
+        es: "Inicio",
+        eu: "Hasiera",
+        en: "Home"
+    },
 
+    "menuShops": {
+        es: "Tiendas",
+        eu: "Dendak",
+        en: "Shops"
+    },
+
+    "menuContact": {
+        es: "Contacto",
+        eu: "Kontaktua",
+        en: "Contact"
+    },
     /*--------------------------------------------------
     LANDING PAGE
     ---------------------------------------------------*/
