@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Products;
-use DB;
+//use DB;
+
 class ProductController extends Controller
 {
     /**
@@ -36,16 +37,16 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $product = new Products;
-        
-        $product ->name = $request->name;
-        $product ->description = 'Zapatos negros de cuero';
-        $product ->stock = $request->input('stock');
-        $product ->price = '39.95';
-        $product ->photo = 'img/fotoTienda/zara.png';
-        $product ->price = '39.95'; 
-        $product ->link = 'www.aasdads.com';
-        $product ->shopId = $request->input('shopId');       
-        $product ->save();
+
+        $product->name = $request->name;
+        $product->description = $request->description;
+        $product->stock = $request->input('stock');
+        $product->price = $request->price;
+        $product->photo = $request->photo;
+        $product->link = $request->link;
+        $product->shopId = $request->shopId;
+        $product->save();
+        return view('tienda/'.$request->shopId);
     }
 
     /**
@@ -56,12 +57,12 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-    
-        $info = Products::where('id',$id)->get();
-        //$info = DB::table('products')->where('id', '=','1')->first(); ESTA ES OTRA FORMA DE GESTIONAR LA BASE DE DATOS
 
+        $info = Products::where('id', $id)->get();
         return view('producto', ['infoProducto' => $info]);
-
+        /* ESTA ES OTRA FORMA DE GESTIONAR LA BASE DE DATOS
+         $info = DB::table('products')->where('id', '=','1')->first();
+         s*/
     }
 
     /**
@@ -84,8 +85,8 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Products::where('id',$id)
-        ->update(['stock'=>$request->stock]);
+        Products::where('id', $id)
+            ->update(['stock' => $request->stock]);
     }
 
     /**
@@ -96,7 +97,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        Products::where('id',$id)
-        ->delete();
+        Products::where('id', $id)
+            ->delete();
     }
 }
