@@ -97,7 +97,7 @@
     <a href="/producto/1">Producto</a>
     <h1>Formulario de insert</h1>
         <form action="/producto" method="POST">
-          {{ csrf_field() }}
+          @csrf
             <label>Producto</label>
             <input type="text" min="1" max="5" step="1" name="name"><br>
             <label>stock</label>
