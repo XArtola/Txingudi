@@ -1,6 +1,11 @@
 <!-- Código interno del header no hace falta etiquieta header aqui-->
 <div class="navbar">
+<<<<<<< HEAD
+    <a href="/"><img src="{{asset('assets/images/txingudi_color.png')}}"></a>
+=======
+
     <a href="#"><img src="{{asset('assets/images/txingudi_color.png')}}"></a>
+>>>>>>> 4684de5012b580dce99a49a1f39ce55a1f582984
     <ul class="nav">
         <li class="trn" data-trn-key="menuHome">Inicio</li>
         <li>
@@ -21,3 +26,4 @@
         <li data-lang="en" class="language">En</li>
     </ul>
 </div>
+>>>>>>> d853dd6d4f58730e227ddbe033547f17cc608e52

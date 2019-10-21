@@ -1,4 +1,4 @@
 @extends('layouts.master')
 @section('content')
-<?php echo $infoShop ?>
+<?php echo $infoShop->name?>
 @stop
