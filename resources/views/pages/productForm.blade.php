@@ -20,7 +20,7 @@
     <input type="submit">
 </form>
 <script type="text/javascript">
-    var lan = "es";
+    //var lan = "es";
     var frmvalidator = new Validator("newProduct");
     frmvalidator.addValidation("name", "req", eval("dictionary.nameEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("name", "maxlen=80", eval("dictionary.nameLength." + sessionStorage.getItem("language")));

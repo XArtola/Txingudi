@@ -100,5 +100,10 @@ class ProductController extends Controller
     {
         Products::where('id', $id)
             ->delete();
+
+    $shops = Shops::select('id','name')->get();
+    return view('pages.landing', ['shops'=>$shops]);
+
+
     }
 }

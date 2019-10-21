@@ -34,7 +34,7 @@ TIENDAS
 */
 
 Route::get('tienda', 'ShopController@index');
-Route::get('tienda/{id}', 'ShopController@show');
+Route::get('tienda/{id}', 'ShopController@show')->name('tienda');
 
 
 

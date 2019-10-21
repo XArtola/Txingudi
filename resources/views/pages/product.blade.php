@@ -19,7 +19,7 @@
     <input type="number" value="<?php echo $info->stock ?>" min="1" max="20" step="1" name="stock"><br>
     <?php //<input type="submit"> 
     ?>
-    <input type="image" src="{{asset('assets/images/icons/add.jpg')}}">
+    <input type="image" src="{{asset('assets/images/icons/delete.png')}}">
 </form>
 <h1>Formulario delete</h1>
 <form action="<?php echo '/producto/' . $info->id ?>" method="POST">
@@ -29,7 +29,7 @@
     <input type="number" min="1" max="20" step="1" name="stock"><br>
     <?php //<input type="submit" name="Eliminar producto"> 
     ?>
-    <input type="image" src="{{asset('assets/images/icons/delete.jpg')}}">
+    <input type="image" src="{{asset('assets/images/icons/delete.png')}}">
 </form>
 
 <?php echo $info ?>

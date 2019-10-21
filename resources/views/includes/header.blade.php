@@ -7,11 +7,9 @@
             <div class="dropdown">
                 <button class="dropbtn trn" data-trn-key="menuShops">Tiendas</button>
                 <div class="dropdown-content">
-                    <?php 
-                    
-                    foreach ($shops as $shop )
-                    echo  "<a href='tienda/".$shop->id."'>".$shop->name."</a>";
-                    ?>
+                    @foreach ($shops as $shop )
+                        <a href='{{url('/tienda/'.$shop->id)}}'>{{$shop->name}}</a>;
+                    @endforeach
                 </div>
             </div>
         </li>
