@@ -1,4 +1,5 @@
 @include('includes.head')
+
     <body>  
 <a href="lista">Lista</a>
    
@@ -16,5 +17,5 @@
        <a href="/producto/1">Producto</a>
    
    </body>
-   
+
    </html>
