@@ -19,28 +19,64 @@ HEADER
 
 .navbar {
     display: flex;
-    height: 100px;
+    height: 20%;
     background-color:  #004587;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 10px;
     padding-right: 10px;
     align-items: center;
+
+   
+      position: fixed;
+      top: 0;
+      width: 100%;
+    
 }
 
 .nav{
 
+  height:100%;
+  width:50%;
+  list-style:none;
 
-cursor:pointer;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  cursor:pointer;
 
 }
 
-logo {
+.nav li {
+    justify-self: center;
+    align-self: center;
     color: white;
+
 }
 
-li {
-    display: inline-block;
-    color: white;
+.nav li a{
+
+text-decoration:none;
+color:black;
+
+height: 100%;
+}
+
+.forma2{
+
+  background-color:#fccb34;
+  height: 100%;
+  width: 100%;
+  /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+  
+  }
+
+.forma3{
+
+background-color:#009a8d;
+height: 100%;
+width: 100%;
+/*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+
 }
 
 img {
@@ -61,7 +97,7 @@ Menu desplegable de las tiendas
 /* Style The Dropdown Button */
 .dropbtn {
     background-color:  #004587;
-    color: #fccb34;
+    color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -99,6 +135,11 @@ Menu desplegable de las tiendas
     background-color: #3e8e41;
   }
 /*seletor de idiomas*/
+.languages li{
+
+list-style:none;
+display: inline-block;
+}
 
 .languages li:hover{
 
@@ -106,9 +147,22 @@ background-color: black;
 cursor: pointer;
 }
 
+
 /*--------------------------------------------------
 LANDING PAGE
 ---------------------------------------------------*/
+.container{
+
+margin-top:10%;
+
+}
+/*--------------------------------------------------
+LANDING PAGE
+---------------------------------------------------*/
+
+
+
+
 
 /*--------------------------------------------------
 TIENDA

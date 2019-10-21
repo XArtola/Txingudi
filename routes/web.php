@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', 'ShopController@listShops');
+Route::get('/', 'ShopController@listShops')->name('landing');
 
 
 //Cuando el se pulsa el a llama a lista y se activa la ruta
