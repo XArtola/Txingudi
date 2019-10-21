@@ -19,6 +19,13 @@ class ProductController extends Controller
         //
     }
 
+    public function form($shopId)
+    {
+        $shops = Shops::select('id', 'name')->get();
+        return view('pages.productForm', ['shopId' => $shopId, 'shops' => $shops]);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -90,7 +97,7 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         Products::where('id', $id)->update(['stock' => $request->stock]);
-        return redirect("producto/".$id);
+        return redirect("producto/" . $id);
     }
 
     /**

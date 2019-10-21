@@ -9,6 +9,12 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
 <head>
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/CSS/estilos.css') }}" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+    </style>
     <script src="{{asset('assets/lib/jquery-3.4.1.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/lib/jquery.translate.js')}}" type="text/javascript"></script>
     <script type="text/javascript">

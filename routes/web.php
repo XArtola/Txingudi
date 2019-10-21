@@ -42,7 +42,10 @@ Route::get('tienda/{id}', 'ShopController@show')->name('tienda');
 PRODUCTOS
 ---------------------------------------------------------------------
 */
+
+
 Route::get('producto/{idProducto}', 'ProductController@show');
+Route::get('producto/create/{idTienda}', 'ProductController@form');
 Route::post('/producto', 'ProductController@store');
 Route::put('producto/{idProducto}', 'ProductController@update');
 Route::delete('producto/{idProducto}', 'ProductController@destroy');
