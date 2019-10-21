@@ -4,7 +4,7 @@
     <ul class="nav">
         <li><a class="trn" data-trn-key="menuHome" href="{{url('/')}}">Inicio</a></li>
         <li>
-            <div class="dropdown forma2">
+            <div class="dropdown">
                 <button class="dropbtn trn" data-trn-key="menuShops">Tiendas</button>
                 <div class="dropdown-content">
                     @foreach ($shops as $shop )
@@ -13,7 +13,7 @@
                 </div>
             </div>
         </li>
-        <li><a class="trn forma3" data-trn-key="menuContact" href="{{url('/')}}">Contacto</a></li>
+        <li class="forma3"><a class="trn" data-trn-key="menuContact" href="{{url('/')}}">Contacto</a></li>
     </ul>
     <ul class="languages">
         <li data-lang="eu" class="language">Eu</li>
