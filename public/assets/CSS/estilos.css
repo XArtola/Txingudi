@@ -8,43 +8,65 @@ Verde:      #009a8d
 
 */
 
-
 /*--------------------------------------------------
 HEADER
 ---------------------------------------------------*/
+
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar {
-    display: flex;
-    height: 100px;
-    background-color:  #004587;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
+  display: flex;
+  height: 20%;
+  background-color: #004587;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.nav{
-
-
-cursor:pointer;
-
+.nav {
+  height: 100%;
+  width: 50%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
-logo {
-    color: white;
+.nav li {
+  justify-self: center;
+  align-self: center;
+  color: white;
 }
 
-li {
-    display: inline-block;
-    color: white;
+.nav li a {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+}
+
+.forma2 {
+  background-color: #fccb34;
+  /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+}
+
+.forma3 {
+  background-color: #009a8d;
+  height: 100%;
+  width: 30%;
+  /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
 }
 
 img {
-    background-color: #004587;
+  background-color: #004587;
 }
 
 /*-----------------------------------------------------------------
@@ -59,51 +81,74 @@ Menu desplegable de las tiendas
 }
 
 /* Style The Dropdown Button */
+
 .dropbtn {
-    background-color:  #004587;
-    color: #fccb34;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
+  background-color: #fccb34;;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
 /*seletor de idiomas*/
 
-.languages li:hover{
+.languages li {
+  list-style: none;
+  display: inline-block;
+}
 
-background-color: black;
-cursor: pointer;
+.languages li:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------
+CONTAINER
+---------------------------------------------------*/
+
+.container {
+  margin-top: 10%;
 }
 
 /*--------------------------------------------------
@@ -118,14 +163,113 @@ TIENDA
 PRODUCTO
 ---------------------------------------------------*/
 
+#productContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
 
+#productContainer article {
+  flex: 40%;
+}
 
+#productContainer article img {
+  width: 80%;
+  margin: 2%;
+}
+
+#productContainer aside {
+  font-size: 1rem;
+  flex: 50%;
+}
+
+#productContainer h1 {
+  font-size: 4rem;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Source Sans Pro', sans-serif;
+  /*font-family: 'Nunito', sans-serif;*/
+  padding-left: 3%;
+}
+
+hr {
+  color: #004587;
+}
+
+#productContainer p {
+  font-size: 1.5rem;
+  letter-spacing: 2%;
+  word-spacing: 5%;
+  text-align: justify;
+  margin: 3%;
+  color: gray;
+}
+
+#productContainer h2 {
+  font-size: 1.5rem;
+  letter-spacing: 2%;
+  word-spacing: 5%;
+  text-align: justify;
+  margin: 4%;
+  color: black;
+}
+
+#productContainer form {
+  width: 50%;
+  float: left;
+}
+
+#productContainer form input {
+  float: left;
+}
 
 /*--------------------------------------------------
 FORMULARIO
 ---------------------------------------------------*/
 
+#formContainer {
+  background-color: lightgray;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
+#formContainer h1 {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+#newProduct {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 8%;
+  color: #004587;
+}
+
+.field {
+ 
+  min-width: 40%;
+  min-height: auto;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+.field label {
+  display: block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.field input[type="text"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color:rgb(80, 78, 78);
+}
 
 /*--------------------------------------------------
 FOOTER
