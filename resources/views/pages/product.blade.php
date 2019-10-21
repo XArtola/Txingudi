@@ -3,9 +3,9 @@
 
 <section id="productContainer">
 
-    <h1><?php echo $info->name ?></h1>
-
-    <img src="<?php echo $info->photo ?>">
+    <h1>{{$info->name}}</h1>
+   
+    <img src={{asset("assets/images/fotoProducto/$info->photo")}}>
     <p><?php echo $info->description ?></p>
 
 </section>
@@ -19,7 +19,7 @@
     <input type="number" value="<?php echo $info->stock ?>" min="1" max="20" step="1" name="stock"><br>
     <?php //<input type="submit"> 
     ?>
-    <input type="image" src="{{asset('assets/images/icons/delete.png')}}">
+    <input type="image" src="{{asset('assets/images/icons/update.png')}}">
 </form>
 <h1>Formulario delete</h1>
 <form action="<?php echo '/producto/' . $info->id ?>" method="POST">

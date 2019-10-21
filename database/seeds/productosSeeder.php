@@ -17,7 +17,7 @@ class productosSeeder extends Seeder
             'description' => 'Zapatos negros de cuero',
             'stock' => '15',
             'price' => '39.95',
-            'photo' => '{{asset("assets/images/fotoTienda/1.jpg")}}',
+            'photo' => '1.jpg',
             'link' => 'www.zara.com',
             'shopId' => '1'
             ]);
