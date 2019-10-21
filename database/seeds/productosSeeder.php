@@ -13,12 +13,12 @@ class productosSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         DB::table('products')->insert([
-            'name' => 'Zapatos negrs',
+            'name' => 'Zapatos negros',
             'description' => 'Zapatos negros de cuero',
             'stock' => '15',
             'price' => '39.95',
-            'photo' => 'img/fotoTienda/zara.png',
-            'link' => 'www.aasdads.com',
+            'photo' => '1.jpg',
+            'link' => 'www.zara.com',
             'shopId' => '1'
             ]);
     }
