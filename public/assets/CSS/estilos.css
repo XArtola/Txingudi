@@ -109,6 +109,43 @@ cursor: pointer;
 /*--------------------------------------------------
 LANDING PAGE
 ---------------------------------------------------*/
+#eventos{
+  display:flex;
+  height: 500px;
+  background-color: grey;
+  align-items: center;
+  justify-content: space-around; 
+
+}
+
+#texto{
+   justify-content: center; 
+}
+
+#info{
+  color: white;
+}
+
+#promociones{
+   display: flex;
+   height: 80px; 
+   align-items: center;
+  justify-content: space-around;
+}
+#productos{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-bottom:10px;
+}
+
+#horarios{
+   display: flex;
+   padding-left:10px;
+   height: 100px;
+   align-items:center;
+}
+
 
 /*--------------------------------------------------
 TIENDA
