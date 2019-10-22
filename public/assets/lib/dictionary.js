@@ -43,7 +43,7 @@ var dictionary = {
         eu: "ORDUTEGIA:<br>Zentroaren ordutegia: Astelehenetik larunbatera 10:00etatik 22:00etara",
         en: "SCHEDULE:<br> shoping centers schedule: Moday to Saturday from 10:00am to 22:00pm"
     },
-    
+
 
     /*--------------------------------------------------
     TIENDA
@@ -53,10 +53,75 @@ var dictionary = {
     PRODUCTO
     ---------------------------------------------------*/
 
+    "productName1": {
+        es: "Zapatos negros",
+        eu: "Zapata beltzak",
+        en: "Black shoes"
+    },
+    "productDescription1": {
+        es: "Zapatos negros",
+        eu: "Zapata beltzak",
+        en: "Black shoes"
+    },
+
     /*--------------------------------------------------
     FORMULARIO
     ---------------------------------------------------*/
+    "productFormTitle": {
+        es: "Inserción de nuevo producto",
+        eu: "Produktu berriaren sorrera",
+        en: "New product insertion"
+    },
 
+    "productFormName": {
+        es: "Nombre del producto",
+        eu: "Produktuaren izena",
+        en: "Product name"
+    },
+
+    "productFormPhoto": {
+        es: "Foto",
+        eu: "Argazkia",
+        en: "Photo"
+    },
+
+    "productFormLanguage": {
+        es: "Idioma",
+        eu: "Hizkuntza",
+        en: "Language"
+    },
+
+    "productFormBasque": {
+        es: "Euskera",
+        eu: "Euskara",
+        en: "Basque"
+    },
+
+    "productFormSpanish": {
+        es: "Español",
+        eu: "Gaztelera",
+        en: "Spanish"
+    },
+
+    "productFormEnglish": {
+        es: "Inglés",
+        eu: "Ingelera",
+        en: "English"
+    },
+
+    "productFormDescription": {
+        es: "Descripción",
+        eu: "Azalpena",
+        en: "Description"
+    },
+
+    "productFormVideo": {
+        es: "Vídeo",
+        eu: "Bideoa",
+        en: "video"
+    },
+    
+    
 
     /*--------------------------------------------------
     ERRORES DE VALIDACIÓN

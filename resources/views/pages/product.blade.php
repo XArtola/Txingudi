@@ -7,9 +7,9 @@
     </article>
 
     <aside>
-        <h1>{{$info->name}}</h1>
+        <h1 class="trn" data-trn-key='{{"productName$info->id"}}'>{{$info->name}}</h1>
         <hr>
-        <p> {{$info->description}} </p>
+        <p class="trn" data-trn-key='{{"productDescription$info->id"}}'> {{$info->description}} </p>
         <h2> {{$info->price}}&euro; </h2>
         <article class="forms">
             <form action="<?php echo '/producto/' . $info->id ?>" method='POST'>
@@ -27,6 +27,9 @@
             </form>
         </article>
     </aside>
+    <div id="videoContainer">
+        <iframe  src={{$info->link}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </section>
 
 <?php echo $info ?>
