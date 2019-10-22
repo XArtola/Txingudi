@@ -10,6 +10,7 @@
 <?php echo $infoShop->photo ?>
 <br>
 <?php echo $infoShop->openh ?>-<?php echo $infoShop->closeh ?>
+<img src={{asset("assets/$infoShop->photo")}}>
 
 <?php echo $infoShop->name ?>
 <!--Esto redirigira al formulario de inserción de nuevo producto -->

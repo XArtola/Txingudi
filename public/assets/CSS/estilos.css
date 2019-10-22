@@ -53,6 +53,8 @@ HEADER
   height: 100%;
 }
 
+
+
 .forma2 {
   background-color: #fccb34;
   /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
@@ -63,7 +65,14 @@ HEADER
   height: 100%;
   width: 30%;
   /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+  transform: skewX(-40deg);
 }
+
+.forma3 a {
+  display: block;
+}
+
+
 
 img {
   background-color: #004587;
