@@ -19,6 +19,13 @@ class ProductController extends Controller
         //
     }
 
+    public function form($shopId)
+    {
+        $shops = Shops::select('id', 'name')->get();
+        return view('pages.productForm', ['shopId' => $shopId, 'shops' => $shops]);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -41,13 +48,16 @@ class ProductController extends Controller
 
         $product->name = $request->name;
         $product->description = $request->description;
-        $product->stock = $request->input('stock');
+        $product->stock = $request->stock;
         $product->price = $request->price;
+        $request->photo->storeAs();
+
+
         $product->photo = $request->photo;
         $product->link = $request->link;
         $product->shopId = $request->shopId;
         $product->save();
-        return view('tienda/'.$request->shopId);
+        return view('tienda/' . $request->shopId);
     }
 
     /**
@@ -59,8 +69,8 @@ class ProductController extends Controller
     public function show($id)
     {
         $info = Products::where('id', $id)->first();
-        $shops = Shops::select('id','name')->get();
-        return view('pages.product', ['info' => $info,'shops'=>$shops]);
+        $shops = Shops::select('id', 'name')->get();
+        return view('pages.product', ['info' => $info, 'shops' => $shops]);
         /* ESTA ES OTRA FORMA DE GESTIONAR LA BASE DE DATOS
          $info = DB::table('products')->where('id', '=','1')->first();
          s*/
@@ -86,8 +96,8 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Products::where('id', $id)
-            ->update(['stock' => $request->stock]);
+        Products::where('id', $id)->update(['stock' => $request->stock]);
+        return redirect("producto/" . $id);
     }
 
     /**
@@ -96,14 +106,10 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        Products::where('id', $id)
-            ->delete();
-
-    $shops = Shops::select('id','name')->get();
-    return view('pages.landing', ['shops'=>$shops]);
-
-
+        Products::where('id', $id)->delete();
+        $ruta =  "tienda/" . $request->shopId;
+        return redirect($ruta);
     }
 }

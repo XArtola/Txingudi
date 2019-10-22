@@ -25,7 +25,7 @@ class ShopController extends Controller
 
     public function listShops()
     {
-       // Shops::select('id','name')->get();
+        // Shops::select('id','name')->get();
         $shops = Shops::All();
 
         return view('pages.landing', (['shops' => $shops]));
@@ -57,8 +57,8 @@ class ShopController extends Controller
     {
 
         $infoShop = Shops::where('id', $id)->get();
-        $shops = Shops::select('id','name')->get();
-        return view('pages.shop', ['infoShop' => $infoShop, 'shops'=>$shops]);
+        $shops = Shops::select('id', 'name')->get();
+        return view('pages.shop', ['infoShop' => $infoShop[0], 'shops' => $shops]);
     }
 
     /**

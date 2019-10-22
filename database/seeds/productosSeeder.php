@@ -14,7 +14,7 @@ class productosSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         DB::table('products')->insert([
             'name' => 'Zapatos negros',
-            'description' => 'Zapatos negros de cuero',
+            'description' => 'Zapatos negros de cuero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis pharetra ipsum, varius commodo risus. Curabitur porta, velit quis viverra accumsan, mauris metus varius ipsum, sed faucibus dui nisi et felis. Fusce dignissim mauris a elementum mattis. Nulla interdum erat eget lorem volutpat efficitur.',
             'stock' => '15',
             'price' => '39.95',
             'photo' => '1.jpg',

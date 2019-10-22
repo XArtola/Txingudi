@@ -1,24 +1,38 @@
 @extends('layouts.master')
 @section('content')
-<h1>Inserción de nuevo producto</h1>
-<form id="newProduct" action="/producto" method="POST">
-    @csrf
-    <label>Nombre del producto</label><br>
-    <input type="text" name="name" id="name"><br>
-    <label>Descripción</label><br>
-    <textarea name="description" id="description"></textarea><br>
-    <label>Stock</label><br>
-    <input type="number" min="1" max="5" step="1" name="stock" id="stock"><br>
-    <label>Precio</label><br>
-    <input type="number" min="1.00" max="999.99" step="0.01" id="price" name="price"><br>
-    <label>Foto</label><br>
-    <input type="file" name="photo" id="photo"><br>
-    <label>Video o enlace</label><br>
-    <input type="url" id="link" name="link"><br>
-    <!-- Hay que cambiar esto para que tome la id de cada tienda -->
-    <input type="hidden" value="1" id="shopId" name="shopId"><br>
-    <input type="submit">
-</form>
+<div id="formContainer">
+    <h1>Inserción de nuevo producto</h1>
+    <form id="newProduct" action="/producto" method="POST">
+        @csrf
+        <div class="field">
+            <label>Nombre del producto</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="field">
+            <label>Descripción</label><br>
+            <textarea name="description" id="description"></textarea><br>
+        </div>
+        <div class="field">
+            <label>Stock</label><br>
+            <input type="number" min="1" max="5" step="1" name="stock" id="stock"><br>
+        </div>
+        <div class="field">
+            <label>Precio</label><br>
+            <input type="number" min="1.00" max="999.99" step="0.01" id="price" name="price"><br>
+        </div>
+        <div class="field">
+            <label>Foto</label><br>
+            <input type="file" name="photo" id="photo"><br>
+        </div>
+        <div class="field">
+            <label>Video o enlace</label><br>
+            <input type="url" id="link" name="link"><br>
+        </div>
+        <!-- Hay que cambiar esto para que tome la id de cada tienda -->
+        <input type="hidden" value="1" id="shopId" name="shopId"><br>
+        <input type="image" src="{{asset('assets/images/icons/confirm.png')}}">
+    </form>
+</div>
 <script type="text/javascript">
     //var lan = "es";
     var frmvalidator = new Validator("newProduct");

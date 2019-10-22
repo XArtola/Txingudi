@@ -1,8 +1,8 @@
 @include('includes.head')
-@include('includes.header')
+
 
 <body>
-
+@include('includes.header')
     <div class="container">
         @yield('content')
     </div>

@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', 'ShopController@listShops');
+Route::get('/', 'ShopController@listShops')->name('landing');
 
 
 //Cuando el se pulsa el a llama a lista y se activa la ruta
@@ -42,7 +42,10 @@ Route::get('tienda/{id}', 'ShopController@show')->name('tienda');
 PRODUCTOS
 ---------------------------------------------------------------------
 */
+
+
 Route::get('producto/{idProducto}', 'ProductController@show');
+Route::get('producto/create/{idTienda}', 'ProductController@form');
 Route::post('/producto', 'ProductController@store');
 Route::put('producto/{idProducto}', 'ProductController@update');
 Route::delete('producto/{idProducto}', 'ProductController@destroy');
