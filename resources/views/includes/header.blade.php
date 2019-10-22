@@ -2,7 +2,7 @@
 <div class="navbar">
     <a href="/"><img src="{{asset('assets/images/imagenesLanding/txingudi_color.png')}}"></a>
     <ul class="nav">
-        <li><a class="trn" data-trn-key="menuHome" href="{{url('/')}}">Inicio</a></li>
+        <li class="forma3"><a class="trn" data-trn-key="menuHome" href="{{url('/')}}">Inicio</a></li>
         <li>
             <div class="dropdown">
                 <button class="dropbtn trn" data-trn-key="menuShops">Tiendas</button>
