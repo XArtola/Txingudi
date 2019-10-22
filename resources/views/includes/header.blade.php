@@ -1,6 +1,6 @@
 <!-- Código interno del header no hace falta etiquieta header aqui-->
 <div class="navbar">
-    <a href="/"><img src="{{asset('assets/images/txingudi_color.png')}}"></a>
+    <a href="/"><img src="{{asset('assets/images/imagenesLanding/txingudi_color.png')}}"></a>
     <ul class="nav">
         <li><a class="trn" data-trn-key="menuHome" href="{{url('/')}}">Inicio</a></li>
         <li>

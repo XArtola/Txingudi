@@ -154,6 +154,8 @@ CONTAINER
 /*--------------------------------------------------
 LANDING PAGE
 ---------------------------------------------------*/
+
+/* Style part for the events zone*/
 #eventos{
   display:flex;
   height: 500px;
@@ -171,6 +173,7 @@ LANDING PAGE
   color: white;
 }
 
+/* Sales part of the landing page, some styles*/
 #promociones{
    display: flex;
    height: 80px; 
@@ -184,6 +187,7 @@ LANDING PAGE
    margin-bottom:10px;
 }
 
+/* Schedule zone styles */
 #horarios{
    display: flex;
    padding-left:10px;
