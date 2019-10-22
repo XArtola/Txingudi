@@ -1,16 +1,16 @@
 @extends('layouts.master')
 @section('content')
     <div id="eventos">
-        <img src="{{asset('assets/images/evento.jpg')}}" style="width:300px; height:300px;">
+        <img src="{{asset('assets/images/imagenesLanding/evento.png')}}" style="width:300px; height:300px;">
 
         <div id="texto">
-            <h2 id="info">TORNEO DE AJEDREZ DEL 25 AL 27 DE OCTUBRE <br></h2>
-            <h3 id="info">CC Txingudi Bº VENTAS Nº 80, 20305, IRUN</h3>
+            <h2 class="trn" data-trn-key="event" id="info">TORNEO DE AJEDREZ DEL 25 AL 27 DE OCTUBRE <br></h2>
+            <h3 class="trn" data-trn-key="place" id="info">CC Txingudi Bº VENTAS Nº 80, 20305, IRUN</h3>
         </div>
     </div>
 
     <div id="promociones">
-            <h2 >LAS MEJORES PROMOCIONES</h2>
+            <h2 class="trn" data-trn-key="bestPromotions">LAS MEJORES PROMOCIONES</h2>
     </div>
     <div id="productos">
         <img src="{{asset('assets/images/evento.jpg')}}" style="width:300px; height:300px;">
@@ -20,7 +20,7 @@
     </div>
 
     <div id="horarios">
-   <h3> HORARIOS:<br> 
+   <h3 class="trn" data-trn-key="schedule"> HORARIOS:<br> 
     Horario del centro: De lunes a sábado de 10h. a 22h.</h3>
     </div>
 

@@ -22,6 +22,28 @@ var dictionary = {
     /*--------------------------------------------------
     LANDING PAGE
     ---------------------------------------------------*/
+    "event": {
+        es: "TORNEO DE AJEDREZ DEL 25 AL 27 DE OCTUBRE",
+        eu: "XAKE TAPELKETA URRIAREN 25-ETIK 27-RA",
+        en: "CHESS TOURNAMENT FROM OCTOBER 25 to 27"
+    },
+    "place": {
+        es: "CC Txingudi Bº VENTAS Nº 80, 20305, IRUN",
+        eu: "Txingudi Merkataritza gunea VENTAS 80 zenbakia, 20305, IRUN",
+        en: "Txingudi shoping mall VENTAS number 80, 20305, IRUN"
+    },
+    "bestPromotions": {
+        es: "Las mejores promociones",
+        eu: "Promozio onenak",
+        en: "The best promotions"
+    },
+
+    "schedule": {
+        es: "HORARIO:<br>Horario del centro: De Lunes a Sábado de 10:00h. a 22:00h.",
+        eu: "ORDUTEGIA:<br>Zentroaren ordutegia: Astelehenetik larunbatera 10:00etatik 22:00etara",
+        en: "SCHEDULE:<br> shoping centers schedule: Moday to Saturday from 10:00am to 22:00pm"
+    },
+    
 
     /*--------------------------------------------------
     TIENDA
