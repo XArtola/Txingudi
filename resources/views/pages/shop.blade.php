@@ -3,29 +3,33 @@
 <div class="section">
     <div class="section-left">
         <div class="titulo">
-            <img src={{asset("assets/$infoShop->logo")}}>
             <?php echo $infoShop->name?>
             <!--Esto redirigira al formulario de inserción de nuevo producto -->
             <a href={{url("/producto/create/$infoShop->id")}}><img src="{{asset('assets/images/icons/add.png')}}"></a>
         </div>
-        <?php echo $infoShop->description ?>
-        <img width src="{{asset('assets/images/icons/reloj.png')}}"></a> <?php echo $infoShop->openh ?>-<?php echo $infoShop->closeh ?>
+        <p><?php echo $infoShop->description ?></p>
+        <div class="reloj">
+            <img src="{{asset('assets/images/icons/reloj.png')}}"width="20px" height="20px">
+            <?php echo $infoShop->openh ?>-<?php echo $infoShop->closeh ?>
+        </div>
     </div>
     <div class="section-right">
-    <img src={{asset("assets/$infoShop->photo")}}>
+        <img src={{asset("assets/$infoShop->photo")}}>
+    </div>
+</div>
+    <div class="productos">
+        @foreach($productos as $producto)
+            <p>{{$producto->name}}</p>
+            <p>{{$producto->description}}</p>
+            <p>{{$producto->stock}}</p>
+            <p>{{$producto->price}}</p>
+            <img src={{asset("assets/images/fotoProducto/$producto->photo")}}> 
+        @endforeach 
     </div>
 
 
-<h1><?php echo $infoShop->name?></h1>
-<br>
-<?php echo $infoShop->description ?>
-<br>
-<?php echo $infoShop->logo ?>
-<br>
-<?php echo $infoShop->photo ?>
-<br>
-<?php echo $infoShop->openh ?>-<?php echo $infoShop->closeh ?>
-<img src={{asset("assets/$infoShop->photo")}}>
+
+
 
     <style>
     .section{
@@ -41,25 +45,38 @@
     }
     .section-left{
         flex:1 1 50%;
-        margin: 20px;
+        margin: 15px 0 0 30px;
     }
-    .titulo{
-        width:50%;
-        font-size:40px;
-        border-bottom: 1px solid black;
+    .section-left p{
+        text-align:justify;
+        font-size:20px;
+        margin: 20px 40px 0 5px;
     }
-    .titulo a{
+    .section-left .titulo{
+        width:100%;
+        font-size:60px;
+        border-bottom: 6px solid black;
+    }
+    .section-left .titulo a{
+        float:right;
+    }
+    .section-left .reloj{
+        margin-top:10px;
         float:right;
     }
     .section-right{
         flex:1 1 50%;
     }
+    .section-right{
+        flex:1 1 50%;
+    }
+    .section-right img{
+        width:80%;
+        height:300px;
+        margin-left:80px; 
+    }
     </style>
  
-
-
-
-<a id="add" href={{url("/producto/create/$infoShop->id")}}><img src="{{asset('assets/images/icons/add.png')}}"></a>;
 
 
 

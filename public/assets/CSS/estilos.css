@@ -168,9 +168,9 @@ LANDING PAGE
 /* Style part for the events zone*/
 
 #eventos {
+  background-image: url("/public/assets/images/imagenesLanding/eventos.png')}}");
   display: flex;
   height: 500px;
-  background-color: grey;
   align-items: center;
   justify-content: space-around;
 }
@@ -192,11 +192,29 @@ LANDING PAGE
   justify-content: space-around;
 }
 
-#productos {
+#contenedor {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  margin-bottom: 10px;
+}
+
+#productos {
+  background-color: grey;
+  width: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: center;
+  justify-content: space-between;
+}
+
+#producto {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: red;
+  text-align: center;
+  width: 30%;
+  height: 500px;
+  padding-top: 10px;
 }
 
 /* Schedule zone styles */
