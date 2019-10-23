@@ -167,9 +167,9 @@ LANDING PAGE
 
 /* Style part for the events zone*/
 
-#eventos{
-  background-image:url("/public/assets/images/imagenesLanding/eventos.png')}}");
-  display:flex;
+#eventos {
+  background-image: url("/public/assets/images/imagenesLanding/eventos.png')}}");
+  display: flex;
   height: 500px;
   align-items: center;
   justify-content: space-around;
@@ -192,31 +192,30 @@ LANDING PAGE
   justify-content: space-around;
 }
 
-#contenedor{
+#contenedor {
   width: 100%;
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-#productos{
+
+#productos {
   background-color: grey;
-	width: 96%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: center;
-	justify-content: space-between;
+  width: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: center;
+  justify-content: space-between;
 }
 
-#producto{
+#producto {
   padding-left: 10px;
-	padding-right: 10px;
-	background-color: red;
-	text-align: center;
-	width: 30%;
-	height: 500px;
-	padding-top: 10px;
+  padding-right: 10px;
+  background-color: red;
+  text-align: center;
+  width: 30%;
+  height: 500px;
+  padding-top: 10px;
 }
-
-
 
 /* Schedule zone styles */
 
@@ -260,7 +259,7 @@ PRODUCTO
   flex: 50%;
   background-color: white;
   padding-right: 1%;
-  border-radius:8%;
+  border-radius: 8%;
 }
 
 #productContainer h1 {
@@ -303,17 +302,16 @@ hr {
 }
 
 #videoContainer {
-  
   flex: 100%;
- 
 }
-#videoContainer iframe{
+
+#videoContainer iframe {
   display: block;
   width: 80vw;
   height: 60vw;
   margin: auto;
- 
 }
+
 /*--------------------------------------------------
 FORMULARIO
 ---------------------------------------------------*/
@@ -391,7 +389,6 @@ FORMULARIO
   margin-left: 2%;
   width: 80%;
   height: 50%;
-
   margin-bottom: 5%;
   background: transparent;
   border: none;
@@ -459,10 +456,9 @@ FORMULARIO
   margin: auto;
   padding: 5% 45%;
 }
-.submit:hover{
 
+.submit:hover {
   background-color: rgb(0, 69, 135, 0.7);
-
 }
 
 /*--------------------------------------------------
