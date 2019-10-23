@@ -53,7 +53,7 @@ class ProductController extends Controller
 
        /* $path = $request->file('photo')->storeAs('submitedImages',uniqid());*/
        /* $path = $request->file('photo')->storeAs('/submitedImages/', $request->file('photo')->getClientOriginalName());*/
-        $path = $request->file('photo')->storeAs('/submitedImages/',uniqid());
+        $path = $request->file('photo')->storeAs('submitedImages',uniqid());
 
         $product->photo = $path;
         $product->language = $request->language;
