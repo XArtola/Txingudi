@@ -2,7 +2,7 @@
 @section('content')
 <div id="formContainer">
     <h1 class="trn" data-trn-key="productFormTitle">Inserción de nuevo producto</h1>
-    <form id="newProduct" enctype =  "multipart/form-data" action="/producto" method="POST">
+    <form id="newProduct" enctype ="multipart/form-data" action="/producto" method="POST">
         @csrf
         <div class="field">
             <label class="trn" data-trn-key="productFormName">Nombre del producto</label>
