@@ -241,7 +241,7 @@ PRODUCTO
   flex: 50%;
   background-color: white;
   padding-right: 1%;
-  border-radius:8%;
+  border-radius: 8%;
 }
 
 #productContainer h1 {
@@ -279,22 +279,30 @@ hr {
   float: left;
 }
 
-#productContainer form input {
+#productContainer form input[type="number"] {
   float: left;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
 }
 
 #videoContainer {
-  
   flex: 100%;
- 
 }
-#videoContainer iframe{
+
+#videoContainer iframe {
   display: block;
   width: 80vw;
   height: 60vw;
   margin: auto;
- 
 }
+
 /*--------------------------------------------------
 FORMULARIO
 ---------------------------------------------------*/
@@ -372,7 +380,6 @@ FORMULARIO
   margin-left: 2%;
   width: 80%;
   height: 50%;
-
   margin-bottom: 5%;
   background: transparent;
   border: none;
@@ -440,10 +447,9 @@ FORMULARIO
   margin: auto;
   padding: 5% 45%;
 }
-.submit:hover{
 
+.submit:hover {
   background-color: rgb(0, 69, 135, 0.7);
-
 }
 
 /*--------------------------------------------------
