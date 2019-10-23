@@ -22,6 +22,7 @@ class CreateProductsTable extends Migration
             $table->float('price', 5, 2);
             $table->string('photo');
             $table->string('link');
+            $table->string('language');
 
             $table->integer('shopId')->unsigned();
             $table->foreign('shopId')
