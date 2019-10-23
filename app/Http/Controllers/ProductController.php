@@ -50,14 +50,10 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->stock = $request->stock;
         $product->price = $request->price;
-
-       /* $path = $request->file('photo')->storeAs('submitedImages',uniqid());*/
-       /* $path = $request->file('photo')->storeAs('/submitedImages/', $request->file('photo')->getClientOriginalName());*/
-        $path = $request->file('photo')->storeAs('fotoProducto',uniqid().".jpg",'submitedImages');
-
-        $product->photo = $path;
+        $photoName = uniqid().$request->file('photo')->getClientOriginalExtension();
+        $path = $request->file('photo')->storeAs('fotoProducto', $photoName, 'submitedImages');
+        $product->photo = $photoName;
         $product->language = $request->language;
-        $product->photo = $request->photo;
         $product->link = $request->link;
         $product->shopId = $request->shopId;
         $product->save();
