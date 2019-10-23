@@ -17,7 +17,6 @@
         <img src={{asset("assets/$infoShop->photo")}}>
     </div>
     <div class="productos">
-       
     </div>
 
 
@@ -69,10 +68,6 @@
     }
     </style>
  
-
-
-
-<a id="add" href={{url("/producto/create/$infoShop->id")}}><img src="{{asset('assets/images/icons/add.png')}}"></a>;
 
 
 
