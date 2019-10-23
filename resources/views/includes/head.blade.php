@@ -24,7 +24,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
                 sessionStorage.setItem("language", "es");
             /*Inicializar la variable encargada de la traducción*/
             var translator = $('body').translate({
-                lang: "es",
+                lang: sessionStorage.getItem("language"),
                 t: dictionary
             });
             /*Cuando un boton se clica cambiar el idioma y guardar la selección 
