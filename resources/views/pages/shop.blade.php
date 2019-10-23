@@ -17,6 +17,11 @@
         <img src={{asset("assets/$infoShop->photo")}}>
     </div>
     <div class="productos">
+        <?php $productos = $infoShop->products;
+        foreach($productos as $producto){
+            echo $producto->name;
+        }
+        ?>
     </div>
 
 
