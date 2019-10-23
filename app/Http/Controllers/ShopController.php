@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Shops;
+use App\Models\Products;
 
 class ShopController extends Controller
 {
@@ -55,10 +56,11 @@ class ShopController extends Controller
      */
     public function show($id)
     {
-    
-        $infoShop = Shops::where('id', $id)->get();
         $shops = Shops::select('id', 'name')->get();
-        return view('pages.shop', ['infoShop' => $infoShop[0], 'shops' => $shops]);
+        $infoShop = Shops::find($id);
+        $productos = Products::where('shopId',$id)->get();
+        return view('pages.shop', ['infoShop' => $infoShop, 'productos'=>$productos, 'shops'=>$shops]);
+        
     }
 
     /**

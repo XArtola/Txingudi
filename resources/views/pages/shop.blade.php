@@ -16,9 +16,17 @@
     <div class="section-right">
         <img src={{asset("assets/$infoShop->photo")}}>
     </div>
+</div>
     <div class="productos">
-       
+        @foreach($productos as $producto)
+            <p>{{$producto->name}}</p>
+            <p>{{$producto->description}}</p>
+            <p>{{$producto->stock}}</p>
+            <p>{{$producto->price}}</p>
+            <img src={{asset("assets/images/fotoProducto/$producto->photo")}}> 
+        @endforeach 
     </div>
+
 
 
 
@@ -69,10 +77,6 @@
     }
     </style>
  
-
-
-
-<a id="add" href={{url("/producto/create/$infoShop->id")}}><img src="{{asset('assets/images/icons/add.png')}}"></a>;
 
 
 
