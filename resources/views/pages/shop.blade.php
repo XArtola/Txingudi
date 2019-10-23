@@ -16,13 +16,17 @@
     <div class="section-right">
         <img src={{asset("assets/$infoShop->photo")}}>
     </div>
+</div>
     <div class="productos">
-        <?php $productos = $infoShop->products;
-        foreach($productos as $producto){
-            echo $producto->name;
-        }
-        ?>
+        @foreach($productos as $producto)
+            <p>{{$producto->name}}</p>
+            <p>{{$producto->description}}</p>
+            <p>{{$producto->stock}}</p>
+            <p>{{$producto->price}}</p>
+            <img src={{asset("assets/images/fotoProducto/$producto->photo")}}> 
+        @endforeach 
     </div>
+
 
 
 
