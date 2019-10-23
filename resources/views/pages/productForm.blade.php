@@ -44,7 +44,7 @@
             <input type="url" id="link" name="link">
         </div>
         <!-- Hay que cambiar esto para que tome la id de cada tienda -->
-        <input type="hidden" value="1" id="shopId" name="shopId"><br>
+        <input type="hidden" value="{{$shopId}}" id="shopId" name="shopId"><br>
         <div class="field submit">
             <input type="image" src="{{asset('assets/images/icons/confirmWhite.png')}}">
         </div>

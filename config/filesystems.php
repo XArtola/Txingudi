@@ -57,8 +57,8 @@ return [
 
         'submitedImages' => [
             'driver' => 'local',
-            'root' => public_path().'/fotoProducto',
-            'url' => env('APP_URL').'/storage',
+            'root' => public_path().'assets/images/fotoProducto',
+            'url' => env('APP_URL').'/public',
             'visibility' => 'public',
         ],
 
