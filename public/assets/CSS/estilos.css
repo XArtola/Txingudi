@@ -166,15 +166,10 @@ LANDING PAGE
 ---------------------------------------------------*/
 
 /* Style part for the events zone*/
-<<<<<<< HEAD
 #eventos{
   background-image:url("/public/assets/images/imagenesLanding/eventos.png')}}");
-  display:flex;
-=======
 
-#eventos {
   display: flex;
->>>>>>> 05d8388bf8cd2c3c34065f2af4c21105e63edc4e
   height: 500px;
   align-items: center;
   justify-content: space-around;
@@ -196,7 +191,6 @@ LANDING PAGE
   align-items: center;
   justify-content: space-around;
 }
-<<<<<<< HEAD
 #contenedor{
   width: 100%;
 	display: flex;
@@ -209,15 +203,8 @@ LANDING PAGE
 	flex-wrap: wrap;
 	flex-direction: center;
 	justify-content: space-between;
-=======
-
-#productos {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 10px;
->>>>>>> 05d8388bf8cd2c3c34065f2af4c21105e63edc4e
 }
+
 
 #producto{
   padding-left: 10px;

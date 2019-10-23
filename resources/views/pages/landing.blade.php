@@ -12,43 +12,45 @@
     <div id="promociones">
             <h2 class="trn" data-trn-key="bestPromotions">LAS MEJORES PROMOCIONES</h2>
     </div>
-    <div id="contenedor" >
-    <div id="productos">
-        <div id="producto">
+    <div id="products">
+        <div id="product">
             <img src="{{asset('assets/images/imagenesLanding/bicicleta.jpeg')}}" style="width:300px; height:300px;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Duis gravida erat ante, ultricies fermentum orci convallis nec.
-             Duis velit lacus, tristique ac tortor a, semper suscipit dui. 
-             Vivamus a porttitor quam. Praesent scelerisque interdum tincidunt.</p>
-        <div>
-        <div id="producto">
+            Duis velit lacus, tristique ac tortor a, semper suscipit dui.
+            Vivamus a porttitor quam. Praesent scelerisque interdum tincidunt.
+            </p>
+</div>
+        <div id="product">
+            <img src="{{asset('assets/images/evento.jpg')}}" style="width:300px; height:300px;">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis gravida erat ante, ultricies fermentum orci convallis nec.
+                Duis velit lacus, tristique ac tortor a, semper suscipit dui.
+                Vivamus a porttitor quam. Praesent scelerisque interdum tincidunt.
+                </p>
+        </div>
+        <div id="product">
             <img src="{{asset('assets/images/evento.jpg')}}" style="width:300px; height:300px;">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Duis gravida erat ante, ultricies fermentum orci convallis nec. 
-                Duis velit lacus, tristique ac tortor a, semper suscipit dui.
-                Vivamus a porttitor quam. Praesent scelerisque interdum tincidunt.</p>
-        <div>
-        <div id="producto">
-         <img src="{{asset('assets/images/evento.jpg')}}" style="width:300px; height:300px;">
-         <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Duis gravida erat ante, ultricies fermentum orci convallis nec.
                 Duis velit lacus, tristique ac tortor a, semper suscipit dui.
                 Vivamus a porttitor quam. Praesent scelerisque interdum tincidunt.</p>
-        <div>
-        <div id="producto">
+        </div>
+        <div id="product">
             <img src="{{asset('assets/images/evento.jpg')}}" style="width:300px; height:300px;">
             <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Duis gravida erat ante, ultricies fermentum orci convallis nec.
                 Duis velit lacus, tristique ac tortor a, semper suscipit dui.
-                Vivamus a porttitor quam. Praesent scelerisque interdum tincidunt.</p>   a porttitor quam. Praesent scelerisque interdum tincidunt.</p>
-        <div>
+                Vivamus a porttitor quam. Praesent scelerisque interdum tincidunt.
+            </p>
+        </div>
     </div>
-</div>
-    <div id="horarios">
-   <h3 class="trn" data-trn-key="schedule"> HORARIOS:<br> 
+
+   <div id="horarios">
+   <h3 class="trn" data-trn-key="schedule"> HORARIOS:<br>
     Horario del centro: De lunes a sábado de 10h. a 22h.</h3>
     </div>
 
