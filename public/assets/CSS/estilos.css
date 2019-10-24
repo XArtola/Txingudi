@@ -279,6 +279,7 @@ PRODUCTO
   padding-top: 3%;
   padding-bottom: 3%;
   text-align: justify;
+  text-transform: uppercase;
 }
 
 #productContainer h2 {
