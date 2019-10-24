@@ -225,6 +225,21 @@ LANDING PAGE
   height: 100px;
   align-items: center;
 }
+
+.submit {
+  background-color: #004587;
+  justify-content: center
+}
+
+.submit input[type="image"] {
+  display: block;
+  margin: auto;
+  padding: 5% 45%;
+}
+
+.submit:hover {
+  background-color: rgb(0, 69, 135, 0.7);
+}
 /*--------------------------------------------------
 FORMUALRIO DE CONTACTO (LANDING)
 ---------------------------------------------------*/

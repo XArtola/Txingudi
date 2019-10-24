@@ -160,6 +160,13 @@ var dictionary = {
         en: "Invalid name, only letters and numbers are acepted"
     },
 
+    "mailEmpty": {
+        es: "Por favor, inserta un email para que te podamos contactar",
+        eu: "Mesedez, sar ezazu email-a kontaktatu ahal izateko",
+        en: "Please insert a email so we can contact with you"
+    },
+
+
     "descriptionEmpty": {
         es: "Por favor, inserta una descripción para el producto",
         eu: "Mesedez, sar ezazu produkturentzat azalpen bat",
