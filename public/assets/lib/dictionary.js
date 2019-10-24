@@ -64,7 +64,17 @@ var dictionary = {
     /*--------------------------------------------------
     TIENDA
     ---------------------------------------------------*/
-
+    "description1": {
+        es: "Zara es una cadena de tiendas de moda española con sede en Arteixo, La Coruña perteneciente al grupo Inditex. Fue fundada por Amancio Ortega Gaona y Rosalía Mera.​ Es la cadena insignia del grupo textil Inditex y cuenta con más 2.040 tiendas repartidas por todo el mundo",
+        eu: "Zara Inditex taldeko Arteixo-n (La Coruñan) kokatutako Espainiako moda-denden katea da. Amancio Ortega Gaonak eta Rosalía Mera-k sortua, Inditex ehungintza taldeko bandera nagusia da eta mundu osoko 2.040 denda baino gehiago ditu",
+        en: "Zara is a chain of Spanish fashion stores based in Arteixo, La Coruña belonging to the Inditex group. Founded by Amancio Ortega Gaona and Rosalía Mera, it is the flagship chain of the Inditex textile group and has more than 2,040 stores around the world"
+    },
+    "description2": {
+        es: "Decathlon es una multinacional Francesa dedicada a la ropa, complementos y material deportivo artículos de deporte. Decathlon es una cadena de establecimientos de grandes superficies, dedicada a la venta y distribución de material deportivo, filial del grupo francés Mulliez",
+        eu: "Decathlon Frantziako multinazionala da, kirol jantziak, osagarriak eta kirol ekipamenduei eskainia. Decathlon saltoki handien katea da, Mulliez talde frantziarraren filiala den kirol ekipamenduen salmentari eta banaketari eskainia",
+        en: "Decathlon is a French multinational dedicated to sportswear, accessories and sports equipment. Decathlon is a chain of large stores, dedicated to the sale and distribution of sports equipment, a subsidiary of the French group Mulliez."
+    },
+    
     /*--------------------------------------------------
     PRODUCTO
     ---------------------------------------------------*/
