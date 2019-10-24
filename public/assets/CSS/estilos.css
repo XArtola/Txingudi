@@ -59,11 +59,12 @@ body {
 
 .forma2 {
   background-color: #fccb34;
-  transform: skewX(-40deg);
+  transform: skew(-40deg);
   height: 100%;
-  width: 35%;
+  width: 35.5%;
   /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
 }
+
 .forma2:hover {
   opacity: 0.9;
 }
@@ -78,14 +79,14 @@ body {
 
 .forma3 a {
   padding: 50% 50%;
-  transform: skewX(40deg);
+  transform: skew(40deg);
 }
 
 .forma3:hover {
   opacity: 0.9;
 }
 
-img {
+header img {
   background-color: #004587;
 }
 
@@ -121,7 +122,7 @@ Menu desplegable de las tiendas
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 80%;
+  left: 74%;
   background-color: #f9f9f9;
   min-width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -141,7 +142,8 @@ Menu desplegable de las tiendas
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
+  opacity: 1;
 }
 
 /* Show the dropdown menu on hover */
@@ -473,6 +475,8 @@ a {
   width: 100%;
   font-size: 60px;
   border-bottom: 6px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .section-left .titulo a {
@@ -568,7 +572,7 @@ PRODUCTO
   text-align: justify;
   margin: 3%;
   color: black;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 
 .forms {
