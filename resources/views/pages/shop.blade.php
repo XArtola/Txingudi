@@ -1,41 +1,88 @@
 @extends('layouts.master')
 @section('content')
-<div class="section">
-    <div class="section-left">
-        <div class="titulo">
-            <?php echo $infoShop->name?>
-            <!--Esto redirigira al formulario de inserción de nuevo producto -->
-            <a href={{url("/producto/create/$infoShop->id")}}><img src="{{asset('assets/images/icons/add.png')}}"></a>
+<div class="contenido">
+    <div class="section">
+        <div class="section-left">
+            <div class="titulo">
+                <?php echo $infoShop->name?>
+                <!--Esto redirigira al formulario de inserción de nuevo producto -->
+                <a href={{url("/producto/create/$infoShop->id")}}><img src="{{asset('assets/images/icons/add.png')}}"></a>
+            </div>
+            <p><?php echo $infoShop->description ?></p>
+            <div class="reloj">
+                <img src="{{asset('assets/images/icons/reloj.png')}}"width="20px" height="20px">
+                <?php echo $infoShop->openh ?>-<?php echo $infoShop->closeh ?>
+            </div>
         </div>
-        <p><?php echo $infoShop->description ?></p>
-        <div class="reloj">
-            <img src="{{asset('assets/images/icons/reloj.png')}}"width="20px" height="20px">
-            <?php echo $infoShop->openh ?>-<?php echo $infoShop->closeh ?>
+        <div class="section-right">
+            <img src={{asset("assets/$infoShop->photo")}}>
         </div>
     </div>
-    <div class="section-right">
-        <img src={{asset("assets/$infoShop->photo")}}>
-    </div>
+    <div class="titulo2">Productos:</div>
+        <div class="productos">
+            @foreach($productos as $producto)
+            <div class="producto" data-language={{ $producto->language }}>
+                <a href={{url("/producto/$producto->id")}}>
+                    <img src={{asset("assets/images/fotoProducto/$producto->photo")}}>
+                    <p>{{$producto->name}}</p>
+                    <p>Stock: {{$producto->stock}}</p>
+                    <p style="color:darkgrey; font-weight: bold;">Precio: {{$producto->price}}€</p>  
+                </a>
+                </div> 
+            
+            @endforeach 
+        </div>
 </div>
-    <div class="productos">
-        @foreach($productos as $producto)
-            <p>{{$producto->name}}</p>
-            <p>{{$producto->description}}</p>
-            <p>{{$producto->stock}}</p>
-            <p>{{$producto->price}}</p>
-            <img src={{asset("assets/images/fotoProducto/$producto->photo")}}> 
-        @endforeach 
-    </div>
+
 
 
 
 
 
     <style>
+    .contenido{
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .productos{
+        margin-top:14px;
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .titulo2{
+        font-size:60px;
+        margin-top:20px;
+        margin-left:30px;
+    }
+    .producto{
+        flex:1 1 20%;
+        text-align:center;
+        margin-top:20px;
+        margin:100px;
+        box-shadow:5px 10px 10px gray;
+    }
+    .producto p{
+        margin-top:5px;
+        margin-bottom:6px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px;
+
+    }
+    .producto img{
+        margin-bottom:10px;
+        margin-top:40px;
+        width:15vw;
+        height:150px;
+        box-shadow:5px 10px 10px gray;
+    }
+    a{
+        text-decoration:none;
+        color:black;
+    }
     .section{
         width:100%;
         height:auto;
-       
         display: flex;
 	    flex-direction: row;
         flex-wrap: nowrap;
