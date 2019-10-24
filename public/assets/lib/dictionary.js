@@ -84,6 +84,12 @@ var dictionary = {
         eu: "Argazkia",
         en: "Photo"
     },
+    "productFormPrice":{
+
+        es: "Precio",
+        eu: "Salneurria",
+        en: "Price"
+    },
 
     "productFormLanguage": {
         es: "Idioma",

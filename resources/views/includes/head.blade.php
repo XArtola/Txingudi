@@ -18,7 +18,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
     <script src="{{asset('assets/lib/jquery-3.4.1.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/lib/jquery.translate.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/lib/gen_validatorv4.js')}}" type="text/javascript"></script>
-
+    <link rel="icon" type="image/png" href="{{asset('assets/images/imagenesLanding/txingudi_color.png')}}">
     <script type="text/javascript">
         $(function() {
             /*Si la variables de sesión que controla el idioma no esxiste crearlo*/
@@ -44,6 +44,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
                         lang: sessionStorage.getItem("language"),
                         t: dictionary
                     });
+                /*Refrescar página si hay un form en ella*/
                 if (hasForm)
                     location.reload();
 

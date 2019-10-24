@@ -17,7 +17,7 @@
             <input type="number" min="1" max="100" step="1" name="stock" id="stock"><br>
         </div>
         <div class="field">
-            <label>Precio</label>
+            <label class="trn" data-trn-key=>Precio</label>
             <input type="number" min="1.00" max="999.99" step="0.01" id="price" name="price"><br>
         </div>
         <div class="field">
@@ -49,6 +49,7 @@
             <input type="image" src="{{asset('assets/images/icons/confirmWhite.png')}}">
         </div>
     </form>
+    <a href={{ URL::previous() }}>Back</a>
 </div>
 <script>
     frmvalidator = new Validator("newProduct");
@@ -59,7 +60,7 @@
 
     frmvalidator.addValidation("description", "req", eval("dictionary.descriptionEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("description", "maxlen=230", eval("dictionary.descriptionLength." + sessionStorage.getItem("language")));
-    frmvalidator.addValidation("description", "regexp=/^[A-Za-z0-9., áéíóúÁÉÍÓÚ]{1,230}$/", eval("dictionary.descriptionCharacters." + sessionStorage.getItem("language")));
+    frmvalidator.addValidation("description", "regexp=^[A-Za-z0-9., áéíóúÁÉÍÓÚ]{1,230}$", eval("dictionary.descriptionCharacters." + sessionStorage.getItem("language")));
 
     frmvalidator.addValidation("stock", "req", eval("dictionary.stockEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("price", "req", eval("dictionary.priceEmpty." + sessionStorage.getItem("language")));

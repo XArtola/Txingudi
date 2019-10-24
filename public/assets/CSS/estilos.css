@@ -234,6 +234,107 @@ TIENDA
   background-color: transparent;
 }
 
+.contenido {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.productos {
+  margin-top: 14px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.titulo2 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.producto {
+  flex: 1 1 20%;
+  text-align: center;
+  margin-top: 20px;
+  margin: 100px;
+  box-shadow: 5px 10px 10px gray;
+}
+
+.producto p {
+  margin-top: 5px;
+  margin-bottom: 6px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+.producto img {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  width: 15vw;
+  height: 150px;
+  box-shadow: 5px 10px 10px gray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.section-left {
+  flex: 1 1 50%;
+  margin: 15px 0 0 30px;
+}
+
+.section-left p {
+  text-align: justify;
+  font-size: 20px;
+  margin: 20px 40px 0 5px;
+}
+
+.section-left .titulo {
+  width: 100%;
+  font-size: 60px;
+  border-bottom: 6px solid black;
+}
+
+.section-left .titulo a {
+  float: right;
+}
+
+.section-left .reloj {
+  margin-top: 10px;
+  float: right;
+}
+
+.section-right {
+  flex: 1 1 50%;
+}
+
+.section-right {
+  flex: 1 1 50%;
+}
+
+.section-right img {
+  width: 80%;
+  height: 300px;
+  margin-left: 80px;
+}
+
+.hide {
+  display: none;
+}
+
 /*--------------------------------------------------
 PRODUCTO
 ---------------------------------------------------*/
@@ -312,14 +413,12 @@ PRODUCTO
   justify-content: space-around;
 }
 
-#updateForm{
-
-  flex:80%;
+#updateForm {
+  flex: 80%;
 }
 
-#deleteForm{
-
-  flex:80%;
+#deleteForm {
+  flex: 80%;
 }
 
 #updateForm input[type="number"] {
@@ -333,23 +432,19 @@ PRODUCTO
   border-bottom: 2px solid #004587;
   font-size: 1.5rem;
   color: rgb(80, 78, 78);
-  float:left;
-
+  float: left;
 }
 
 #updateForm input[type="image"] {
-  margin:auto;
+  margin: auto;
   padding: 2.5% 13%;
   background-color: #004587;
- 
 }
-
 
 #deleteForm input[type="image"] {
   display: block;
   padding: 5% 45%;
   background-color: #004587;
- 
 }
 
 #videoContainer {
