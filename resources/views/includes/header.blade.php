@@ -2,9 +2,11 @@
 <div class="navbar">
         <a href="#"><img src="{{asset('assets/images/txingudi_color.png')}}"></a>
         <ul class="nav">
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>Inicio</li>
+            <li>Tiendas</li>
+            <li>Contacto</li>
+            <li>Español</li>
+            <li>/</li>
+            <li>Ingles<li>
         </ul>
     </div>

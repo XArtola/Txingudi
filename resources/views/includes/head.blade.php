@@ -34,6 +34,11 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
             background-color:white;
         }
 
+        footer{
+            height: 80px;
+            background-color:#034890;
+        }
+
     </style>
 
 </head>

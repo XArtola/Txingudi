@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 //Cuando el se pulsa el a llama a lista y se activa la ruta
