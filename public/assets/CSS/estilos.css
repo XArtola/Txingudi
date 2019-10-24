@@ -1,0 +1,779 @@
+/*
+
+Paleta de colores principal de nuestra página (los colores del logo)
+
+Azul:       #004587
+Amarrillo:  #fccb34
+Verde:      #009a8d
+
+*/
+
+/*--------------------------------------------------
+HEADER
+---------------------------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e0e4ef;
+}
+
+.navbar {
+  display: flex;
+  height: 20%;
+  background-color: #004587;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav {
+  height: 100%;
+  width: 50%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav li {
+  justify-self: center;
+  align-self: center;
+  color: white;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+}
+
+.forma2 {
+  background-color: #fccb34;
+  transform: skewX(-40deg);
+  height: 100%;
+  width: 35%;
+  /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+}
+.forma2:hover {
+  opacity: 0.9;
+}
+
+.forma3 {
+  background-color: #009a8d;
+  height: 100%;
+  width: 32.5%;
+  /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+  transform: skew(-40deg);
+}
+
+.forma3 a {
+  padding: 50% 50%;
+  transform: skewX(40deg);
+}
+
+.forma3:hover {
+  opacity: 0.9;
+}
+
+img {
+  background-color: #004587;
+}
+
+/*-----------------------------------------------------------------
+Menu desplegable de las tiendas
+----------------------------------------------------------------*/
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style The Dropdown Button */
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 0 50%;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transform: skew(40deg)
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 80%;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transform: skewX(40deg);
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+
+.forma2:hover .dropdown-content {
+  display: block;
+}
+
+/*seletor de idiomas*/
+
+.languages {
+  padding-top: 2.5%;
+}
+
+.languages li {
+  list-style: none;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.languages li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------
+CONTAINER
+---------------------------------------------------*/
+
+.container {
+  margin-top: 10%;
+}
+
+/*--------------------------------------------------
+LANDING PAGE
+---------------------------------------------------*/
+
+/* Style part for the events zone*/
+
+#eventos {
+  background-image: url("/public/assets/images/imagenesLanding/eventos.png')}}");
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#texto {
+  justify-content: center;
+}
+
+#info {
+  color: white;
+}
+
+/* Sales part of the landing page, some styles*/
+
+#promociones {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contenedor {
+  background-color: grey;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#productos {
+  background-color: grey;
+  width: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: center;
+  justify-content: space-between;
+}
+
+#producto {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  width: 23%;
+  padding-top: 10px;
+}
+
+/* Schedule zone styles */
+
+#horarios {
+  display: flex;
+  padding-left: 10px;
+  height: 100px;
+  align-items: center;
+}
+
+.submit {
+  background-color: #004587;
+  justify-content: center
+}
+
+.submit input[type="image"] {
+  display: block;
+  margin: auto;
+  padding: 5% 45%;
+}
+
+.submit:hover {
+  background-color: rgb(0, 69, 135, 0.7);
+}
+
+/*--------------------------------------------------
+FORMUALRIO DE CONTACTO (LANDING)
+---------------------------------------------------*/
+
+#formContainer {
+  background-color: #e0e4ef;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#newContact {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e0e4ef;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#formContainer h1 {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.field {
+  width: 50%;
+  min-height: auto;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid #e0e4ef;
+}
+
+.fielddesc {
+  width: 99%;
+  min-height: auto;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid #e0e4ef;
+}
+
+.field label {
+  display: inline-block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fielddesc label {
+  display: inline-block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#name {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 50%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.fielddesc textarea {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  /*resize: none;*/
+}
+
+#email {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  /*resize: none;*/
+}
+
+/*El marcador de selección*/
+
+.checkmark {
+  display: block;
+  float: left;
+  height: 1rem;
+  width: 1rem;
+  margin-top: .5rem;
+  margin-right: .5rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* Cambiar color del elemento seleccionado */
+
+.radioOption input:checked~.checkmark {
+  background-color: #004587;
+}
+
+.field input[type="url"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.submit {
+  background-color: #004587;
+  justify-content: center
+}
+
+.submit input[type="image"] {
+  display: block;
+  margin: auto;
+  padding: 5% 45%;
+}
+
+.submit:hover {
+  background-color: rgb(0, 69, 135, 0.7);
+}
+
+/*--------------------------------------------------
+TIENDA
+---------------------------------------------------*/
+
+#add img {
+  background-color: transparent;
+}
+
+.contenido {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.productos {
+  margin-top: 14px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.titulo2 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.producto {
+  flex: 1 1 20%;
+  text-align: center;
+  margin-top: 20px;
+  margin: 100px;
+  box-shadow: 5px 10px 10px gray;
+}
+
+.producto p {
+  margin-top: 5px;
+  margin-bottom: 6px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+.producto img {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  width: 15vw;
+  height: 150px;
+  box-shadow: 5px 10px 10px gray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.section-left {
+  flex: 1 1 50%;
+  margin: 15px 0 0 30px;
+}
+
+.section-left p {
+  text-align: justify;
+  font-size: 20px;
+  margin: 20px 40px 0 5px;
+}
+
+.section-left .titulo {
+  width: 100%;
+  font-size: 60px;
+  border-bottom: 6px solid black;
+}
+
+.section-left .titulo a {
+  float: right;
+}
+
+.section-left .reloj {
+  margin-top: 10px;
+  float: right;
+}
+
+.section-right {
+  flex: 1 1 50%;
+}
+
+.section-right {
+  flex: 1 1 50%;
+}
+
+.section-right img {
+  width: 80%;
+  height: 300px;
+  margin-left: 80px;
+}
+
+.hide {
+  display: none;
+}
+
+/*--------------------------------------------------
+PRODUCTO
+---------------------------------------------------*/
+
+#productContainer {
+  margin: 10% 5%;
+  border-radius: 2%;
+  box-shadow: 5px 10px #b8b5b5;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#productImg {
+  flex: 50%;
+  align-self: center;
+}
+
+/*Comprobarlo con otras imagenes*/
+
+#productImg img {
+  width: 100%;
+  display: block;
+}
+
+#productContainer aside {
+  font-size: 1rem;
+  flex: 45%;
+  background-color: white;
+  padding-right: 1%;
+  border-radius: 8%;
+  max-width: 60%;
+}
+
+#productContainer h1 {
+  font-size: 2.5rem;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Source Sans Pro', sans-serif;
+  /*font-family: 'Nunito', sans-serif;*/
+  padding-left: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+#productContainer h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2%;
+  word-spacing: 5%;
+  text-align: justify;
+  padding: 4%;
+  color: darkgrey;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#productContainer p {
+  font-size: 1.5rem;
+  letter-spacing: 2%;
+  word-spacing: 5%;
+  text-align: justify;
+  margin: 3%;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 10% 5%;
+  justify-content: space-around;
+}
+
+#updateForm {
+  flex: 80%;
+}
+
+#deleteForm {
+  flex: 80%;
+}
+
+#updateForm input[type="number"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 1%;
+  margin-top: 6%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  float: left;
+}
+
+#updateForm input[type="image"] {
+  margin: auto;
+  padding: 2.5% 13%;
+  background-color: #004587;
+}
+
+#deleteForm input[type="image"] {
+  display: block;
+  padding: 5% 45%;
+  background-color: #004587;
+}
+
+#videoContainer {
+  flex: 100%;
+}
+
+#videoContainer iframe {
+  display: block;
+  width: 80vw;
+  height: 60vw;
+  margin: auto;
+}
+
+/*--------------------------------------------------
+FORMULARIO
+---------------------------------------------------*/
+
+#formContainer {
+  background-color: #e0e4ef;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#formContainer h1 {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+#newProduct {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 8%;
+  color: #004587;
+}
+
+.field {
+  min-width: 40%;
+  min-height: auto;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid #e0e4ef;
+}
+
+.field label {
+  display: block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.field input[type="text"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.field input[type="file"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.field input[type="number"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.field textarea {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  /*resize: none;*/
+}
+
+/*Cada una de las opciones de radio ira guardada aqui*/
+
+.radioOption {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  user-select: none;
+  color: rgb(80, 78, 78);
+}
+
+.radioOption input {
+  float: left;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/*El marcador de selección*/
+
+.checkmark {
+  display: block;
+  float: left;
+  height: 1rem;
+  width: 1rem;
+  margin-top: .5rem;
+  margin-right: .5rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* Cambiar color del elemento seleccionado */
+
+.radioOption input:checked~.checkmark {
+  background-color: #004587;
+}
+
+.field input[type="url"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.submit {
+  background-color: #004587;
+  justify-content: center
+}
+
+.submit input[type="image"] {
+  display: block;
+  margin: auto;
+  padding: 5% 45%;
+}
+
+.submit:hover {
+  background-color: rgb(0, 69, 135, 0.7);
+}
+
+/*--------------------------------------------------
+FOOTER
+---------------------------------------------------*/

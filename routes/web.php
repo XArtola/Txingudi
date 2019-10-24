@@ -10,10 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
-    return view('index');
+
+    return view('pages.productForm');
 });
+*/
+
+Route::get('/', 'ShopController@listShops')->name('landing');
+
 
 //Cuando el se pulsa el a llama a lista y se activa la ruta
 Route::get('lista', 'UserController@show');
@@ -21,13 +26,15 @@ Route::get('lista', 'UserController@show');
 //Cuando el se pulsa el a llama a lista y se activa la ruta
 Route::get('lista/{nombre}', 'UserController@show2');
 
+Route::get('lista', 'UserController@show');
 
 /*
 TIENDAS
 ---------------------------------------------------------------------
 */
 
-Route::get('lista', 'UserController@show');
+Route::get('tienda', 'ShopController@index');
+Route::get('tienda/{id}', 'ShopController@show')->name('tienda');
 
 
 
@@ -35,8 +42,10 @@ Route::get('lista', 'UserController@show');
 PRODUCTOS
 ---------------------------------------------------------------------
 */
+
+
 Route::get('producto/{idProducto}', 'ProductController@show');
+Route::get('producto/create/{idTienda}', 'ProductController@form');
 Route::post('/producto', 'ProductController@store');
-/*
-Route::update('/producto/{idProducto}', 'ProductController@update');
-*/
+Route::put('producto/{idProducto}', 'ProductController@update');
+Route::delete('producto/{idProducto}', 'ProductController@destroy');

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Shops;
+use App\Models\Products;
 
 class ShopController extends Controller
 {
@@ -13,7 +15,7 @@ class ShopController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.shop');
     }
 
     /**
@@ -21,6 +23,15 @@ class ShopController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function listShops()
+    {
+        // Shops::select('id','name')->get();
+        $shops = Shops::All();
+
+        return view('pages.landing', (['shops' => $shops]));
+    }
+
     public function create()
     {
         //
@@ -45,7 +56,12 @@ class ShopController extends Controller
      */
     public function show($id)
     {
-        //
+        $shops = Shops::select('id', 'name')->get();
+        $infoShop = Shops::find($id);
+        $info = Products::where('id', $id)->first();
+        $productos = Products::where('shopId',$id)->get();
+        return view('pages.shop', ['infoShop' => $infoShop,'info' => $info, 'productos'=>$productos, 'shops'=>$shops]);
+        
     }
 
     /**
