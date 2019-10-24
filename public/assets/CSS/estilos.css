@@ -386,19 +386,24 @@ PRODUCTO
 ---------------------------------------------------*/
 
 #productContainer {
-  width: 100%;
+  margin: 10% 5%;
+  border-radius: 2%;
+  box-shadow: 5px 10px #b8b5b5;
+  background-color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 #productContainer article {
   flex: 40%;
 }
 
-#productContainer article img {
-  width: 80%;
-  margin: 2%;
+/*Comprobarlo con otras imagenes*/
+
+#productImg {
+  width: 100%;
 }
 
 #productContainer aside {
@@ -407,18 +412,28 @@ PRODUCTO
   background-color: white;
   padding-right: 1%;
   border-radius: 8%;
+  max-width: 60%;
 }
 
 #productContainer h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   /*font-family: 'Raleway', sans-serif;*/
   font-family: 'Source Sans Pro', sans-serif;
   /*font-family: 'Nunito', sans-serif;*/
   padding-left: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-hr {
-  color: #004587;
+#productContainer h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2%;
+  word-spacing: 5%;
+  text-align: justify;
+  padding: 4%;
+  color: darkgrey;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #productContainer p {
@@ -427,25 +442,57 @@ hr {
   word-spacing: 5%;
   text-align: justify;
   margin: 3%;
-  color: gray;
-}
-
-#productContainer h2 {
-  font-size: 1.5rem;
-  letter-spacing: 2%;
-  word-spacing: 5%;
-  text-align: justify;
-  margin: 4%;
   color: black;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-#productContainer form {
-  width: 50%;
-  float: left;
+.forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 10% 5%;
+  justify-content: space-around;
 }
 
-#productContainer form input {
-  float: left;
+#updateForm{
+
+  flex:80%;
+}
+
+#deleteForm{
+
+  flex:80%;
+}
+
+#updateForm input[type="number"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 1%;
+  margin-top: 6%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  float:left;
+
+}
+
+#updateForm input[type="image"] {
+  margin:auto;
+  padding: 2.5% 13%;
+  background-color: #004587;
+ 
+}
+
+
+#deleteForm input[type="image"] {
+  display: block;
+  padding: 5% 45%;
+  background-color: #004587;
+ 
 }
 
 #videoContainer {

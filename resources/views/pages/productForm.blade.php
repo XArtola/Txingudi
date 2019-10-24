@@ -2,7 +2,7 @@
 @section('content')
 <div id="formContainer">
     <h1 class="trn" data-trn-key="productFormTitle">Inserción de nuevo producto</h1>
-    <form id="newProduct" enctype =  "multipart/form-data" action="/producto" method="POST">
+    <form id="newProduct" enctype ="multipart/form-data" action="/producto" method="POST">
         @csrf
         <div class="field">
             <label class="trn" data-trn-key="productFormName">Nombre del producto</label>
@@ -44,14 +44,13 @@
             <input type="url" id="link" name="link">
         </div>
         <!-- Hay que cambiar esto para que tome la id de cada tienda -->
-        <input type="hidden" value="1" id="shopId" name="shopId"><br>
+        <input type="hidden" value="{{$shopId}}" id="shopId" name="shopId"><br>
         <div class="field submit">
             <input type="image" src="{{asset('assets/images/icons/confirmWhite.png')}}">
         </div>
     </form>
 </div>
 <script type="text/javascript">
-    //var lan = "es";
     var frmvalidator = new Validator("newProduct");
     frmvalidator.addValidation("name", "req", eval("dictionary.nameEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("name", "maxlen=80", eval("dictionary.nameLength." + sessionStorage.getItem("language")));

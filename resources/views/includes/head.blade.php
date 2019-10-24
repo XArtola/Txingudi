@@ -20,19 +20,28 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
     <script type="text/javascript">
         $(function() {
             /*Si la variables de sesión que controla el idioma no esxiste crearlo*/
-            if (sessionStorage.getItem("language") == "")
+            console.log("valor: " + sessionStorage.getItem("language"));
+
+            if (sessionStorage.getItem("language") === null)
                 sessionStorage.setItem("language", "es");
             /*Inicializar la variable encargada de la traducción*/
-            var translator = $('body').translate({
-                lang: sessionStorage.getItem("language"),
-                t: dictionary
-            });
+            else if (sessionStorage.getItem("language") != "es")
+                var translator = $('body').translate({
+                    lang: sessionStorage.getItem("language"),
+                    t: dictionary
+                });
             /*Cuando un boton se clica cambiar el idioma y guardar la selección 
             para en una variable se sesión para mantenerla en las otras páginas*/
             $(".language").click(function() {
                 $lang = $(this).data('lang');
                 sessionStorage.setItem("language", $lang);
+                if(translator)
                 translator.lang($lang);
+                else
+                var translator = $('body').translate({
+                    lang: sessionStorage.getItem("language"),
+                    t: dictionary
+                });
             });
         });
     </script>
