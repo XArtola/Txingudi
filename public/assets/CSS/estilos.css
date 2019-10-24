@@ -228,7 +228,15 @@ LANDING PAGE
 /*--------------------------------------------------
 FORMUALRIO DE CONTACTO (LANDING)
 ---------------------------------------------------*/
-formContainer {
+
+#formContainer {
+  background-color: #e0e4ef;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#newContact {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #e0e4ef;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -238,15 +246,17 @@ formContainer {
   padding-top: 2%;
 }
 
-#newProduct {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3% 8%;
-  color: #004587;
-}
 
 .field {
-  min-width: 40%;
+  width: 50%;
+  min-height: auto;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid #e0e4ef;
+}
+
+.fielddesc {
+  width: 99%;
   min-height: auto;
   flex: max-content;
   background-color: white;
@@ -254,16 +264,23 @@ formContainer {
 }
 
 .field label {
-  display: block;
+  display: inline-block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.fielddesc label {
+  display: inline-block;
   padding: 1% 2%;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.field input[type="text"] {
+
+#name{
   margin-bottom: 2%;
   margin-left: 2%;
-  width: 60%;
+  width: 50%;
   background: transparent;
   border: none;
   border-bottom: 2px solid #004587;
@@ -272,31 +289,7 @@ formContainer {
   color: rgb(80, 78, 78);
 }
 
-.field input[type="file"] {
-  margin-bottom: 2%;
-  margin-left: 2%;
-  width: 60%;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid #004587;
-  display: block;
-  font-size: 1.5rem;
-  color: rgb(80, 78, 78);
-}
-
-.field input[type="number"] {
-  margin-bottom: 2%;
-  margin-left: 2%;
-  width: 60%;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid #004587;
-  display: block;
-  font-size: 1.5rem;
-  color: rgb(80, 78, 78);
-}
-
-.field textarea {
+.fielddesc textarea {
   margin-bottom: 2%;
   margin-left: 2%;
   width: 80%;
@@ -311,21 +304,22 @@ formContainer {
   /*resize: none;*/
 }
 
-/*Cada una de las opciones de radio ira guardada aqui*/
-
-.radioOption {
+#email{
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
   display: block;
-  cursor: pointer;
   font-size: 1.5rem;
-  user-select: none;
   color: rgb(80, 78, 78);
-}
+  /*resize: none;*/
+}#
 
-.radioOption input {
-  float: left;
-  opacity: 0;
-  cursor: pointer;
-}
+
 
 /*El marcador de selección*/
 

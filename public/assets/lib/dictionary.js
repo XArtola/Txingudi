@@ -54,7 +54,12 @@ var dictionary = {
         eu: "Izen Abizenak",
         en: "Name and Surname"
     },
-    
+    "landingFormDescription": {
+        es: "Cúentanos tus dudas",
+        eu: "Azaldu zure dudak",
+        en: "Tell us your doubts"
+    },
+        
 
     /*--------------------------------------------------
     TIENDA
