@@ -5,7 +5,7 @@ use App\Models\Shops;
 class tiendasSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Seed the application's database with shops info.
      *
      * @return void
      */

@@ -58,8 +58,9 @@ class ShopController extends Controller
     {
         $shops = Shops::select('id', 'name')->get();
         $infoShop = Shops::find($id);
+        $info = Products::where('id', $id)->first();
         $productos = Products::where('shopId',$id)->get();
-        return view('pages.shop', ['infoShop' => $infoShop, 'productos'=>$productos, 'shops'=>$shops]);
+        return view('pages.shop', ['infoShop' => $infoShop,'info' => $info, 'productos'=>$productos, 'shops'=>$shops]);
         
     }
 
