@@ -65,7 +65,7 @@ class productosSeeder extends Seeder
                 'link' => 'https://www.youtube.com/watch?v=DvDpj-4FPog&list=PLKKYyqiDzoOj1l02LSgj4DMoJi4j7lqfw?controls=0',
                 'language' => 'multi',
                 'shopId' => '1'
-            ],
+            ]
 
             /*PRODUCTOS DE MERKALCALZADOS*/
 

@@ -43,7 +43,6 @@ var dictionary = {
         eu: "ORDUTEGIA:<br>Zentroaren ordutegia: Astelehenetik larunbatera 10:00etatik 22:00etara",
         en: "SCHEDULE:<br> shoping centers schedule: Moday to Saturday from 10:00am to 22:00pm"
     },
-
     "landingFormTitle": {
         es: "Formulario de contacto",
         eu: "Kontaktu formularioa",
