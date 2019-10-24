@@ -193,6 +193,7 @@ LANDING PAGE
 }
 
 #contenedor {
+  background-color: grey;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -210,10 +211,9 @@ LANDING PAGE
 #producto {
   padding-left: 10px;
   padding-right: 10px;
-  background-color: red;
   text-align: center;
-  width: 30%;
-  height: 500px;
+  width: 23%;
+ 
   padding-top: 10px;
 }
 
@@ -224,6 +224,162 @@ LANDING PAGE
   padding-left: 10px;
   height: 100px;
   align-items: center;
+}
+
+.submit {
+  background-color: #004587;
+  justify-content: center
+}
+
+.submit input[type="image"] {
+  display: block;
+  margin: auto;
+  padding: 5% 45%;
+}
+
+.submit:hover {
+  background-color: rgb(0, 69, 135, 0.7);
+}
+/*--------------------------------------------------
+FORMUALRIO DE CONTACTO (LANDING)
+---------------------------------------------------*/
+
+#formContainer {
+  background-color: #e0e4ef;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#newContact {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e0e4ef;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#formContainer h1 {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+
+.field {
+  width: 50%;
+  min-height: auto;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid #e0e4ef;
+}
+
+.fielddesc {
+  width: 99%;
+  min-height: auto;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid #e0e4ef;
+}
+
+.field label {
+  display: inline-block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.fielddesc label {
+  display: inline-block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+#name{
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 50%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.fielddesc textarea {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  /*resize: none;*/
+}
+
+#email{
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  /*resize: none;*/
+}#
+
+
+
+/*El marcador de selección*/
+
+.checkmark {
+  display: block;
+  float: left;
+  height: 1rem;
+  width: 1rem;
+  margin-top: .5rem;
+  margin-right: .5rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* Cambiar color del elemento seleccionado */
+
+.radioOption input:checked~.checkmark {
+  background-color: #004587;
+}
+
+.field input[type="url"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.submit {
+  background-color: #004587;
+  justify-content: center
+}
+
+.submit input[type="image"] {
+  display: block;
+  margin: auto;
+  padding: 5% 45%;
+}
+
+.submit:hover {
+  background-color: rgb(0, 69, 135, 0.7);
 }
 
 /*--------------------------------------------------
