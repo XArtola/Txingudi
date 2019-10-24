@@ -44,6 +44,17 @@ var dictionary = {
         en: "SCHEDULE:<br> shoping centers schedule: Moday to Saturday from 10:00am to 22:00pm"
     },
 
+    "landingFormTitle": {
+        es: "Formulario de contacto",
+        eu: "Kontaktu formularioa",
+        en: "Contact Form"
+    },
+    "landingFormName": {
+        es: "Nombre  Apellidos",
+        eu: "Izen Abizenak",
+        en: "Name and Surname"
+    },
+    
 
     /*--------------------------------------------------
     TIENDA

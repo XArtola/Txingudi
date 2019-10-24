@@ -50,15 +50,15 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->stock = $request->stock;
         $product->price = $request->price;
-       /* $request->file('prueba')->store(
+        /* $request->file('prueba')->store(
             'submitedImages', 'public'
         );*/
-       /* $request->photo->storeAs('submitedImages',$request->name.".jpg");*/
-      /* $request->file('note')->storeAs('submitedImages', $request->name.'.jpg', 'local');*/
-      $path = $request->file('photo')->store('submitedImages');
+        /* $request->photo->storeAs('submitedImages',$request->name.".jpg");*/
+        /* $request->file('note')->storeAs('submitedImages', $request->name.'.jpg', 'local');*/
+       $path = $request->file('photo')->store('submitedImages');
 
-      
-      $product->photo->$request->$path;
+
+        $product->photo->$request->$path;
         $product->language = $request->language;
         $product->photo = $request->photo;
         $product->link = $request->link;
