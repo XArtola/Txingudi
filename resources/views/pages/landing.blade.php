@@ -60,5 +60,8 @@
 <img src={{asset("assets/$shop->logo")}} style="width:300px; height:300px;">
 @endforeach
 
-<?php echo $shops?>
+<?php echo $shops ?>
+<script>
+hasForm=false;
+</script>
 @stop
