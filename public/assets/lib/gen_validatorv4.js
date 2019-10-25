@@ -1133,7 +1133,7 @@ function validateInput(strValidateStr, objValue, strError)
     case "alphabetic_space":
     case "alpha_s":
         {
-            ret = TestInputType(objValue, "[^A-Za-z\\s]", strError, objValue.name + ": Only alphabetic characters and space allowed ");
+            ret = TestInputType(objValue, "[^A-Za-z\\sñ]", strError, objValue.name + ": Only alphabetic characters and space allowed ");
             break;
         }
     case "email":
