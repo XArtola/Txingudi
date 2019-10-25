@@ -80,7 +80,7 @@
             <textarea name="question" id="question"></textarea>
         </div>
         <div class="field submit">
-            <input type="image" src="{{asset('assets/images/icons/confirmWhite.png')}}" onClick="recargarPagina()">
+            <input type="image" src="{{asset('assets/images/icons/confirmWhite.png')}}" >
         </div>
     </form>
 </div>
@@ -91,7 +91,7 @@
 
     frmvalidator.addValidation("name", "req", eval("dictionary.nameEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("name", "maxlen=80", eval("dictionary.nameLength." + sessionStorage.getItem("language")));
-    frmvalidator.addValidation("name", "alphanumeric_space", eval("dictionary.nameCharacters." + sessionStorage.getItem("language")));
+    frmvalidator.addValidation("name", "alphabetic_space", eval("dictionary.nameCharacters." + sessionStorage.getItem("language")));
 
     frmvalidator.addValidation("description", "req", eval("dictionary.descriptionEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("description", "maxlen=230", eval("dictionary.descriptionLength." + sessionStorage.getItem("language")));

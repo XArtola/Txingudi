@@ -14,6 +14,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
         @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
     </style>
     <script src="{{asset('assets/lib/jquery-3.4.1.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/lib/jquery.translate.js')}}" type="text/javascript"></script>

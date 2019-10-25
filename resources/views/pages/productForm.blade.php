@@ -60,7 +60,7 @@
 
     frmvalidator.addValidation("description", "req", eval("dictionary.descriptionEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("description", "maxlen=230", eval("dictionary.descriptionLength." + sessionStorage.getItem("language")));
-    frmvalidator.addValidation("description", "regexp=^[A-Za-z0-9., áéíóúÁÉÍÓÚ]{1,230}$", eval("dictionary.descriptionCharacters." + sessionStorage.getItem("language")));
+    frmvalidator.addValidation("description", "regexp=^[A-Za-z0-9.,\\sáéíóúÁÉÍÓÚ]{1,230}$", eval("dictionary.descriptionCharacters." + sessionStorage.getItem("language")));
 
     frmvalidator.addValidation("stock", "req", eval("dictionary.stockEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("price", "req", eval("dictionary.priceEmpty." + sessionStorage.getItem("language")));

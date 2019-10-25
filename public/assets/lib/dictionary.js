@@ -73,6 +73,36 @@ var dictionary = {
         eu: "Decathlon Frantziako multinazionala da, kirol jantziak, osagarriak eta kirol ekipamenduei eskainia. Decathlon saltoki handien katea da, Mulliez talde frantziarraren filiala den kirol ekipamenduen salmentari eta banaketari eskainia",
         en: "Decathlon is a French multinational dedicated to sportswear, accessories and sports equipment. Decathlon is a chain of large stores, dedicated to the sale and distribution of sports equipment, a subsidiary of the French group Mulliez."
     },
+    "description3": {
+        es: "Cadena de tiendas líder en la distribución de calzado en España. Sus amplias instalaciones permiten ofrecer al cliente todo tipo de estilos y calidades; desde el calzado más deportivo hasta el zapatos de fiesta, pasando por el casual, nuevas tendencias, clásicos o los obligados básicos",
+        eu: "Oinetakoen oinetakoen banaketan Espainiako denda kate nagusia. Instalazio zabalek bezeroari era guztietako estiloak eta kalitateak eskaintzeko aukera ematen diote; Oinetako kirolarienetatik festa oinetakoetara, joera berrietara, klasikoetara edo oinarrizko behartuta",
+        en: "Leading chain of stores in the distribution of footwear in Spain. Its extensive facilities allow the client to offer all kinds of styles and qualities; from the most sporty footwear to party shoes, to casual, new trends, classics or the basic obliged"
+    },
+    "description4": {
+        es: "Springfield es una cadena española de tiendas de moda que cuenta con más de 1000 tiendas de ropa en 60 países. Pertenece al Grupo de distribución textil TENDAM, empresa del sector de la moda",
+        eu: "Springfield Espainiako moda-denda katea da eta 60 herrialdetan 1000 arropa denda baino gehiago ditu. Moda sektoreko TENDAM Textile Distribution Group taldekoa da",
+        en: "Springfield is a Spanish fashion store chain that has more than 1000 clothing stores in 60 countries. It belongs to the TENDAM Textile Distribution Group, a company in the fashion sector"
+    },
+    "description5": {
+        es: "Afede, un mundo de buenos y fantásticos juguetes con los que nuestros niños aprenderán jugando sano y divertido.",
+        eu: "Afede, jostailu on eta fantastikoen mundua, gure haurrek ikasiko dute osasuntsu eta dibertsioz ​​jokatuz",
+        en: "Afede, a world of good and fantastic toys with which our children will learn playing healthy and fun"
+    },
+    "description6": {
+        es: "En perfumerías Douglas encontrarás los productos que más se adaptan a tus necesidades, las mejores marcas y el asesoramiento personalizado que buscas",
+        eu: "Douglas lurrinetan zure beharretara egokitzen diren produktuak, marka onenak eta bilatzen dituzun aholku pertsonalizatuak aurkituko dituzu",
+        en: "In Douglas perfumeries you will find the products that best suit your needs, the best brands and the personalized advice you are looking for"
+    },
+    "productos": {
+        es: "Productos:",
+        eu: "Produktuak:",
+        en: "Products:"
+    },
+    "precio": {
+        es: "Precio: ",
+        eu: "Prezioa: ",
+        en: "Price: "
+    },
     
     /*--------------------------------------------------
     PRODUCTO

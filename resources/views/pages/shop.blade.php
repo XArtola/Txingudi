@@ -18,7 +18,7 @@
             <img src={{asset("assets/$infoShop->photo")}}>
         </div>
     </div>
-    <div class="titulo2">Productos:</div>
+    <div class="titulo2 trn" data-trn-key="productos">Productos:</div>
         <div class="productos">
             @foreach($productos as $producto)
             <div class="producto" data-language={{ $producto->language }}>
@@ -26,10 +26,9 @@
                     <img src={{asset("assets/images/fotoProducto/$producto->photo")}}>
                     <p class="trn" data-trn-key='{{"productName$producto->id"}}'>{{$producto->name}}</p>
                     <p>Stock: {{$producto->stock}}</p>
-                    <p style="color:darkgrey; font-weight: bold;">Precio: {{$producto->price}}€</p>  
+                    <p style="color:darkgrey; font-weight: bold;"><div style="color:darkgrey; font-weight: bold;" id="precio" class="trn" data-trn-key="precio">Precio:</div> {{$producto->price}}€</p>  
                 </a>
                 </div> 
-                <?php echo $infoShop->description ?>
             @endforeach 
         </div>
 
