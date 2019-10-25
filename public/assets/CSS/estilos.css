@@ -209,14 +209,16 @@ LANDING PAGE
 }
 
 #contenedor {
-  background-color: grey;
+  background-color: rgb(184, 177, 177);
   width: 100%;
   display: flex;
   justify-content: space-around;
+  padding-bottom:15px;
+  padding-top:15px;
 }
 
 #productos {
-  background-color: grey;
+  
   width: 96%;
   display: flex;
   flex-wrap: wrap;
@@ -231,6 +233,22 @@ LANDING PAGE
   width: 23%;
   padding-top: 10px;
 }
+
+#tiendas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:90%;
+}
+
+#tienda{
+  
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
 
 /* Schedule zone styles */
 
@@ -261,14 +279,18 @@ FORMULARIO DE CONTACTO (LANDING)
 ---------------------------------------------------*/
 
 #formContainer {
-  width: 80%; 
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
   background-color: #e0e4ef;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 #newContact {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
+
+  width: 90%; 
   background-color: #e0e4ef;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -760,3 +782,21 @@ FORMULARIO
 /*--------------------------------------------------
 FOOTER
 ---------------------------------------------------*/
+
+#footer{
+    padding-top:30px;
+    margin-top: 15px;
+    display:flex;
+    color:white;
+    height:150px; 
+    background-color: black;
+    justify-content:space-around;
+}
+
+#info1{
+  width:30%;
+}
+
+#info2{
+  width:30%;
+}
