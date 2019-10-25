@@ -5,35 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Products;
 use App\Models\Shops;
-//use DB;
 
 class ProductController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Muestra el formulario de 
      *
+     * @param  int  $shopId
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
-    }
-
     public function form($shopId)
     {
         $shops = Shops::select('id', 'name')->get();
         return view('pages.productForm', ['shopId' => $shopId, 'shops' => $shops]);
-    }
-
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
     }
 
     /**
@@ -71,20 +55,6 @@ class ProductController extends Controller
         $info = Products::where('id', $id)->first();
         $shops = Shops::select('id', 'name')->get();
         return view('pages.product', ['info' => $info, 'shops' => $shops]);
-        /* ESTA ES OTRA FORMA DE GESTIONAR LA BASE DE DATOS
-         $info = DB::table('products')->where('id', '=','1')->first();
-         s*/
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
     }
 
     /**

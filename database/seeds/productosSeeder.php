@@ -21,7 +21,7 @@ class productosSeeder extends Seeder
                 'stock' => '15',
                 'price' => '39.95',
                 'photo' => '1.jpg',
-                'link' => 'https://www.youtube.com/watch?v=DvDpj-4FPog&list=PLKKYyqiDzoOj1l02LSgj4DMoJi4j7lqfw?controls=0',
+                'link' => 'https://www.youtube.com/embed/WWJtZSaSd7M',
                 'language' => 'multi',
                 'shopId' => '1'
             ],
