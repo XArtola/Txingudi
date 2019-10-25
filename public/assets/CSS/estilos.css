@@ -507,7 +507,11 @@ a {
 .hide {
   display: none;
 }
-
+#precio{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  display: inline-block;
+}
 /*--------------------------------------------------
 PRODUCTO
 ---------------------------------------------------*/
