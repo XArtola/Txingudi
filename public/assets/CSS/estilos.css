@@ -255,10 +255,11 @@ LANDING PAGE
 }
 
 /*--------------------------------------------------
-FORMUALRIO DE CONTACTO (LANDING)
+FORMULARIO DE CONTACTO (LANDING)
 ---------------------------------------------------*/
 
 #formContainer {
+  width: 80%; 
   background-color: #e0e4ef;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -277,15 +278,15 @@ FORMUALRIO DE CONTACTO (LANDING)
 
 .field {
   width: 50%;
-  min-height: auto;
+  
   flex: max-content;
   background-color: white;
   border: 1px solid #e0e4ef;
 }
 
 .fielddesc {
-  width: 99%;
-  min-height: auto;
+  width: 80%;
+  
   flex: max-content;
   background-color: white;
   border: 1px solid #e0e4ef;
@@ -347,44 +348,16 @@ FORMUALRIO DE CONTACTO (LANDING)
   /*resize: none;*/
 }
 
-/*El marcador de selección*/
-
-.checkmark {
-  display: block;
-  float: left;
-  height: 1rem;
-  width: 1rem;
-  margin-top: .5rem;
-  margin-right: .5rem;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* Cambiar color del elemento seleccionado */
-
-.radioOption input:checked~.checkmark {
-  background-color: #004587;
-}
-
-.field input[type="url"] {
-  margin-bottom: 2%;
-  margin-left: 2%;
-  width: 60%;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid #004587;
-  display: block;
-  font-size: 1.5rem;
-  color: rgb(80, 78, 78);
-}
 
 .submit {
+  width:20%;
   background-color: #004587;
   justify-content: center
 }
 
 .submit input[type="image"] {
   display: block;
+  width:20%;
   margin: auto;
   padding: 5% 45%;
 }

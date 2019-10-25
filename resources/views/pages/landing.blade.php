@@ -36,13 +36,10 @@
             </p>
         </div>
         <div id="producto">
-            <img src="{{asset('assets/images/imagenesLanding/gasolina.jpg')}}" style="width:300px; height:300px;">
-            
+            <img src="{{asset('assets/images/imagenesLanding/circo.jpg')}}" style="width:300px; height:300px;">
+            <h3>Circo Raluy en Txingudi</h3><br>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis gravida erat ante, ultricies fermentum orci convallis nec.
-                Duis velit lacus, tristique ac tortor a, semper suscipit dui.
-                Vivamus a porttitor quam. Praesent scelerisque interdum tincidunt.
+                Si no sabes que hacer esta tarde, estas de suerte. El circo Raluy ha llegado al centro comercial Txingudi.
             </p>
         </div>
     </div>
@@ -61,7 +58,13 @@
 </div>
 
 
-<div id="formContainer">
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1451.3470922523986!2d-1.8367863129816961!3d43.32066089737894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a7f9305fe675%3A0xdc69099e4c09cecb!2sParque%20Comercial%20Txingudi!5e0!3m2!1ses!2ses!4v1571586752460!5m2!1ses!2ses" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+
+    <div id="formContainer">
     <h1 class="trn" data-trn-key="landingFormTitle">Formulario de contacto</h1>
     <form id="newContact" enctype ="multipart/form-data">
         <div class="field">
@@ -105,9 +108,5 @@
 
 
 </script>
-
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1451.3470922523986!2d-1.8367863129816961!3d43.32066089737894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a7f9305fe675%3A0xdc69099e4c09cecb!2sParque%20Comercial%20Txingudi!5e0!3m2!1ses!2ses!4v1571586752460!5m2!1ses!2ses" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
 </body>
 @stop
