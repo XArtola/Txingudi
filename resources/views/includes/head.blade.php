@@ -80,5 +80,5 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
         });
     </script>
     <script src="{{asset('assets/lib/dictionary.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/lib/gen_validatorv4.js')}}" type="text/javascript"></script>
+    
 </head>
