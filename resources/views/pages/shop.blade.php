@@ -24,17 +24,17 @@
         <div class="producto" data-language={{ $producto->language }}>
             <a href={{url("/producto/$producto->id")}}>
                 <img src={{asset("assets/images/fotoProducto/$producto->photo")}}>
-                <p class="trn" data-trn-key='{{"productName$producto->id"}}'>{{$producto->name}}</p>
-                <p>Stock: {{$producto->stock}}</p>
+                <p class="trn productName" data-trn-key='{{"productName$producto->id"}}'>{{$producto->name}}</p>
+                <!-- <p>Stock: {{$producto->stock}}</p> -->
                 <p style="color:darkgrey; font-weight: bold;">
-                    <div style="color:darkgrey; font-weight: bold;" id="precio" class="trn" data-trn-key="precio">Precio:</div> {{$producto->price}}€
+                    <div style="color:darkgrey; font-weight: bold;" id="precio" class="trn" data-trn-key="precio">Precio:</div> {{$producto->price}} €
                 </p>
             </a>
         </div>
         @endforeach
         <script>
             isShop = true;
-            hasForm=false;
+            hasForm = false;
         </script>
     </div>
 
