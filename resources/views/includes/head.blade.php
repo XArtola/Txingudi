@@ -8,7 +8,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
 <title>Txingudi</title>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/CSS/estilos.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/CSS/estilos2.css') }}" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -17,6 +17,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
         @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Finger+Paint&display=swap');
     </style>
     <script src="{{asset('assets/lib/jquery-3.4.1.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/lib/jquery.translate.js')}}" type="text/javascript"></script>
@@ -55,30 +56,29 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
                     var language = sessionStorage.getItem("language");
                     switch (language) {
                         case "es":
-                        $('.producto').show();
-                        $('.producto[data-language="eu"]').hide();
-                        $('.producto[data-language="en"]').hide();
-                        break;
+                            $('.producto').show();
+                            $('.producto[data-language="eu"]').hide();
+                            $('.producto[data-language="en"]').hide();
+                            break;
                         case "en":
-                        $('.producto').show();
-                        $('.producto[data-language="eu"]').hide();
-                        $('.producto[data-language="es"]').hide();
-                        break;
+                            $('.producto').show();
+                            $('.producto[data-language="eu"]').hide();
+                            $('.producto[data-language="es"]').hide();
+                            break;
                         case "eu":
-                        $('.producto').show();
-                        $('.producto[data-language="es"]').hide();
-                        $('.producto[data-language="en"]').hide();
-                        break;
+                            $('.producto').show();
+                            $('.producto[data-language="es"]').hide();
+                            $('.producto[data-language="en"]').hide();
+                            break;
                         default:
-                        $('.producto').show();
-                        break;
+                            $('.producto').show();
+                            break;
 
                     }
-                    $()
                 }
             });
         });
     </script>
     <script src="{{asset('assets/lib/dictionary.js')}}" type="text/javascript"></script>
-    
+
 </head>

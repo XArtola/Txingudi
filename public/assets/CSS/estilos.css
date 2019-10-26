@@ -364,12 +364,13 @@ LANDING PAGE
 }
 
 #tienda {
-  display:flex;
+  display: flex;
   justify-content: space-around;
 }
+
 #imagen {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -397,16 +398,15 @@ LANDING PAGE
   background-color: rgb(0, 69, 135, 0.7);
 }
 
-@media (max-width:1100px){
+@media (max-width:1100px) {
   #producto {
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
     width: 46%;
     padding-top: 10px;
   }
-
   #productos {
     width: 100%;
     display: flex;
@@ -414,36 +414,29 @@ LANDING PAGE
     flex-direction: center;
     justify-content: space-between;
   }
-
-  
 }
 
-@media (max-width:600px){
+@media (max-width:600px) {
   #eventos {
-   
     display: flex;
     height: auto;
     align-items: center;
     justify-content: space-around;
   }
-  
   #texto {
     justify-content: center;
   }
-  
   #info {
     color: black;
   }
-
   #producto {
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
     width: 100%;
     padding-top: 10px;
   }
-
   #productos {
     width: 96%;
     display: flex;
@@ -647,23 +640,21 @@ TIENDA
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   /* background-color: white;*/
 }
 
 .producto {
-  flex:30%;
+  flex: 30%;
   text-align: center;
-  /* margin: 100px;*/
   max-width: 30%;
-  /*box-shadow: 5px 10px 10px gray;*/
 }
 
 .producto p {
   margin-top: 1%;
   margin-bottom: 1.125rem;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .productName {
@@ -678,8 +669,7 @@ TIENDA
 .producto img {
   width: 80%;
   margin: 2% 5%;
-  display:block;
-  /* box-shadow: 5px 10px 10px gray;*/
+  display: block;
   border: 1px solid #004587;
 }
 
@@ -691,8 +681,8 @@ a {
 #precio {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.125rem;
-  font-weight:bold;
-  color:darkgrey;
+  font-weight: bold;
+  color: darkgrey;
 }
 
 /*--------------------------------------------------
@@ -700,13 +690,11 @@ Tienda responsive
 ---------------------------------------------------*/
 
 @media screen and (max-width: 1000px) {
-  .producto{
-    flex:50%;
-    min-width:50%;
+  .producto {
+    flex: 50%;
+    min-width: 50%;
   }
-  
 }
-
 
 @media screen and (max-width: 700px) {
   .section {
@@ -720,20 +708,16 @@ Tienda responsive
     flex: 100%;
     min-width: 100%;
   }
-
-  .titulo a{
-
-    margin-right:10%;
+  .titulo a {
+    margin-right: 10%;
   }
-
   .section-left .reloj span {
-    width:40%;
+    width: 40%;
   }
-  .producto{
-    flex:100%;
+  .producto {
+    flex: 100%;
     min-width: 100%;
   }
-
 }
 
 /*--------------------------------------------------
@@ -741,13 +725,13 @@ PRODUCTO
 ---------------------------------------------------*/
 
 #productContainer {
-  margin: 10% 5%;
+  margin: 18vh 5% 10% 5%;
   border-radius: 2%;
   box-shadow: 5px 10px #b8b5b5;
   background-color: white;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   overflow: hidden;
 }
 
@@ -859,6 +843,18 @@ PRODUCTO
   margin: auto;
 }
 
+@media screen and (max-width: 850px) {
+  .productContainer {
+    flex-direction: row;
+
+  }
+  #productContainer aside {
+    flex: 100%;
+    min-width: 100%;
+    order:1;
+  }
+}
+
 /*--------------------------------------------------
 FORMULARIO
 ---------------------------------------------------*/
@@ -870,7 +866,7 @@ FORMULARIO
 
 #formContainer h1 {
   padding-left: 5%;
-  padding-top: 2%;
+  padding-top: 18vh;
 }
 
 #newProduct {
@@ -1014,13 +1010,15 @@ FOOTER
 
 #footer {
   padding-top: 30px;
-  padding-bottom:30px;
+  padding-bottom: 30px;
   margin-top: 15px;
   display: flex;
   color: white;
   height: auto;
   background-color: black;
   justify-content: space-around;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
 }
 
 #info1 {

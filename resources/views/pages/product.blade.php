@@ -29,5 +29,5 @@
 <div id="videoContainer">
     <iframe width="560" height="315" src="{{$info->link}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </div>
-<?php echo $info ?>
+
 @stop

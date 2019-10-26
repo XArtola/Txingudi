@@ -27,6 +27,16 @@ var dictionary = {
         eu: "XAKE TAPELKETA URRIAREN 25-ETIK 27-RA",
         en: "CHESS TOURNAMENT FROM OCTOBER 25 to 27"
     },
+    "event2": {
+        es: "La noche más terrorífica del año",
+        eu: "Urteko gaurik beldurgarriena!",
+        en: "The most terrifying night of the year"
+    },
+    " eventTime": {
+        es: "¡Ven a celebrar Halloween a Txingudi!",
+        eu: "Zatos Txingudira Halloween gaua ospatzera!",
+        en: "Come tp Txingudi to celebrate Halloween!"
+    },
     "place": {
         es: "CC Txingudi Bº VENTAS Nº 80, 20305, IRUN",
         eu: "Txingudi Merkataritza gunea VENTAS 80 zenbakia, 20305, IRUN",
