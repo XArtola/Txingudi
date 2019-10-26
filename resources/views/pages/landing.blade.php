@@ -3,7 +3,7 @@
 <div id="eventos">
     <img src="{{asset('assets/images/imagenesLanding/evento.png')}}" style="width:300px; height:300px;">
 
-    <div id="texto">
+    <div id="texto" style="background-image:'assets/images/imagenesLanding/evento.png';">
         <h2 class="trn" data-trn-key="event" id="info">TORNEO DE AJEDREZ DEL 25 AL 27 DE OCTUBRE <br></h2>
         <h3 class="trn" data-trn-key="place" id="info">CC Txingudi Bº VENTAS Nº 80, 20305, IRUN</h3>
     </div>
@@ -36,7 +36,7 @@
             </p>
         </div>
         <div id="producto">
-            <img src="{{asset('assets/images/imagenesLanding/circo.jpg')}}" style="width:300px; height:300px;">
+            <img src="{{asset('assets/images/imagenesLanding/circo.jpeg')}}" style="width:300px; height:300px;">
             <h3>Circo Raluy en Txingudi</h3><br>
             <p>
                 Si no sabes que hacer esta tarde, estas de suerte. El circo Raluy ha llegado al centro comercial Txingudi.
@@ -49,9 +49,11 @@
 <!-- FOREACH PARA RECORRER Y MOSTRAR TODAS LAS TIENDAS -->
 <div id="tiendas">
     <div id="tienda">
-        @foreach ($shops as $shop )
-        <a href={{url("/tienda/$shop->id")}}> <img src={{asset("assets/$shop->logo")}} style="width:400px; height:300px;"> </a>   
-        @endforeach
+        <div id="imagen">
+            @foreach ($shops as $shop )
+                <a href={{url("/tienda/$shop->id")}}> <img src={{asset("assets/$shop->logo")}} style="width:400px; height:300px;"> </a>   
+            @endforeach
+        </div>
     </div>
 </div>
 
@@ -62,7 +64,7 @@
 </div>
 
 <!-- IFRAME DEL MAPA SACADO DE GOOGLE MAPS-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1451.3470922523986!2d-1.8367863129816961!3d43.32066089737894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a7f9305fe675%3A0xdc69099e4c09cecb!2sParque%20Comercial%20Txingudi!5e0!3m2!1ses!2ses!4v1571586752460!5m2!1ses!2ses" width="99%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1451.3470922523986!2d-1.8367863129816961!3d43.32066089737894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a7f9305fe675%3A0xdc69099e4c09cecb!2sParque%20Comercial%20Txingudi!5e0!3m2!1ses!2ses!4v1571586752460!5m2!1ses!2ses" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 <!-- CONTENIDO DEL FORMULARIO DE CONTACTO -->
     <div id="formContainer">
@@ -90,17 +92,19 @@
 
     hasForm = true;
 
-    frmvalidator = new Validator("newContact");
+    frmvalidator = new Validator("newContact"); 
 
-    frmvalidator.addValidation("name", "req", eval("dictionary.nameEmpty." + sessionStorage.getItem("language")));
-    frmvalidator.addValidation("name", "maxlen=80", eval("dictionary.nameLength." + sessionStorage.getItem("language")));
-    frmvalidator.addValidation("name", "alphabetic_space", eval("dictionary.nameCharacters." + sessionStorage.getItem("language")));
-
-    frmvalidator.addValidation("description", "req", eval("dictionary.descriptionEmpty." + sessionStorage.getItem("language")));
-    frmvalidator.addValidation("description", "maxlen=230", eval("dictionary.descriptionLength." + sessionStorage.getItem("language")));
-    frmvalidator.addValidation("description", "regexp=/^[A-Za-z0-9., áéíóúÁÉÍÓÚ]{1,230}$/", eval("dictionary.descriptionCharacters." + sessionStorage.getItem("language")));
+    frmvalidator.addValidation("name", "req", eval("dictionary.namelEmpty." + sessionStorage.getItem("language")));
+    frmvalidator.addValidation("name", "maxlen=80", eval("dictionary.namelLength." + sessionStorage.getItem("language")));
+    frmvalidator.addValidation("name", "alphabetic_space", eval("dictionary.namelCharacters." + sessionStorage.getItem("language")));
 
     frmvalidator.addValidation("email", "req", eval("dictionary.mailEmpty." + sessionStorage.getItem("language")));
+
+    frmvalidator.addValidation("question", "req", eval("dictionary.questionEmpty." + sessionStorage.getItem("language")));
+    frmvalidator.addValidation("question", "maxlen=230", eval("dictionary.questionLength." + sessionStorage.getItem("language")));
+    frmvalidator.addValidation("question", "regexp=^[A-Za-z0-9., áéíóúÁÉÍÓÚ]{1,230}$", eval("dictionary.questionCharacters." + sessionStorage.getItem("language")));
+
+    
     
     
 

@@ -50,10 +50,6 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
                 /*Refrescar página si hay un form en ella*/
                 if (hasForm)
                     location.reload();
-<<<<<<< HEAD
-                
-
-=======
                 /*Controlar si estamos en la tienda*/
                 if (isShop) {
                     var language = sessionStorage.getItem("language");
@@ -80,7 +76,6 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
                     }
                     $()
                 }
->>>>>>> 3bba44a6371ce7caa7180df60667513b85d4b70c
             });
         });
     </script>

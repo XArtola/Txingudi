@@ -39,9 +39,9 @@ var dictionary = {
     },
 
     "schedule": {
-        es: "HORARIO:<br>Horario del centro: De Lunes a Sábado de 10:00h. a 22:00h.",
-        eu: "ORDUTEGIA:<br>Zentroaren ordutegia: Astelehenetik larunbatera 10:00etatik 22:00etara",
-        en: "SCHEDULE:<br> shoping centers schedule: Moday to Saturday from 10:00am to 22:00pm"
+        es: "HORARIO:<br>De Lunes a Sábado de 10:00h. a 22:00h.",
+        eu: "ORDUTEGIA:<br>Astelehenetik larunbatera 10:00etatik 22:00etara",
+        en: "SCHEDULE:<br>Moday to Saturday from 10:00am to 22:00pm"
     },
     "landingFormTitle": {
         es: "Formulario de contacto",
@@ -200,6 +200,23 @@ var dictionary = {
     },
 
     "nameCharacters": {
+        es: "Nombre invalido, los nombres no tienen numeros ni signos ",
+        eu: "Izen onartezina, letrak bakarrik",
+        en: "Invalid name, only letters are acepted"
+    },
+    "namelEmpty": {
+        es: "Por favor, inserta un nombre ",
+        eu: "Mesedez, sar ezazu  izen bat",
+        en: "Please insert a name "
+    },
+
+    "namelLength": {
+        es: "Nombre demasiado largo",
+        eu: "Izen luzeegia",
+        en: "So long name"
+    },
+
+    "namelCharacters": {
         es: "Nombre invalido, solo caracteres alfanumericos",
         eu: "Izen onartezina, letrak eta zenbakiak bakarrik",
         en: "Invalid name, only letters and numbers are acepted"
@@ -210,7 +227,23 @@ var dictionary = {
         eu: "Mesedez, sar ezazu email-a kontaktatu ahal izateko",
         en: "Please insert a email so we can contact with you"
     },
+    "questionEmpty": {
+        es: "Por favor, inserta una descripción para el producto",
+        eu: "Mesedez, sar ezazu produkturentzat azalpen bat",
+        en: "Please insert a description for the product"
+    },
 
+    "questionLength": {
+        es: "Descripción demasiado larga",
+        eu: "Azalpen luzeegia",
+        en: "So long description"
+    },
+
+    "questionCharacters": {
+        es: "Descripción invalida, solo caracteres alfanumericos",
+        eu: "Azalpen onartezina, letrak eta zenbakiak bakarrik",
+        en: "Invalid description, only letters and numbers are acepted"
+    },
 
     "descriptionEmpty": {
         es: "Por favor, inserta una descripción para el producto",
