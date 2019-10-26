@@ -14,11 +14,11 @@ class tiendasSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         Shops::insert([
             [
-                'name' => 'Zara',
-                'description' => 'Zara es una cadena de tiendas de moda española con sede en Arteixo, La Coruña perteneciente al grupo Inditex. Fue fundada por Amancio Ortega Gaona y Rosalía Mera.​ Es la cadena insignia del grupo textil Inditex y cuenta con más 2.040 tiendas repartidas por todo el mundo',
-                'logo' => 'images/logo/Zara.jpg',
-                'photo' => 'images/fotoTienda/fotoZara.jpg',
-                'openh' => '9:00',
+                'name' => 'OroVivo',
+                'description' => 'Como siempre ORO VIVO te acerca a las últimas tendencias en joyería, relojería y bisutería. PANDORA, CALVIN KLEIN, ARMANI, DKNY, G&G, GUESS, TOMMY HILFIGER, FOSSIL, LOTUS, FESTINA, VICEROY, etc...',
+                'logo' => 'images/logo/OroVivo.jpg',
+                'photo' => 'images/fotoTienda/fotoOroVivo.jpg',
+                'openh' => '10:00',
                 'closeh' => '22:00'
             ],
             [

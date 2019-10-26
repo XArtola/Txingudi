@@ -5,6 +5,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
 -->
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<title>Txingudi</title>
 
 <head>
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/CSS/estilos.css') }}" />
@@ -15,6 +16,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
         @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
     </style>
     <script src="{{asset('assets/lib/jquery-3.4.1.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/lib/jquery.translate.js')}}" type="text/javascript"></script>
@@ -48,8 +50,37 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
                 /*Refrescar página si hay un form en ella*/
                 if (hasForm)
                     location.reload();
+<<<<<<< HEAD
                 
 
+=======
+                /*Controlar si estamos en la tienda*/
+                if (isShop) {
+                    var language = sessionStorage.getItem("language");
+                    switch (language) {
+                        case "es":
+                        $('.producto').show();
+                        $('.producto[data-language="eu"]').hide();
+                        $('.producto[data-language="en"]').hide();
+                        break;
+                        case "en":
+                        $('.producto').show();
+                        $('.producto[data-language="eu"]').hide();
+                        $('.producto[data-language="es"]').hide();
+                        break;
+                        case "eu":
+                        $('.producto').show();
+                        $('.producto[data-language="es"]').hide();
+                        $('.producto[data-language="en"]').hide();
+                        break;
+                        default:
+                        $('.producto').show();
+                        break;
+
+                    }
+                    $()
+                }
+>>>>>>> 3bba44a6371ce7caa7180df60667513b85d4b70c
             });
         });
     </script>
