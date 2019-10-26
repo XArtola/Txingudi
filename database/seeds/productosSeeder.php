@@ -139,12 +139,12 @@ class productosSeeder extends Seeder
                 'shopId' => '2'
             ]
             [
-                'name' => 'BICICLETA DE MONTAÑA 27,5" ROCKRIDER ST 520 NEGRO AZUL',
-                'description' => ' Nuestro equipo ha concebido esta BTT de 27,5", cómoda con frenos de disco mecánicos, para las travesías de BTT, de 2 a 3 horas, durante todo el año.<br>Comodidad ante todo:sillín cóncavo, geometría del cuadro, potencia ajustable. Eficacia de las ruedas 27,5" con llantas de doble pared y de 24 velocidades. Ventaja: Frenos de disco mecánicos. ',
+                'name' => "Tabla Surf Espuma Evolutiva Olaian 100 8' Adulto Turquesa Naranja Leash Quillas",
+                'description' => ' Nuestro equipo de diseñadores surfistas ha creado esta tabla para principiantes de 40 a 70 kg. Adaptada a un uso ocasional por surfistas más experimentados.<br>La tabla de surf para comenzar a practicar el surf y progresar con total seguridad. Incluye leash y 3 quillas no cortantes. Encerar para no resbalar. No apta para escuelas de surf',
                 'stock' => '5',
-                'price' => '249.99',
+                'price' => '149.99',
                 'photo' => '12.webp',
-                'link' => 'https://www.youtube.com/embed/If-J5bgDQEw',
+                'link' => 'https://www.youtube.com/embed/lHtJC3rMql8',
                 'language' => 'multi',
                 'shopId' => '2'
             ]
@@ -381,7 +381,7 @@ class productosSeeder extends Seeder
                 'shopId' => '6'
             ],
 
-                [
+            [
                 'name' => 'Good Girl Carolina Herrera Eau De Parfum',
                 'description' => 'Good Girl es una fragancia sensual y sofisticada, que refleja la dualidad de la mujer. Esta innovadora fragancia captura la complejidad de la mujer con excepcionales ingredientes. Cada parte de la fragancia es un reflejo de la mujer Herrera. Una fragancia afrutada y amaderada, con un contraste de acordes que reflejan a la perfección el concepto de dualidad.',
                 'stock' => '40',
@@ -391,7 +391,7 @@ class productosSeeder extends Seeder
                 'language' => 'multi',
                 'shopId' => '6'
             ],
-              [
+            [
                 'name' => 'Kenzo World Power',
                 'description' => 'Kenzo World Power, el nuevo Eau de Parfum, símbolo de la diversidad y la libertad. A través de un perfume femenino positivo con un carácter distinguido, Kenzo World Power te invita a escribir tus propias reglas. Lo que tú eres realmente hace tu fuerza, tu PODER: ¡muéstralo al mundo! El nuevo perfume Kenzo World Power se inspira en la moda Kenzo de Carol Lim y Humberto León y va dirigido a aquellas mujeres que les gusta ser quiénes son, perfectamente imperfectas. Con Kenzo World Power, muestra el poder que está en ti.El icónico ojo en color amarillo que representa la vitalidad, la energía y el positivismo de la generación millenial. El efecto espejo del packaging que muestra tú verdadero yo y la tapa transparente del frasco, que revela lo oculto. Kenzo World Power, el poder de ser tú mismo.',
                 'stock' => '40',
@@ -401,7 +401,7 @@ class productosSeeder extends Seeder
                 'language' => 'multi',
                 'shopId' => '6'
             ],
-[
+            [
                 'name' => 'Olympea Legend Eau De Parfum',
                 'description' => 'Olympéa Legend Eau de Parfum, presenta a una pareja singular, la vainilla – ciruela salada. Con sus facetas de albaricoque y violeta, esta jugosa ciruela cubierta de cristales de sal, densifican el poder adictivo de la vainilla. Un perfume, simplemente divino.',
                 'stock' => '40',
@@ -411,8 +411,6 @@ class productosSeeder extends Seeder
                 'language' => 'multi',
                 'shopId' => '6'
             ]
-
-
 
         );
 }
