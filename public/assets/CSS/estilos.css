@@ -26,8 +26,8 @@ body {
   height: 20%;
   background-color: #004587;
   justify-content: space-around;
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-left: 10px;
+  padding-right: 10px;*/
   align-items: center;
   position: fixed;
   top: 0;
@@ -61,8 +61,7 @@ body {
   background-color: #fccb34;
   transform: skew(-40deg);
   height: 100%;
-  width: 35.5%;
-  /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+  width: 25%;
 }
 
 .forma2:hover {
@@ -72,13 +71,14 @@ body {
 .forma3 {
   background-color: #009a8d;
   height: 100%;
-  width: 32.5%;
-  /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+  width: 25%;
   transform: skew(-40deg);
 }
 
 .forma3 a {
-  padding: 45% 60%;
+  min-width: 100%;
+  min-height: 100%;
+  /*padding: 45% 60%;*/
   transform: skew(40deg);
 }
 
@@ -174,21 +174,32 @@ Menu desplegable de las tiendas
   display: block;
 }
 
-/*seletor de idiomas*/
+/*-------------------------------------------------
+Seletor de idiomas
+---------------------------------------------------*/
+
+.languagesLi {
+  width: 25%;
+}
 
 .languages {
-  padding-top: 2.5%;
-  align-self: flex-end;
+  padding-top: 15%;
+  float: bottom;
+  ;
 }
 
 .languages li {
   list-style: none;
   display: inline-block;
   font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 30%;
+  text-align: center;
 }
 
 .languages li:hover {
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
@@ -261,13 +272,15 @@ Barra de navegación responsiva
     background-color: #004587;
   }
   .languages {
-    min-width:100%;
-    display:inline-block;
+    min-width: 100%;
+    display: inline-block;
+    padding-top: 0%;
+    padding: auto;
   }
-  .languages li{
-    float:left;
-    min-width:32%;
-    text-align:center;
+  .languages li {
+    float: left;
+    min-width: 32%;
+    text-align: center;
   }
   .menuIcon {
     display: block;
@@ -503,8 +516,71 @@ TIENDA
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.section-left {
+  flex: 1 1 50%;
+  padding: 5% 0 0 5%;
+}
+
+.section-left p {
+  text-align: justify;
+  font-size: 1.25rem;
+  padding: 5% 10% 0 2.5%;
+}
+
+.section-left .titulo {
+  width: 100%;
+  font-size: 3.75rem;
+  border-bottom: 0.375rem solid #004587;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section-left .titulo a {
+  float: right;
+}
+
+.section-left .reloj {
+  padding-top: 5%;
+  float: right;
+  font-size: 1rem;
+  width: 30%;
+}
+
+.section-left .reloj img {
+  width: 25%;
+  height: 25%;
+  margin: 1% 1% 1% 1%;
+  float: left;
+}
+
+.section-left .reloj span {
+  font-size: 1.5rem;
+  display: table;
+  margin: 5% auto;
+}
+
+.section-right {
+  flex: 1 1 50%;
+}
+
+.section-right img {
+  width: 80%;
+  height: 60vh;
+  padding-left: 10%;
+}
+
 .productos {
-  margin-top: 14px;
+  margin-top: 5%;
   width: 100%;
   height: auto;
   display: flex;
@@ -513,25 +589,17 @@ TIENDA
   /* background-color: white;*/
 }
 
-.titulo2 {
-  font-size: 2rem;
-  margin-top: 20px;
-  margin-left: 30px;
-  text-transform: uppercase;
-}
-
 .producto {
-  flex: 1 1 30%;
+  flex:30%;
   text-align: center;
-  margin-top: 20px;
   /* margin: 100px;*/
   max-width: 30%;
   /*box-shadow: 5px 10px 10px gray;*/
 }
 
 .producto p {
-  margin-top: 5px;
-  margin-bottom: 6px;
+  margin-top: 1%;
+  margin-bottom: 1.125rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
 }
@@ -546,10 +614,9 @@ TIENDA
 }
 
 .producto img {
-  margin-bottom: 10px;
-  margin-top: 40px;
-  width: 15vw;
-  height: 150px;
+  width: 80%;
+  margin: 2% 5%;
+  display:block;
   /* box-shadow: 5px 10px 10px gray;*/
   border: 1px solid #004587;
 }
@@ -559,67 +626,51 @@ a {
   color: black;
 }
 
-.section {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-}
-
-.section-left {
-  flex: 1 1 50%;
-  margin: 15px 0 0 30px;
-}
-
-.section-left p {
-  text-align: justify;
-  font-size: 20px;
-  margin: 20px 40px 0 5px;
-}
-
-.section-left .titulo {
-  width: 100%;
-  font-size: 60px;
-  border-bottom: 6px solid #004587;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.section-left .titulo a {
-  float: right;
-}
-
-.section-left .reloj {
-  margin-top: 10px;
-  float: right;
-}
-
-.section-right {
-  flex: 1 1 50%;
-}
-
-.section-right {
-  flex: 1 1 50%;
-}
-
-.section-right img {
-  width: 80%;
-  height: 300px;
-  margin-left: 80px;
-}
-
-.hidden {
-  display: none;
-}
-
 #precio {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   display: inline-block;
+}
+
+/*--------------------------------------------------
+Tienda responsive
+---------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+  .producto{
+    flex:50%;
+    min-width:50%;
+  }
+  
+}
+
+
+@media screen and (max-width: 700px) {
+  .section {
+    flex-wrap: wrap;
+  }
+  .section-left {
+    flex: 100%;
+    min-width: 100%;
+  }
+  .section-right {
+    flex: 100%;
+    min-width: 100%;
+  }
+
+  .titulo a{
+
+    margin-right:10%;
+  }
+
+  .section-left .reloj span {
+    width:40%;
+  }
+  .producto{
+    flex:100%;
+    min-width: 100%;
+  }
+
 }
 
 /*--------------------------------------------------
