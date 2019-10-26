@@ -48,11 +48,11 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
                 /*Refrescar página si hay un form en ella*/
                 if (hasForm)
                     location.reload();
-
+                
 
             });
         });
     </script>
     <script src="{{asset('assets/lib/dictionary.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/lib/gen_validatorv4.js')}}" type="text/javascript"></script>
+    
 </head>
