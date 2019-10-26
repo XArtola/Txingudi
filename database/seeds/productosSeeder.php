@@ -13,7 +13,7 @@ class productosSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        Products::insert(
+        Products::insert([
              /*PRODUCTOS DE ZARA (**SON DE PRUEBA**)
             [
                 'name' => 'Zapatos negros',
@@ -137,7 +137,7 @@ class productosSeeder extends Seeder
                 'link' => 'https://www.youtube.com/embed/If-J5bgDQEw',
                 'language' => 'multi',
                 'shopId' => '2'
-            ]
+            ],
             [
                 'name' => "Tabla Surf Espuma Evolutiva Olaian 100 8' Adulto Turquesa Naranja Leash Quillas",
                 'description' => ' Nuestro equipo de diseñadores surfistas ha creado esta tabla para principiantes de 40 a 70 kg. Adaptada a un uso ocasional por surfistas más experimentados.<br>La tabla de surf para comenzar a practicar el surf y progresar con total seguridad. Incluye leash y 3 quillas no cortantes. Encerar para no resbalar. No apta para escuelas de surf',
@@ -147,7 +147,7 @@ class productosSeeder extends Seeder
                 'link' => 'https://www.youtube.com/embed/lHtJC3rMql8',
                 'language' => 'multi',
                 'shopId' => '2'
-            ]
+            ],
 
             /*PRODUCTOS DE MERKALCALZADOS*/
 
@@ -412,6 +412,6 @@ class productosSeeder extends Seeder
                 'shopId' => '6'
             ]
 
-        );
+        ]);
 }
 }

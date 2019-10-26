@@ -5,7 +5,7 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
 -->
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
+<title>Txingudi</title>
 <head>
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/CSS/estilos.css') }}" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,6 +15,8 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
         @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
     </style>
     <script src="{{asset('assets/lib/jquery-3.4.1.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/lib/jquery.translate.js')}}" type="text/javascript"></script>
