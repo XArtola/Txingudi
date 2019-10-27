@@ -39,19 +39,19 @@ var dictionary = {
         en: "Come tp Txingudi to celebrate Halloween!"
     },
 
-  
+
     "tTienda": {
         es: "TIENDAS:",
         eu: "DENDAK:",
         en: "SHOPS:"
     },
-     
+
     "mapa": {
         es: "LOCALIZACION:",
         eu: "KOKAPENA:",
         en: "LOCATION:"
     },
-     
+
 
     "place": {
         es: "CC Txingudi Bº VENTAS Nº 80, 20305, IRUN",
@@ -65,7 +65,7 @@ var dictionary = {
     },
     "visitShops": {
         es: "Visita nuestras <span class='resaltadoy'>tiendas</span>",
-        eu: "Zatoz gure <span class='resaltadoy'>dendetara</span> onenak",
+        eu: "Zatoz gure <span class='resaltadoy'>dendetara</span>",
         en: "Come to our <span class='resaltadoy'>shops</span>"
     },
     "weAreHere": {
@@ -96,55 +96,70 @@ var dictionary = {
     },
 
     "titulopromo1": {
-        es:"30% Dto. en bicicletas",
-        eu:"%30eko deskontua bizikletetan",
-        en:"30% off on bicycles"
+        es: "30% Dto. en bicicletas",
+        eu: "%30eko deskontua bizikletetan",
+        en: "30% off on bicycles"
+    },
+    "titulopromo2": {
+        es: "2X1 en disfrazes de afede",
+        eu: "2 mozorro baten prezioan Afeden",
+        en: "2X1 in costumes in Afede"
+    },
+    "titulopromo3": {
+        es: "Gasolina a 0.80€ el litro",
+        eu: "Gasolina litro bakoitzeko 0,80 eurotan",
+        en: "Petrol at € 0.80 per liter"
+    },
+    "titulopromo4": {
+        es: "Circo Raluy en Txingudi",
+        eu: "Raluy Circus Txingudin",
+        en: "Raluy Circus in Txingudi"
     },
 
     "textopromo1": {
-        es:"Necesitas una bicicleta nueva? es tu momento, ven a DECATHLON hoy y encontraras todas las bicicletas al 30% de descuento.",
-        eu:"Bizikleta berria behar duzu? Zure ordua da, etorri DECATHLONera gaur eta bizikleta guztiak% 30eko deskontuan aurkituko dituzu.",
-        en:"Do you need a new bike? It's your time, come to DECATHLON today and you will find all bicycles at 30% discount."
+        es: "Necesitas una bicicleta nueva? es tu momento, ven a DECATHLON hoy y encontraras todas las bicicletas al 30% de descuento.",
+        eu: "Bizikleta berria behar duzu? Zure ordua da, etorri DECATHLONera gaur eta bizikleta guztiak% 30eko deskontuan aurkituko dituzu.",
+        en: "Do you need a new bike? It's your time, come to DECATHLON today and you will find all bicycles at 30% discount."
     },
     "textopromo2": {
-        es:"2X1 en disfrazes de afede",
-        eu:"2X1 soineko dotoreetan",
-        en:"2X1 in Afede costumes"
+        es: "2X1 en disfrazes de afede",
+        eu: "2X1 soineko dotoreetan",
+        en: "2X1 in Afede costumes"
     },
     "textopromo2": {
-        es:"Halloween se acerca, En afede encontraras un 2X1 en los disfrazes mas espeluznantes para que te disfraces de lo que quieras.",
-        eu:"Halloween datorrenean, 2X1 aurkituko duzu mozorro erraldoienetan nahi duzun moduan janzteko.",
-        en:"Halloween is coming, you will find a 2X1 in the creepiest costumes so you can dress up as you want."
+        es: "Halloween se acerca, En afede encontraras un 2X1 en los disfrazes mas espeluznantes para que te disfraces de lo que quieras.",
+        eu: "Halloween datorrenean, 2X1 aurkituko duzu mozorro erraldoienetan nahi duzun moduan janzteko.",
+        en: "Halloween is coming, you will find a 2X1 in the creepiest costumes so you can dress up as you want."
     },
     "textopromo3": {
-        es:"Gasolina a 0.80€ el litro",
-        eu:"Gasolina litro bakoitzeko 0,80 eurotan",
-        en:"Petrol at € 0.80 per liter"
+        es: "Gasolina a 0.80€ el litro",
+        eu: "Gasolina litro bakoitzeko 0,80 eurotan",
+        en: "Petrol at € 0.80 per liter"
     },
     "textopromo3": {
         es: "Aprovecha para recargar el deposito de tu vehiculo en nuestra gasolinera. no encontraras otra gasolinera con los precios iguales.",
-        eu:" Aukera ezazu ibilgailuaren gordailua kargatzeko gure gasolindegian. Ez duzu prezio berdinekin topatuko beste gasolindegirik.",
-        en:"Take the opportunity to recharge the deposit of your vehicle at our gas station. You will not find another gas station with the same prices."
+        eu: " Aukera ezazu ibilgailuaren gordailua kargatzeko gure gasolindegian. Ez duzu prezio berdinekin topatuko beste gasolindegirik.",
+        en: "Take the opportunity to recharge the deposit of your vehicle at our gas station. You will not find another gas station with the same prices."
     },
     "textopromo4": {
-        es:"Circo Raluy en Txingudi",
-        eu:"Raluy Circus Txingudin",
-        en:"Raluy Circus in Txingudi"
+        es: "Circo Raluy en Txingudi",
+        eu: "Raluy Circus Txingudin",
+        en: "Raluy Circus in Txingudi"
     },
     "textopromo4": {
-        es:"Si no sabes que hacer esta tarde, estas de suerte. El circo Raluy ha llegado al centro comercial Txingudi.",
-        eu:"Gaur arratsaldean zer egin ez badakizu, zorte onean zaude. Raluy zirkua Txingudi merkataritza gunera iritsi da.",
-        en:"If you don't know what to do this afternoon, you're in luck. The Raluy circus has arrived at the Txingudi shopping center.",
-    }
-        
+        es: "Si no sabes que hacer esta tarde, estas de suerte. El circo Raluy ha llegado al centro comercial Txingudi.",
+        eu: "Gaur arratsaldean zer egin ez badakizu, zorte onean zaude. Raluy zirkua Txingudi merkataritza gunera iritsi da.",
+        en: "If you don't know what to do this afternoon, you're in luck. The Raluy circus has arrived at the Txingudi shopping center.",
+    },
+
 
     /*--------------------------------------------------
     TIENDA
     ---------------------------------------------------*/
     "description1": {
-        es: "Zara es una cadena de tiendas de moda española con sede en Arteixo, La Coruña perteneciente al grupo Inditex. Fue fundada por Amancio Ortega Gaona y Rosalía Mera.​ Es la cadena insignia del grupo textil Inditex y cuenta con más 2.040 tiendas repartidas por todo el mundo",
-        eu: "Zara Inditex taldeko Arteixo-n (La Coruñan) kokatutako Espainiako moda-denden katea da. Amancio Ortega Gaonak eta Rosalía Mera-k sortua, Inditex ehungintza taldeko bandera nagusia da eta mundu osoko 2.040 denda baino gehiago ditu",
-        en: "Zara is a chain of Spanish fashion stores based in Arteixo, La Coruña belonging to the Inditex group. Founded by Amancio Ortega Gaona and Rosalía Mera, it is the flagship chain of the Inditex textile group and has more than 2,040 stores around the world"
+        es: "Como siempre ORO VIVO te acerca a las últimas tendencias en joyería, relojería y bisutería. PANDORA, CALVIN KLEIN, ARMANI, DKNY, G&G, GUESS, TOMMY HILFIGER, FOSSIL, LOTUS, FESTINA, VICEROY, etc...",
+        eu: "Beti bezala, GOLD LIVE bitxiak, eta erlojuen azken joeretara hurbiltzen zaitu. PANDORA, CALVIN KLEIN, ARMANI, DKNY, G&G, GUESS, TOMMY HILFIGER, FOSIL, LOTUS, FESTINA, VICEROY, etab ...",
+        en: "As always, GOLD LIVE brings you closer to the latest trends in jewelry, watches and costume jewelery. PANDORA, CALVIN KLEIN, ARMANI, DKNY, G&G, GUESS, TOMMY HILFIGER, FOSSIL, LOTUS, FESTINA, VICEROY, etc ..."
     },
     "description2": {
         es: "Decathlon es una multinacional Francesa dedicada a la ropa, complementos y material deportivo artículos de deporte. Decathlon es una cadena de establecimientos de grandes superficies, dedicada a la venta y distribución de material deportivo, filial del grupo francés Mulliez",
@@ -181,7 +196,7 @@ var dictionary = {
         eu: "Prezioa: ",
         en: "Price: "
     },
-    
+
     /*--------------------------------------------------
     PRODUCTO
     ---------------------------------------------------*/
@@ -249,9 +264,9 @@ var dictionary = {
         en: " Tissot Gent XL T1164101604700 watch with brown leather strap and blue dial        "
     },
     "productDescription6": {
-        es: "Calvin Klein ofrece las joyas más elegantes y modernas, el toque perfecto.<br>Un diseño único y sorprendente, descubre el Choker Beyond.",
-        eu: "Calvin Kleinek bitxiak dotoreenak eta modernoenak eskaintzen ditu, ukitu ezin hobea. <br> Diseinu berezi eta harrigarria, Choker Beyond ezagutzeko.        ",
-        en: "Calvin Klein offers the most elegant and modern jewels, the perfect touch. <br> A unique and surprising design, discover the Choker Beyond. "
+        es: "Calvin Klein ofrece las joyas más elegantes y modernas, el toque perfecto.Un diseño único y sorprendente, descubre el Choker Beyond.",
+        eu: "Calvin Kleinek bitxiak dotoreenak eta modernoenak eskaintzen ditu, ukitu ezin hobea. Diseinu berezi eta harrigarria, Choker Beyond ezagutzeko.        ",
+        en: "Calvin Klein offers the most elegant and modern jewels, the perfect touch. A unique and surprising design, discover the Choker Beyond. "
     },
 
     /*----------------DECATHLON ------------------------*/
@@ -262,9 +277,9 @@ var dictionary = {
     },
     "productDescription7": {
         es: "Pásate al trail running con las TRAILSTER. Concebidas para que practiques de forma segura por los caminos, estas zapatillas ofrecen la comodidad, la protección y el agarre necesarios para cada salida.",
-        eu:"JoanTrailILER lasterketara. Errepideetan segurtasun osoz praktikatzeko diseinatuta dago, zapata hauek irteera bakoitzean behar duten erosotasuna, babesa eta adeitasuna eskaintzen dituzte.",
+        eu: "JoanTrailILER lasterketara. Errepideetan segurtasun osoz praktikatzeko diseinatuta dago, zapata hauek irteera bakoitzean behar duten erosotasuna, babesa eta adeitasuna eskaintzen dituzte.",
         en: "Go to trail running with TRAILSTER. Designed for you to practice safely on the roads, these shoes offer the comfort, protection and grip needed for each outing.        "
-    },"productName8": {
+    }, "productName8": {
         es: "Sudadera Chándal Cremallera Capucha Gimnasia Pilates Domyos 900 Hombre Negro",
         eu: "Jertseko jertsea Zipper Hoodie Gimnasia Pilates Domyos 900 Man Black",
         en: " Sweatshirt Tracksuit Zip Hoodie Gymnastics Pilates Domyos 900 Man Black        "
@@ -273,24 +288,24 @@ var dictionary = {
         es: "Nuestros diseñadores han desarrollado esta chaqueta para abrigar antes/durante/después de la sesión de Pilates y Gimnasia suave. Aporte de calor elevado.",
         eu: "Gure diseinatzaileek jaka hau garatu dute Pilates eta Gimnasia Soft saioa aurretik / bitartean / ondoren berotzeko. Bero sarrera handia.",
         en: "Our designers have developed this jacket to warm up before / during / after the Pilates and Soft Gymnastics session. High heat input."
-    },"productName9": {
+    }, "productName9": {
         es: "Capa 2 esquí hombre 900 Negro",
         eu: "Geruza 2 eskuko gizona 900 Beltza",
         en: "Layer 2 ski man 900 Black"
     },
     "productDescription9": {
-        es: "Concebida para esquiadores que buscan una chaqueta térmica de esquí cálida, ligera y compacta.<br>Gracias a la composición de plumón, esta chaqueta térmica es ligera y cálida. Componente stretch para una excelente libertad de movimiento durante la práctica.",
-        eu: "Eski jaka epela, trinkoa eta trinkoa bilatzen duten eskiatzaileentzat diseinatua. <br> Beheko konposizioari esker, jaka termikoa arina eta epela da. Praktikan mugimendu askatasun bikaina lortzeko osagai estentsiboa.",
-        en: "Designed for skiers looking for a warm, light and compact ski thermal jacket. <br> Thanks to the down composition, this thermal jacket is light and warm. Stretch component for excellent freedom of movement during practice."
-    },"productName10": {
+        es: "Concebida para esquiadores que buscan una chaqueta térmica de esquí cálida, ligera y compacta. Gracias a la composición de plumón, esta chaqueta térmica es ligera y cálida. Componente stretch para una excelente libertad de movimiento durante la práctica.",
+        eu: "Eski jaka epela, trinkoa eta trinkoa bilatzen duten eskiatzaileentzat diseinatua. Beheko konposizioari esker, jaka termikoa arina eta epela da. Praktikan mugimendu askatasun bikaina lortzeko osagai estentsiboa.",
+        en: "Designed for skiers looking for a warm, light and compact ski thermal jacket. Thanks to the down composition, this thermal jacket is light and warm. Stretch component for excellent freedom of movement during practice."
+    }, "productName10": {
         es: "Pantalón de Montaña y Trekking Forclaz Trek 500 Hombre",
         eu: "Forclaz Trek 500 Gizonezkoen Mendiko eta Trekking Pants",
         en: "Forclaz Trek 500 Men's Mountain and Trekking Pants "
     },
     "productDescription10": {
-        es: "Nuestro equipo, apasionado de trekking en montaña, ha desarrollado este pantalón para hacer trekking con máxima comodidad.<br>La mejor relación entre duración y ligereza.",
-        eu: "Mendiko mendi-ibiliak egiteko zalea den gure taldeak, prakak garatu ditu trekking-a ahalik eta erosotasun handienarekin egiteko. <br> Iraupenaren eta arintasunaren arteko harremanik onena.",
-        en: "  Our team, passionate about mountain trekking, has developed this pants to make trekking with maximum comfort. <br> The best relationship between duration and lightness."
+        es: "Nuestro equipo, apasionado de trekking en montaña, ha desarrollado este pantalón para hacer trekking con máxima comodidad. La mejor relación entre duración y ligereza.",
+        eu: "Mendiko mendi-ibiliak egiteko zalea den gure taldeak, prakak garatu ditu trekking-a ahalik eta erosotasun handienarekin egiteko. Iraupenaren eta arintasunaren arteko harremanik onena.",
+        en: "  Our team, passionate about mountain trekking, has developed this pants to make trekking with maximum comfort. The best relationship between duration and lightness."
     },
     "productName11": {
         es: "BICICLETA DE MONTAÑA 27,5 ROCKRIDER ST 520 NEGRO AZUL",
@@ -298,9 +313,9 @@ var dictionary = {
         eu: "MENDIKO BIZIKLETA 27,5 ROCKRIDER ST 520 BLACK BLUE "
     },
     "productDescription11": {
-        es: "Nuestro equipo ha concebido esta BTT de 27,5 , cómoda con frenos de disco mecánicos, para las travesías de BTT, de 2 a 3 horas, durante todo el año.<br>Comodidad ante todo:sillín cóncavo, geometría del cuadro, potencia ajustable. Eficacia de las ruedas 27,5 con llantas de doble pared y de 24 velocidades. Ventaja: Frenos de disco mecánicos.",
+        es: "Nuestro equipo ha concebido esta BTT de 27,5 , cómoda con frenos de disco mecánicos, para las travesías de BTT, de 2 a 3 horas, durante todo el año. Comodidad ante todo:sillín cóncavo, geometría del cuadro, potencia ajustable. Eficacia de las ruedas 27,5 con llantas de doble pared y de 24 velocidades. Ventaja: Frenos de disco mecánicos.",
         eu: "Gure taldeak 27,5 MTB hau diseinatu du. Disko balazta mekanikoekin erosoak. Mendiko bizikletan ibiltzeko, 2 eta 3 ordu bitartean. Urte osoan. Erosotasuna. Lehenik eta behin: zintzilika konkorduna, markoaren geometria. Potentzia erregulagarria. 27,5 eraginkortasuna. horma bikoitzeko eta 24 abiadurako gurpilak. Abantaila: Disko balazta mekanikoak.",
-        en: "Our team has conceived this 27.5 MTB, comfortable with mechanical disc brakes, for mountain biking, from 2 to 3 hours, all year round. <br> Comfort first and foremost: concave saddle, frame geometry, Adjustable power. Efficiency of 27.5 wheels with double-walled and 24-speed wheels. Advantage: Mechanical disc brakes."
+        en: "Our team has conceived this 27.5 MTB, comfortable with mechanical disc brakes, for mountain biking, from 2 to 3 hours, all year round. Comfort first and foremost: concave saddle, frame geometry, Adjustable power. Efficiency of 27.5 wheels with double-walled and 24-speed wheels. Advantage: Mechanical disc brakes."
     },
     "productName12": {
         es: "Tabla Surf Espuma Evolutiva Olaian 100 8' Adulto Turquesa Naranja Leash Quillas",
@@ -308,9 +323,9 @@ var dictionary = {
         en: "Surfboard Foam Evolutive Olaian 100 8 'Adult Turquoise Orange Leash Keels "
     },
     "productDescription12": {
-        es: "Nuestro equipo de diseñadores surfistas ha creado esta tabla para principiantes de 40 a 70 kg. Adaptada a un uso ocasional por surfistas más experimentados.<br>La tabla de surf para comenzar a practicar el surf y progresar con total seguridad. Incluye leash y 3 quillas no cortantes. Encerar para no resbalar. No apta para escuelas de surf",
+        es: "Nuestro equipo de diseñadores surfistas ha creado esta tabla para principiantes de 40 a 70 kg. Adaptada a un uso ocasional por surfistas más experimentados. La tabla de surf para comenzar a practicar el surf y progresar con total seguridad. Incluye leash y 3 quillas no cortantes. Encerar para no resbalar. No apta para escuelas de surf",
         eu: "Surf-diseinatzaileen taldeak 40 eta 70 kg bitarteko hasiberrientzako taula hau sortu du. Surflari esperientziadunek noizbehinka erabiltzera egokitua. Surf-a surfean hasteko eta segurtasun osoz jarraitzeko. Leash eta ez ebaki 3 keel ditu. Argizaria labain ez dadin. Ez da surfeko eskoletarako egokia",
-        en: "Our team of surf designers has created this table for beginners from 40 to 70 kg. Adapted to occasional use by more experienced surfers. <br> The surfboard to start surfing and progress with total safety. It includes leash and 3 non-cutting keels. Wax to avoid slipping. Not suitable for surf schools"
+        en: "Our team of surf designers has created this table for beginners from 40 to 70 kg. Adapted to occasional use by more experienced surfers. The surfboard to start surfing and progress with total safety. It includes leash and 3 non-cutting keels. Wax to avoid slipping. Not suitable for surf schools"
     },
 
     /*----------------MERKAL CALZADOS ------------------------*/
@@ -332,7 +347,7 @@ var dictionary = {
 
     "productDescription14": {
         es: "Pásate al trail running con las TRAILSTER. Concebidas para que practiques de forma segura por los caminos, estas zapatillas ofrecen la comodidad, la protección y el agarre necesarios para cada salida.",
-        eu:"JoanTrailILER lasterketara. Errepideetan segurtasun osoz praktikatzeko diseinatuta dago, zapata hauek irteera bakoitzean behar duten erosotasuna, babesa eta adeitasuna eskaintzen dituzte.",
+        eu: "JoanTrailILER lasterketara. Errepideetan segurtasun osoz praktikatzeko diseinatuta dago, zapata hauek irteera bakoitzean behar duten erosotasuna, babesa eta adeitasuna eskaintzen dituzte.",
         en: "Go to trail running with TRAILSTER. Designed for you to practice safely on the roads, these shoes offer the comfort, protection and grip needed for each outing.        "
     },
     "productName15": {
@@ -362,7 +377,7 @@ var dictionary = {
     },
     "productDescription17": {
         es: "Pásate al trail running con las TRAILSTER. Concebidas para que practiques de forma segura por los caminos, estas zapatillas ofrecen la comodidad, la protección y el agarre necesarios para cada salida.",
-        eu:"JoanTrailILER lasterketara. Errepideetan segurtasun osoz praktikatzeko diseinatuta dago, zapata hauek irteera bakoitzean behar duten erosotasuna, babesa eta adeitasuna eskaintzen dituzte.",
+        eu: "JoanTrailILER lasterketara. Errepideetan segurtasun osoz praktikatzeko diseinatuta dago, zapata hauek irteera bakoitzean behar duten erosotasuna, babesa eta adeitasuna eskaintzen dituzte.",
         en: "Go to trail running with TRAILSTER. Designed for you to practice safely on the roads, these shoes offer the comfort, protection and grip needed for each outing.        "
     },
     "productName18": {
@@ -371,12 +386,12 @@ var dictionary = {
         en: "SPIDERMAN elastic house shoe "
     },
     "productDescription18": {
-        es: "Nuestro equipo de diseñadores surfistas ha creado esta tabla para principiantes de 40 a 70 kg. Adaptada a un uso ocasional por surfistas más experimentados.<br>La tabla de surf para comenzar a practicar el surf y progresar con total seguridad. Incluye leash y 3 quillas no cortantes. Encerar para no resbalar. No apta para escuelas de surf",
+        es: "Nuestro equipo de diseñadores surfistas ha creado esta tabla para principiantes de 40 a 70 kg. Adaptada a un uso ocasional por surfistas más experimentados. La tabla de surf para comenzar a practicar el surf y progresar con total seguridad. Incluye leash y 3 quillas no cortantes. Encerar para no resbalar. No apta para escuelas de surf",
         eu: "Surf-diseinatzaileen taldeak 40 eta 70 kg bitarteko hasiberrientzako taula hau sortu du. Surflari esperientziadunek noizbehinka erabiltzera egokitua. Surf-a surfean hasteko eta segurtasun osoz jarraitzeko. Leash eta ez ebaki 3 keel ditu. Argizaria labain ez dadin. Ez da surfeko eskoletarako egokia",
-        en: "Our team of surf designers has created this table for beginners from 40 to 70 kg. Adapted to occasional use by more experienced surfers. <br> The surfboard to start surfing and progress with total safety. It includes leash and 3 non-cutting keels. Wax to avoid slipping. Not suitable for surf schools"
+        en: "Our team of surf designers has created this table for beginners from 40 to 70 kg. Adapted to occasional use by more experienced surfers. The surfboard to start surfing and progress with total safety. It includes leash and 3 non-cutting keels. Wax to avoid slipping. Not suitable for surf schools"
     },
-/*---------------- SPRINGFIELD ------------------------*/
-     "productName19": {
+    /*---------------- SPRINGFIELD ------------------------*/
+    "productName19": {
         es: "Jersey intarsia montaña",
         eu: "Jersey intarsia mendia ",
         en: "Jersey intarsia mountain "
@@ -487,7 +502,7 @@ var dictionary = {
     },
     "productDescription29": {
         es: "Pásate al trail running con las TRAILSTER. Concebidas para que practiques de forma segura por los caminos, estas zapatillas ofrecen la comodidad, la protección y el agarre necesarios para cada salida.",
-        eu:"JoanTrailILER lasterketara. Errepideetan segurtasun osoz praktikatzeko diseinatuta dago, zapata hauek irteera bakoitzean behar duten erosotasuna, babesa eta adeitasuna eskaintzen dituzte.",
+        eu: "JoanTrailILER lasterketara. Errepideetan segurtasun osoz praktikatzeko diseinatuta dago, zapata hauek irteera bakoitzean behar duten erosotasuna, babesa eta adeitasuna eskaintzen dituzte.",
         en: "Go to trail running with TRAILSTER. Designed for you to practice safely on the roads, these shoes offer the comfort, protection and grip needed for each outing."
     },
     "productName30": {
@@ -508,9 +523,9 @@ var dictionary = {
         en: "Bad Boy Eau De Toilette"
     },
     "productDescription31": {
-        es: "Bad Boy Eau de Toilette personifica la dualidad masculina en un audaz símbolo de una nueva masculinidad. Fuerte pero sensible, heroico y al mismo tiempo vulnerable, el hombre BAD BOY está seguro de quién es. BAD BOY Eau de Toilette captura Las múltiples facetas de la virilidad contemporánea en un perfume moderno, explosivo y sofisticado.",
-        eu: "Bad Boy Eau de Toilette-k maskulinitatearen dualtasuna adierazten du maskulinitate berri baten sinbolo lodiaz. Sendoa baina sentikorra, heroikoa eta, aldi berean, ahula, BAD BOY gizona nor den ziur dago. BAD BOY Eau de Toilette capture Gizon garaikidearen aurpegi anitzak perfume moderno, leherkari eta sofistikatu batean.",
-        en: "Bad Boy Eau de Toilette epitomizes masculine duality in a bold symbol of a new masculinity. Strong but sensitive, heroic and at the same time vulnerable, the BAD BOY man is sure who he is. BAD BOY Eau de Toilette capture The multiple facets of contemporary manhood in a modern, explosive and sophisticated perfume"
+        es: "Bad Boy Eau de Toilette personifica la dualidad masculina en un audaz símbolo de una nueva masculinidad.",
+        eu: "Bad Boy Eau de Toilette-k maskulinitatearen dualtasuna adierazten du maskulinitate berri baten sinbolo lodiaz.",
+        en: "Bad Boy Eau de Toilette epitomizes masculine duality in a bold symbol of a new masculinity."
     },
     "productName32": {
         es: "Invictus Legend Eau De Parfum",
@@ -518,9 +533,9 @@ var dictionary = {
         en: "Invictus Legend Eau De Parfum"
     },
     "productDescription32": {
-        es: "Esta nueva versión de Invictus conserva algunos de los rasgos característicos: la virilidad y la alianza frescor – sensualidad. Pero esta vez con un cambio de registro, Invictus Legend se rinde ante un frescor aromático repleto de contrastes especiados y ante unas intensas y ardientes notas amaderadas.",
-        eu: "Invictus-en bertsio berri honek ezaugarri bereizgarri batzuk gordetzen ditu: hauskortasuna eta freskotasun-sentsualitatea aliantza. Oraingoan, ordea, izena aldatzearekin batera, Invictus Legend-ek kontraste pikantez eta egurrezko ohar biziez eta errez betetako freskotasun aromatikoa ematen du.",
-        en: "This new version of Invictus retains some of the characteristic features: virility and freshness - sensuality alliance. But this time with a change of registration, Invictus Legend surrenders to an aromatic freshness full of spicy contrasts and intense and burning woody notes."
+        es: "Esta nueva versión de Invictus conserva algunos de los rasgos característicos: la virilidad y la alianza frescor – sensualidad.",
+        eu: "Invictus-en bertsio berri honek ezaugarri bereizgarri batzuk gordetzen ditu: hauskortasuna eta freskotasun-sentsualitatea aliantza.",
+        en: "This new version of Invictus retains some of the characteristic features: virility and freshness - sensuality alliance."
     },
     "productName33": {
         es: "Invictus Legend Eau De Parfum",
@@ -528,9 +543,9 @@ var dictionary = {
         en: "Invictus Legend Eau De Parfum "
     },
     "productDescription33": {
-        es: "Humor, sensualidad, estilo gentleman. Paco Rabanne apuesta 1 millón al gran retorno de la seducción masculina. El oro, materia predilecta de Paco Rabanne, reaparece aquí en un frasco asombroso en forma de lingote de oro, numerado y labrado. Dandy con pinta de rufián, el modelo Matt Gordon es el icono de 1 Million. Difícil de catalogar, 1 Million es un perfume singular donde se combinan notas frescas, efluvios aromáticos y especiados, sensación de fruta jugosa, pero también notas de flores, de maderas cálidas y una impronta de cuero suave.",
-        eu: "Umorea, sentsualitatea, jaun estiloa. Paco Rabanne-k milioi bat apostu egin ditu gizonezkoen sedukzioaren itzulera handian. Urrea, ingeleta bezalako zenbakiak eta zizelkatuak, urre-lingote moduko ontzi harrigarrian agertuko da Paco Rabanneren gai gogokoena. Dandy ruffian itxurarekin, Matt Gordon eredua milioi bat ikono da. Katalogatzeko zaila da, 1 Million lurrina paregabea da. Ohar freskoak, efluvio usaintsuak eta pikantea, fruta sentsazio urtsua, baina loreen oharrak, egur epelak eta larru leunaren aztarnak konbinatzen dira.",
-        en: "Humor, sensuality, gentleman style. Paco Rabanne bets 1 million on the great return of male seduction. Gold, Paco Rabanne's favorite subject, reappears here in an amazing jar shaped like a gold ingot, numbered and carved. Dandy with a look of ruffian, the model Matt Gordon is the icon of 1 Million. Difficult to catalog, 1 Million is a unique perfume where fresh notes, aromatic and spicy effluviums, juicy fruit sensation, but also notes of flowers, warm woods and a soft leather imprint are combined."
+        es: "Humor, sensualidad, estilo gentleman. Paco Rabanne apuesta 1 millón al gran retorno de la seducción masculina.",
+        eu: "Umorea, sentsualitatea, jaun estiloa. Paco Rabanne-k milioi bat apostu egin ditu gizonezkoen sedukzioaren itzulera handian.",
+        en: "Humor, sensuality, gentleman style. Paco Rabanne bets 1 million on the great return of male seduction."
     },
     "productName34": {
         es: "Good Girl Carolina Herrera Eau De Parfum",
@@ -538,9 +553,9 @@ var dictionary = {
         en: "Good Girl Carolina Herrera Eau De Parfum "
     },
     "productDescription34": {
-        es: "Good Girl es una fragancia sensual y sofisticada, que refleja la dualidad de la mujer. Esta innovadora fragancia captura la complejidad de la mujer con excepcionales ingredientes. Cada parte de la fragancia es un reflejo de la mujer Herrera. Una fragancia afrutada y amaderada, con un contraste de acordes que reflejan a la perfección el concepto de dualidad.",
-        eu: "Good Girl usain sentsual eta sofistikatua da, emakumearen dualtasuna islatzen duena. Usain berritzaile honek aparteko osagaiak dituzten emakumeen konplexutasuna biltzen du. Usain zati bakoitza Herrerako emakumearen isla da. Lore fruta eta egurra, dualtasunaren kontzeptua ezin hobeto islatzen duten akordeen kontrastearekin",
-        en: "Good Girl is a sensual and sophisticated fragrance, which reflects the duality of women. This innovative fragrance captures the complexity of women with exceptional ingredients. Each part of the fragrance is a reflection of the Herrera woman. A fruity and woody fragrance, with a contrast of chords that perfectly reflect the concept of duality."
+        es: "Good Girl es una fragancia sensual y sofisticada, que refleja la dualidad de la mujer. Esta innovadora fragancia captura la complejidad de la mujer con excepcionales ingredientes. Cada parte de la fragancia es un reflejo de la mujer Herrera.",
+        eu: "Good Girl usain sentsual eta sofistikatua da, emakumearen dualtasuna islatzen duena. Usain berritzaile honek aparteko osagaiak dituzten emakumeen konplexutasuna biltzen du. Usain zati bakoitza Herrerako emakumearen isla da.",
+        en: "Good Girl is a sensual and sophisticated fragrance, which reflects the duality of women. This innovative fragrance captures the complexity of women with exceptional ingredients. Each part of the fragrance is a reflection of the Herrera woman. "
     },
     "productName35": {
         es: "Kenzo World Power",
@@ -548,9 +563,9 @@ var dictionary = {
         en: "Kenzo World Power "
     },
     "productDescription35": {
-        es: "Kenzo World Power, el nuevo Eau de Parfum, símbolo de la diversidad y la libertad. A través de un perfume femenino positivo con un carácter distinguido, Kenzo World Power te invita a escribir tus propias reglas. Lo que tú eres realmente hace tu fuerza, tu PODER: ¡muéstralo al mundo! El nuevo perfume Kenzo World Power se inspira en la moda Kenzo de Carol Lim y Humberto León y va dirigido a aquellas mujeres que les gusta ser quiénes son, perfectamente imperfectas. Con Kenzo World Power, muestra el poder que está en ti.El icónico ojo en color amarillo que representa la vitalidad, la energía y el positivismo de la generación millenial. El efecto espejo del packaging que muestra tú verdadero yo y la tapa transparente del frasco, que revela lo oculto. Kenzo World Power, el poder de ser tú mismo.",
-        en: "Kenzo World Power, the new Eau de Parfum, symbol of diversity and freedom. Through a positive feminine perfume with a distinguished character, Kenzo World Power invites you to write your own rules. What you are really does your strength, your POWER: show it to the world! The new Kenzo World Power perfume is inspired by the Kenzo fashion of Carol Lim and Humberto León and is aimed at those women who like to be who they are, perfectly imperfect. With Kenzo World Power, show the power that is in you.The iconic yellow eye that represents the vitality, energy and positivism of the millennial generation. The mirror effect of the packaging that shows your true self and the transparent lid of the bottle, which reveals the hidden. Kenzo World Power, the power of being yourself.",
-        eu: "Kenzo World Power, Eau de Parfum berria, aniztasunaren eta askatasunaren ikurra. Pertsonaia bereizgarria duen perfume femenino positibo baten bidez, Kenzo World Power-ek zure arauak idaztera gonbidatzen zaitu. Benetan zarela zure indarra, zure AHOTSA: erakutsi munduari! Kenzo World Power perfume berria Carol Lim eta Humberto León-en Kenzoko modan inspiratuta dago eta norbera izan nahi duten emakume guztiei zuzenduta dago, guztiz inperfektuak. Kenzo World Power-ekin erakutsi milurtekoaren belaunaldiaren bizitasuna, energia eta positibismoa adierazten duen begi horia ikonikoa. Zure ezkutua agerian uzten duen ontziaren ispiluaren efektua eta botilaren estalkia gardena. Kenzo World Power, zeure burua izatearen indarra."
+        es: "Kenzo World Power, el nuevo Eau de Parfum, símbolo de la diversidad y la libertad. A través de un perfume femenino positivo con un carácter distinguido, Kenzo World Power te invita a escribir tus propias reglas.",
+        en: "Kenzo World Power, the new Eau de Parfum, symbol of diversity and freedom. Through a positive feminine perfume with a distinguished character, Kenzo World Power invites you to write your own rules.",
+        eu: "Kenzo World Power, Eau de Parfum berria, aniztasunaren eta askatasunaren ikurra. Pertsonaia bereizgarria duen perfume femenino positibo baten bidez, Kenzo World Power-ek zure arauak idaztera gonbidatzen zaitu. "
     },
     "productName36": {
         es: "Olympea Legend Eau De Parfum",
@@ -564,13 +579,30 @@ var dictionary = {
     },
 
     /*--------------------------------------------------
+    
+        PRUEBA
+        ---------------------------------------------------*/
+    "productName37": {
+        es: "ARCO TIRO CON ARCO INITECH 2 ZURDO",
+        eu: "INITECH 2 ARKUA EZKERRA",
+        en: "ARCH SHOT WITH ARC INITECH 2 ZURDO"
+    },
+    "productDescription37": {
+        es: "Hemos diseñado este arco para iniciarse en el tiro al arco lúdico. Este arco permite disparar entre 10 y 30 m con flechas con punta de acero.",
+        eu: "Arku hau arku jolasean hasteko diseinatu dugu. Arku honek 10 eta 30 m arteko tiroak ahalbidetzen ditu altzairuzko punta batekin geziekin.",
+        en: "We have designed this arc to begin in the playful archery. This arc allows shooting between 10 and 30 m with arrows with a steel tip."
+    },
+
+
+
+    /*--------------------------------------------------
 
     FORMULARIO
     ---------------------------------------------------*/
     "productFormTitle": {
-        es: "Inserción de nuevo producto",
-        eu: "Produktu berriaren sorrera",
-        en: "New product insertion"
+        es: "Inserción de nuevo <span class='resaltadob'>producto</span>",
+        eu: "<span class='resaltadob'>Produktu</span> berriaren sorrera",
+        en: "New <span class='resaltadob'>product</span> insertion"
     },
 
     "productFormName": {
@@ -584,7 +616,7 @@ var dictionary = {
         eu: "Argazkia",
         en: "Photo"
     },
-    "productFormPrice":{
+    "productFormPrice": {
 
         es: "Precio",
         eu: "Salneurria",
@@ -626,8 +658,8 @@ var dictionary = {
         eu: "Bideoa",
         en: "video"
     },
-    
-    
+
+
 
     /*--------------------------------------------------
     ERRORES DE VALIDACIÓN
@@ -730,7 +762,7 @@ var dictionary = {
     /*--------------------------------------------------
     FOOTER
     ---------------------------------------------------*/
-    
+
 
 
 }

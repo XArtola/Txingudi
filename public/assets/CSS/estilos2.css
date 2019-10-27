@@ -161,6 +161,11 @@ Selector de idiomas
   cursor: pointer;
 }
 
+.selectedLanguage {
+  color: white;
+  text-decoration: underline;
+}
+
 .responsiveText {
   display: none;
 }
@@ -678,22 +683,24 @@ TIENDA
 
 .section-left .reloj {
   padding-top: 5%;
-  float: right;
+  float: left;
   font-size: 1rem;
   width: 30%;
 }
 
 .section-left .reloj img {
-  width: 25%;
-  height: 25%;
+  width: 100%;
+  height: 100%;
   margin: 1% 1% 1% 1%;
-  float: left;
 }
 
 .section-left .reloj span {
   font-size: 1.5rem;
-  display: table;
   margin: 5% auto;
+}
+
+.section-left .reloj table tr td {
+  width: max-content;
 }
 
 .section-right {
@@ -704,6 +711,7 @@ TIENDA
   width: 80%;
   height: 60vh;
   padding-left: 10%;
+  padding-top: 10%;
 }
 
 .productos {
@@ -716,6 +724,19 @@ TIENDA
   /* background-color: white;*/
 }
 
+.producto {
+  flex: 30%;
+  text-align: center;
+  max-width: 30%;
+}
+
+.producto p {
+  margin-top: 1%;
+  margin-bottom: 1.125rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.125rem;
+}
+
 .productName {
   color: #004587;
   text-transform: uppercase;
@@ -723,6 +744,21 @@ TIENDA
   width: 50%;
   margin: auto;
   padding: auto;
+}
+#parrafoPrecio h3{
+
+font-weight:bold;
+font-size: 1rem;
+margin-top: 2.5%;
+margin-bottom: 5%;
+
+}
+
+.producto img {
+  width: 80%;
+  margin: 2% 5%;
+  display: block;
+  border: 1px solid #004587;
 }
 
 a {
@@ -918,6 +954,7 @@ FORMULARIO
 #formContainer h1 {
   padding-left: 5%;
   padding-top: 18vh;
+  text-transform: uppercase;
 }
 
 #newProduct {
@@ -945,7 +982,7 @@ FORMULARIO
 .field input[type="text"] {
   margin-bottom: 2%;
   margin-left: 2%;
-  width: 60%;
+  width: 95%;
   background: transparent;
   border: none;
   border-bottom: 2px solid #004587;
@@ -1031,7 +1068,7 @@ FORMULARIO
 .field input[type="url"] {
   margin-bottom: 2%;
   margin-left: 2%;
-  width: 60%;
+  width: 90%;
   background: transparent;
   border: none;
   border-bottom: 2px solid #004587;

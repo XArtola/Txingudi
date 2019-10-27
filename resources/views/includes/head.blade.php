@@ -27,22 +27,24 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
         $(function() {
             /*Si la variables de sesión que controla el idioma no esxiste crearlo*/
             console.log("valor: " + sessionStorage.getItem("language"));
-
-            if (sessionStorage.getItem("language") === null)
+            if (sessionStorage.getItem("language") === null) {
                 sessionStorage.setItem("language", "es");
+            }
             /*Inicializar la variable encargada de la traducción*/
-            else if (sessionStorage.getItem("language") != "es")
+            else if (sessionStorage.getItem("language") != "es") {
                 var translator = $('body').translate({
                     lang: sessionStorage.getItem("language"),
                     t: dictionary
                 });
+              
+            }
             /*Cuando un boton se clica cambiar el idioma y guardar la selección 
             para en una variable se sesión para mantenerla en las otras páginas*/
             $(".language").click(function() {
-                $lang = $(this).data('lang');
-                sessionStorage.setItem("language", $lang);
+                lang = $(this).data('lang');
+                sessionStorage.setItem("language", lang);
                 if (translator)
-                    translator.lang($lang);
+                    translator.lang(lang);
                 else
                     var translator = $('body').translate({
                         lang: sessionStorage.getItem("language"),
@@ -53,30 +55,35 @@ https://scotch.io/tutorials/simple-laravel-layouts-using-blade
                     location.reload();
                 /*Controlar si estamos en la tienda*/
                 if (isShop) {
-                    var language = sessionStorage.getItem("language");
-                    switch (language) {
-                        case "es":
-                            $('.producto').show();
-                            $('.producto[data-language="eu"]').hide();
-                            $('.producto[data-language="en"]').hide();
-                            break;
-                        case "en":
-                            $('.producto').show();
-                            $('.producto[data-language="eu"]').hide();
-                            $('.producto[data-language="es"]').hide();
-                            break;
-                        case "eu":
-                            $('.producto').show();
-                            $('.producto[data-language="es"]').hide();
-                            $('.producto[data-language="en"]').hide();
-                            break;
-                        default:
-                            $('.producto').show();
-                            break;
-
-                    }
+                    hideProducts();
                 }
             });
+            /*Función para no mostrar productos que no tengan traducción en ese idioma*/
+
+            function hideProducts() {
+                var language = sessionStorage.getItem("language");
+                switch (language) {
+                    case "es":
+                        $('.producto').show();
+                        $('.producto[data-language="eu"]').hide();
+                        $('.producto[data-language="en"]').hide();
+                        break;
+                    case "en":
+                        $('.producto').show();
+                        $('.producto[data-language="eu"]').hide();
+                        $('.producto[data-language="es"]').hide();
+                        break;
+                    case "eu":
+                        $('.producto').show();
+                        $('.producto[data-language="es"]').hide();
+                        $('.producto[data-language="en"]').hide();
+                        break;
+                    default:
+                        $('.producto').show();
+                        break;
+                }
+            }
+
         });
     </script>
     <script src="{{asset('assets/lib/dictionary.js')}}" type="text/javascript"></script>

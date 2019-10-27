@@ -1,7 +1,8 @@
 @extends('layouts.master')
 @section('content')
 <div id="formContainer">
-    <h1 class="trn" data-trn-key="productFormTitle">Inserción de nuevo producto</h1>
+
+    <h1 class="trn" data-trn-key="productFormTitle">Inserción de nuevo <span class='resaltadob'>producto</span></h1>
     <form id="newProduct" enctype="multipart/form-data" action="/producto" method="POST">
         @csrf
         <div class="field">
@@ -14,7 +15,7 @@
         </div>
         <div class="field">
             <label>Stock</label>
-            <input type="number" min="1" max="100" step="1" name="stock" id="stock"><br>
+            <input type="number" min="1" max="200" step="1" name="stock" id="stock"><br>
         </div>
         <div class="field">
             <label class="trn" data-trn-key=>Precio</label>
@@ -49,21 +50,28 @@
             <input type="image" src="{{asset('assets/images/icons/confirmWhite.png')}}">
         </div>
     </form>
-   <!-- <a href={{ URL::previous() }}>Back</a>-->
+    <!-- <a href={{ URL::previous() }}>Back</a>-->
 </div>
 <script>
+    /*Inicializar variable de validación*/
     frmvalidator = new Validator("newProduct");
-
+    /*Condiciones de validación para campo name*/
     frmvalidator.addValidation("name", "req", eval("dictionary.nameEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("name", "maxlen=80", eval("dictionary.nameLength." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("name", "alphanumeric_space", eval("dictionary.nameCharacters." + sessionStorage.getItem("language")));
-
+    
+    /*Condiciones de validación para campo description*/
     frmvalidator.addValidation("description", "req", eval("dictionary.descriptionEmpty." + sessionStorage.getItem("language")));
     frmvalidator.addValidation("description", "maxlen=230", eval("dictionary.descriptionLength." + sessionStorage.getItem("language")));
-    frmvalidator.addValidation("description", "regexp=^[A-Za-z0-9.,\\sáéíóúÁÉÍÓÚ]{1,230}$", eval("dictionary.descriptionCharacters." + sessionStorage.getItem("language")));
-
+    frmvalidator.addValidation("description", "regexp=^[A-Za-z0-9.,\\sáéíóúÁÉÍÓÚñ]{1,230}$", eval("dictionary.descriptionCharacters." + sessionStorage.getItem("language")));
+    
+    /*Condiciones de validación para campo stock*/
     frmvalidator.addValidation("stock", "req", eval("dictionary.stockEmpty." + sessionStorage.getItem("language")));
+    
+    /*Condiciones de validación para campo price*/
     frmvalidator.addValidation("price", "req", eval("dictionary.priceEmpty." + sessionStorage.getItem("language")));
+    
+    /*Condiciones de validación para campo photo*/
     frmvalidator.addValidation("photo", "req", eval("dictionary.fileEmpty." + sessionStorage.getItem("language")));
 
     hasForm = true;
