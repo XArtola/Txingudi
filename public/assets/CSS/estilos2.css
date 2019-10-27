@@ -281,22 +281,21 @@ LANDING PAGE
   justify-content: space-around;
   font-family: 'Source Sans Pro', sans-serif;
 }
-#promociones h1{
 
-text-transform: uppercase;
-margin-top: 10%;
-margin-bottom: 3%;
-
+#promociones h1 {
+  text-transform: uppercase;
+  margin-top: 10%;
+  padding-bottom: 5%;
 }
-.resaltado{
+
+.resaltado {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   color: #009a8d;
-
 }
 
 #contenedor {
-  background-color: rgb(184, 177, 177);
+  background-color: transparent;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -305,30 +304,73 @@ margin-bottom: 3%;
   margin-bottom: 20px;
 }
 
-#productos {
+#productosLanding {
   width: 96%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: center;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-#producto {
-  padding-left: 10px;
-  padding-right: 10px;
+.productoLanding {
+  flex: 30%;
+  max-width: 30%;
   text-align: center;
-  width: 23%;
-  padding-top: 10px;
-  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 300px;
+  min-width: 300px;
+  background-size: 100% 100%;
+  color: black;
+  background-repeat: no-repeat;
+  margin: 1%;
 }
 
-#tiendas {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
+.productoLanding div {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #009a8d;
+  color: black;
+  opacity: 0;
+  display: block;
 }
-#shopsTitle{
+
+.productoLanding div:hover {
+  opacity: 1;
+}
+
+.productoLanding div h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding: 1%;
+}
+
+.productoLanding div p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  padding: 10% 3% 3% 3%;
+}
+
+#promo1 {
+  background-image: url("./../images/fotoProducto/11.webp");
+}
+
+#promo2 {
+  background-image: url("./../images/fotoProducto/28.jpg");
+}
+
+#promo3 {
+  background-image: url("./../images/imagenesLanding/gasolina.jpg");
+}
+
+#promo4 {
+  background-image: url("./../images/imagenesLanding/circo.jpeg");
+}
+
+#shopsTitle {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -336,49 +378,57 @@ margin-bottom: 3%;
   margin-bottom: 3%;
 }
 
-.resaltadoy{
+.resaltadoy {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   color: #fccb34;
-
 }
 
-#locationTitle{
+#locationTitle {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   color: black;
   text-align: center;
-  margin-top:10%;
+  margin-top: 10%;
   margin-bottom: 3%;
-
 }
 
-.resaltadob{
+.resaltadob {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
   color: #004587;
-
 }
 
-#tienda {
-  display: flex;
-  justify-content: space-around;
-}
-
-#imagen {
+#tiendas {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: space-around;
+}
+
+.tienda {
+  flex: 30%;
+  margin: 1%;
+}
+
+.tienda img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  min-width: 300px;
+}
+
+.tienda img:hover {
+  box-shadow: 5px 10px #888888;
 }
 
 /* Mapa del sitio */
 
-#map{
-
-width: 80%;
-display:block;
-margin:auto;
-
+#map {
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 
 /* Schedule zone styles */
@@ -405,21 +455,26 @@ margin:auto;
   background-color: rgb(0, 69, 135, 0.7);
 }
 
+label {
+  text-transform: uppercase;
+}
+
 @media (max-width:1100px) {
-  #producto {
-    flex-wrap: wrap;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    width: 46%;
-    padding-top: 10px;
-  }
-  #productos {
+  #productosLanding {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: center;
     justify-content: space-between;
+  }
+  .productoLanding {
+    flex-wrap: wrap;
+    text-align: center;
+    width: 46%;
+  }
+  .tienda {
+    flex: 45%;
+    margin: 2%
   }
 }
 
@@ -441,20 +496,21 @@ margin:auto;
     font-size: 1.5rem;
     font-family: 'Finger Paint', cursive;
   }
-  #producto {
-    flex-wrap: wrap;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    width: 100%;
-    padding-top: 10px;
-  }
-  #productos {
+  #productosLanding {
     width: 96%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: center;
     justify-content: space-between;
+  }
+  .productoLanding {
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+  }
+  .tienda {
+    flex: 90%;
+    margin-bottom: 5%;
   }
 }
 
@@ -546,7 +602,7 @@ FORMULARIO DE CONTACTO (LANDING)
 #email {
   margin-bottom: 2%;
   margin-left: 2%;
-  width: 50%;
+  width: 75%;
   height: 50%;
   margin-bottom: 5%;
   background: transparent;
@@ -569,12 +625,10 @@ FORMULARIO DE CONTACTO (LANDING)
   width: 20%;
   margin: auto;
   padding: 5% 45%;
-
 }
 
 .submit2:hover {
-  
-  background-color: rgb(0,154,141, 0.7) !important;
+  background-color: rgb(0, 154, 141, 0.7) !important;
 }
 
 /*--------------------------------------------------
@@ -662,50 +716,13 @@ TIENDA
   /* background-color: white;*/
 }
 
-.producto {
-  flex: 30%;
-  text-align: center;
-  max-width: 30%;
-}
-
-.textoFondo{
-
-background-image: url("./../images/fotoProducto/11.webp");
-size: contain;
-width: 500px;
-height: 500px;
-background-size: contain;
-color: white;
-
-}
-
-.textoFondo:hover{
-color:black;
-background-color: #004587 !important;
-
-}
-
-.producto p {
-  margin-top: 1%;
-  margin-bottom: 1.125rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.125rem;
-}
-
 .productName {
   color: #004587;
   text-transform: uppercase;
   font-weight: bold;
   width: 50%;
-  margin: auto;rgb(0,154,141)
+  margin: auto;
   padding: auto;
-}
-
-.producto img {
-  width: 80%;
-  margin: 2% 5%;
-  display: block;
-  border: 1px solid #004587;
 }
 
 a {
