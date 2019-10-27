@@ -47,7 +47,7 @@
             <p>
                 Aprovecha para recargar el deposito de tu vehiculo en nuestra gasolinera. no encontraras otra gasolinera con los precios iguales.
             </p>
-        </div>
+        </div>>>>>>>> 983619aae3dcfbcf17536bd04b34e6da67c938c4
         <div id="producto">
             <img src="{{asset('assets/images/imagenesLanding/circo.jpeg')}}" style="width:300px; height:300px;">
             <h3>Circo Raluy en Txingudi</h3><br>
@@ -69,23 +69,45 @@
         <div id="imagen">
 
             <a href={{url("/tienda/$shop->id")}}> <img src={{asset("assets/$shop->logo")}} style="width:400px; height:300px;"> </a>
+        </div>
+    </div>
+    @endforeach
+</div>
+<!--
+<h3 id="tTienda" class="trn" data-trn-key="tTienda"> TIENDAS: </h3>   
+<div id="tiendas">
+   
+    <div id="tienda">
+        <div id="imagen">
+        
+            @foreach ($shops as $shop )
+                <a href={{url("/tienda/$shop->id")}}> <img src={{asset("assets/$shop->logo")}} style="width:400px; height:300px;"> </a>   
+            @endforeach
 
         </div>
     </div>
     @endforeach
 </div>
-
+-->
 <!-- INFORMACIÓN DE LOS HORARIOS 
 <div id="horarios">
     <h3 class="trn" data-trn-key="schedule"> HORARIOS:<br>
         Horario del centro: De lunes a sábado de 10h. a 22h.</h3>
 </div>
 -->
+
 <h1 id="locationTitle" class="trn" data-trn-key="weAreHere">Estamos <span class='resaltadob'>aqui</span></h1>
 
 <!-- IFRAME DEL MAPA SACADO DE GOOGLE MAPS-->
+
 <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1451.3470922523986!2d-1.8367863129816961!3d43.32066089737894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a7f9305fe675%3A0xdc69099e4c09cecb!2sParque%20Comercial%20Txingudi!5e0!3m2!1ses!2ses!4v1571586752460!5m2!1ses!2ses" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
+<!--
+<div id="mapa">
+<h3 id="mapa"> LOCALIZACION: </h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1451.3470922523986!2d-1.8367863129816961!3d43.32066089737894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a7f9305fe675%3A0xdc69099e4c09cecb!2sParque%20Comercial%20Txingudi!5e0!3m2!1ses!2ses!4v1571586752460!5m2!1ses!2ses" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+-->
 <!-- CONTENIDO DEL FORMULARIO DE CONTACTO -->
 <h1 class="trn" id="contactFormTitle" data-trn-key="landingFormTitle">Formulario de contacto</h1>
 <div id="formContainer2">
