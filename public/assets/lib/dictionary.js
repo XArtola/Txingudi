@@ -94,6 +94,48 @@ var dictionary = {
         eu: "Azaldu zure dudak",
         en: "Tell us your doubts"
     },
+
+    "titulopromo1": {
+        es:"30% Dto. en bicicletas",
+        eu:"%30eko deskontua bizikletetan",
+        en:"30% off on bicycles"
+    },
+
+    "textopromo1": {
+        es:"Necesitas una bicicleta nueva? es tu momento, ven a DECATHLON hoy y encontraras todas las bicicletas al 30% de descuento.",
+        eu:"Bizikleta berria behar duzu? Zure ordua da, etorri DECATHLONera gaur eta bizikleta guztiak% 30eko deskontuan aurkituko dituzu.",
+        en:"Do you need a new bike? It's your time, come to DECATHLON today and you will find all bicycles at 30% discount."
+    },
+    "textopromo2": {
+        es:"2X1 en disfrazes de afede",
+        eu:"2X1 soineko dotoreetan",
+        en:"2X1 in Afede costumes"
+    },
+    "textopromo2": {
+        es:"Halloween se acerca, En afede encontraras un 2X1 en los disfrazes mas espeluznantes para que te disfraces de lo que quieras.",
+        eu:"Halloween datorrenean, 2X1 aurkituko duzu mozorro erraldoienetan nahi duzun moduan janzteko.",
+        en:"Halloween is coming, you will find a 2X1 in the creepiest costumes so you can dress up as you want."
+    },
+    "textopromo3": {
+        es:"Gasolina a 0.80€ el litro",
+        eu:"Gasolina litro bakoitzeko 0,80 eurotan",
+        en:"Petrol at € 0.80 per liter"
+    },
+    "textopromo3": {
+        es: "Aprovecha para recargar el deposito de tu vehiculo en nuestra gasolinera. no encontraras otra gasolinera con los precios iguales.",
+        eu:" Aukera ezazu ibilgailuaren gordailua kargatzeko gure gasolindegian. Ez duzu prezio berdinekin topatuko beste gasolindegirik.",
+        en:"Take the opportunity to recharge the deposit of your vehicle at our gas station. You will not find another gas station with the same prices."
+    },
+    "textopromo4": {
+        es:"Circo Raluy en Txingudi",
+        eu:"Raluy Circus Txingudin",
+        en:"Raluy Circus in Txingudi"
+    },
+    "textopromo4": {
+        es:"Si no sabes que hacer esta tarde, estas de suerte. El circo Raluy ha llegado al centro comercial Txingudi.",
+        eu:"Gaur arratsaldean zer egin ez badakizu, zorte onean zaude. Raluy zirkua Txingudi merkataritza gunera iritsi da.",
+        en:"If you don't know what to do this afternoon, you're in luck. The Raluy circus has arrived at the Txingudi shopping center.",
+    }
         
 
     /*--------------------------------------------------
