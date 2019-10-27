@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'ShopController@listShops')->name('landing');
+Route::get('/#contactFormTitle', 'ShopController@contactForm');
 
 /*
 TIENDAS

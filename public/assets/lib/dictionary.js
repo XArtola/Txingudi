@@ -69,9 +69,9 @@ var dictionary = {
         en: "Come to our <span class='resaltadoy'>shops</span>"
     },
     "weAreHere": {
-        es: " Estamos <span class='resaltadob'>aqui</span>",
-        eu: "<span class='resaltadob'>Hemen</span> gaude",
-        en: "We are <span class='resaltadob'>here</span>"
+        es: "ESTAMOS <span class='resaltadob'>AQUI</span>",
+        eu: "<span class='resaltadob'>HEMEN</span> GAUDE",
+        en: "WE ARE <span class='resaltadob'>HERE</span>"
     },
 
     "schedule": {

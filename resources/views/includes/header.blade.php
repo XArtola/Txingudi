@@ -11,7 +11,7 @@
         </ul>
 
     </div>
-    <a href="{{url('#contactFormTitle')}}" class="green"><img src="{{asset('assets/images/icons/contact.png')}}"><span class="trn responsiveText" data-trn-key="menuContact">Contacto</span></a>
+    <a href="/#contactFormTitle" class="green"><img src="{{asset('assets/images/icons/contact.png')}}"><span class="trn responsiveText" data-trn-key="menuContact">Contacto</span></a>
     <ul class="languages">
         <li data-lang="eu" class="language">Eu</li>
         <li data-lang="es" class="language">Es</li>

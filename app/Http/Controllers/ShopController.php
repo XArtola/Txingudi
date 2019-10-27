@@ -21,6 +21,13 @@ class ShopController extends Controller
         return view('pages.landing', (['shops' => $shops]));
     }
 
+    public function contactForm()
+    {
+        $shops = Shops::All();
+
+        return view('pages.landing', (['shops' => $shops, 'goToForm'=>true]));
+    }
+
     /**
      * Display the specified resource.
      *
