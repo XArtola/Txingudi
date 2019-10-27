@@ -19,32 +19,32 @@
     <div id="productosLanding">
         <div class="productoLanding" id="promo1">
             <div>
-                <h3>30% Dto. en bicicletas</h3>
-                <p>
+                <h3 class="trn" data-trn-key="titulopromo1">30% Dto. en bicicletas</h3>
+                <p class="trn" data-trn-key="textopromo1">
                     Necesitas una bicicleta nueva? es tu momento, ven a DECATHLON hoy y encontraras todas las bicicletas al 30% de descuento.
                 </p>
             </div>
         </div>
         <div class="productoLanding" id="promo2">
             <div>
-                <h3>2X1 en disfrazes de afede</h3>
-                <p>
+                <h3 class="trn" data-trn-key="titulopromo2">2X1 en disfrazes de afede</h3>
+                <p class="trn" data-trn-key="textopromo2">
                     Halloween se acerca, En afede encontraras un 2X1 en los disfrazes mas espeluznantes para que te disfraces de lo que quieras.
                 </p>
             </div>
         </div>
         <div class="productoLanding" id="promo3">
             <div>
-                <h3>Gasolina a 0.80€ el litro</h3>
-                <p>
+                <h3 class="trn" data-trn-key="titulopromo3">Gasolina a 0.80€ el litro</h3>
+                <p class="trn" data-trn-key="textopromo3">
                     Aprovecha para recargar el deposito de tu vehiculo en nuestra gasolinera. no encontraras otra gasolinera con los precios iguales.
                 </p>
             </div>
         </div>
         <div class="productoLanding" id="promo4">
             <div>
-                <h3>Circo Raluy en Txingudi</h3>
-                <p>
+                <h3 class="trn" data-trn-key="titulopromo4">Circo Raluy en Txingudi</h3>
+                <p class="trn" data-trn-key="textopromo4">
                     Si no sabes que hacer esta tarde, estas de suerte. El circo Raluy ha llegado al centro comercial Txingudi.
                 </p>
             </div>
