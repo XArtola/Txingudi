@@ -239,7 +239,7 @@ CONTAINER
 ---------------------------------------------------*/
 
 .container {
-  margin-top: 10%;
+  padding-top: 20vh;
 }
 
 /*--------------------------------------------------
@@ -264,29 +264,190 @@ LANDING PAGE
   font-size: 2rem;
   padding-top: 5%;
   align-self: flex-end;
-  padding-bottom:10%;
-  text-align:center;
+  padding-bottom: 10%;
+  text-align: center;
 }
 
 #info {
   color: white;
 }
 
-  /* Sales part of the landing page, some styles*/
-  #promociones {
+/* Sales part of the landing page, some styles*/
+
+#promociones {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#promociones h1{
+
+text-transform: uppercase;
+margin-top: 10%;
+margin-bottom: 3%;
+
+}
+.resaltado{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  color: #009a8d;
+
+}
+
+#contenedor {
+  background-color: rgb(184, 177, 177);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+#productos {
+  width: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: center;
+  justify-content: space-between;
+}
+
+#producto {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  width: 23%;
+  padding-top: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#tiendas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+#shopsTitle{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.resaltadoy{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  color: #fccb34;
+
+}
+
+#locationTitle{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  margin-top:10%;
+  margin-bottom: 3%;
+
+}
+
+.resaltadob{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  color: #004587;
+
+}
+
+#tienda {
+  display: flex;
+  justify-content: space-around;
+}
+
+#imagen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Mapa del sitio */
+
+#map{
+
+width: 80%;
+display:block;
+margin:auto;
+
+}
+
+/* Schedule zone styles */
+
+#horarios {
+  display: flex;
+  padding-left: 10px;
+  height: 100px;
+  align-items: center;
+}
+
+.submit2 {
+  background-color: #009a8d;
+  justify-content: center
+}
+
+.submit2 input[type="image"] {
+  display: block;
+  margin: auto;
+  padding: 5% 45%;
+}
+
+.submit2:hover {
+  background-color: rgb(0, 69, 135, 0.7);
+}
+
+@media (max-width:1100px) {
+  #producto {
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 46%;
+    padding-top: 10px;
+  }
+  #productos {
+    width: 100%;
     display: flex;
-    height: 80px;
+    flex-wrap: wrap;
+    flex-direction: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:600px) {
+  #eventos {
+    display: flex;
+    height: 80vh;
     align-items: center;
     justify-content: space-around;
   }
-  #contenedor {
-    background-color: rgb(184, 177, 177);
+  #texto {
+    justify-content: center;
+    align-self: flex-end;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+  #info {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Finger Paint', cursive;
+  }
+  #producto {
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    margin-bottom: 20px;
+    padding-top: 10px;
   }
   #productos {
     width: 96%;
@@ -295,599 +456,611 @@ LANDING PAGE
     flex-direction: center;
     justify-content: space-between;
   }
-  #producto {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    width: 23%;
-    padding-top: 10px;
-  }
-  #tiendas {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-  }
-  #tienda {
-    display: flex;
-    justify-content: space-around;
-  }
-  #imagen {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  /* Schedule zone styles */
-  #horarios {
-    display: flex;
-    padding-left: 10px;
-    height: 100px;
-    align-items: center;
-  }
-  .submit {
-    background-color: #004587;
-    justify-content: center
-  }
-  .submit input[type="image"] {
-    display: block;
-    margin: auto;
-    padding: 5% 45%;
-  }
-  .submit:hover {
-    background-color: rgb(0, 69, 135, 0.7);
-  }
-  @media (max-width:1100px) {
-    #producto {
-      flex-wrap: wrap;
-      padding-left: 10px;
-      padding-right: 10px;
-      text-align: center;
-      width: 46%;
-      padding-top: 10px;
-    }
-    #productos {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: center;
-      justify-content: space-between;
-    }
-  }
-  @media (max-width:600px) {
-    #eventos {
-      display: flex;
-      height: 80vh;
-      align-items: center;
-      justify-content: space-around;
-    }
-    #texto {
-      justify-content: center;
-      align-self: flex-end;
-      padding-bottom:10%;
-      text-align:center;
-    }
-    #info {
-      color: white;
-      font-size: 1.5rem;
-      font-family: 'Finger Paint', cursive;
-    }
-    #producto {
-      flex-wrap: wrap;
-      padding-left: 10px;
-      padding-right: 10px;
-      text-align: center;
-      width: 100%;
-      padding-top: 10px;
-    }
-    #productos {
-      width: 96%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: center;
-      justify-content: space-between;
-    }
-  }
-  /*--------------------------------------------------
+}
+
+/*--------------------------------------------------
 FORMULARIO DE CONTACTO (LANDING)
 ---------------------------------------------------*/
-  #formContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #e0e4ef;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  #newContact {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    background-color: #e0e4ef;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  #formContainer h1 {
-    padding-left: 5%;
-    padding-top: 2%;
-    text-align: left;
-  }
-  .field {
-    width: 50%;
-    flex: max-content;
-    background-color: white;
-    border: 1px solid #e0e4ef;
-  }
-  .fielddesc {
-    width: 80%;
-    flex: max-content;
-    background-color: white;
-    border: 1px solid #e0e4ef;
-  }
-  .field label {
-    display: inline-block;
-    padding: 1% 2%;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .fielddesc label {
-    display: inline-block;
-    padding: 1% 2%;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  #name {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 50%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #004587;
-    display: block;
-    font-size: 1.5rem;
-    color: rgb(80, 78, 78);
-  }
-  .fielddesc textarea {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 80%;
-    height: 50%;
-    margin-bottom: 5%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #004587;
-    display: block;
-    font-size: 1.5rem;
-    color: rgb(80, 78, 78);
-    /*resize: none;*/
-  }
-  #email {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 50%;
-    height: 50%;
-    margin-bottom: 5%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #004587;
-    display: block;
-    font-size: 1.5rem;
-    color: rgb(80, 78, 78);
-    /*resize: none;*/
-  }
-  .submit {
-    width: 20%;
-    background-color: #004587;
-    justify-content: center
-  }
-  .submit input[type="image"] {
-    display: block;
-    width: 20%;
-    margin: auto;
-    padding: 5% 45%;
-  }
-  .submit:hover {
-    background-color: rgb(0, 69, 135, 0.7);
-  }
-  /*--------------------------------------------------
+
+#formContainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e0e4ef;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#newContact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: #e0e4ef;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#contactFormTitle {
+  padding-left: 5%;
+  padding-top: 2%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.field {
+  width: 50%;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid #e0e4ef;
+}
+
+.fielddesc {
+  width: 80%;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid #e0e4ef;
+}
+
+.field label {
+  display: inline-block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fielddesc label {
+  display: inline-block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#name2 {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 50%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #009a8d;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.fielddesc textarea {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #009a8d;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  /*resize: none;*/
+}
+
+#email {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #009a8d;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  /*resize: none;*/
+}
+
+.submit2 {
+  width: 20%;
+  background-color: #009a8d !important;
+  justify-content: center
+}
+
+.submit2 input[type="image"] {
+  display: block;
+  width: 20%;
+  margin: auto;
+  padding: 5% 45%;
+
+}
+
+.submit2:hover {
+  
+  background-color: rgb(0,154,141, 0.7) !important;
+}
+
+/*--------------------------------------------------
 TIENDA
 ---------------------------------------------------*/
-  #add img {
-    background-color: transparent;
-  }
-  .contenido {
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  .section {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-  }
-  .section-left {
-    flex: 1 1 50%;
-    padding: 5% 0 0 5%;
-  }
-  .section-left p {
-    text-align: justify;
-    font-size: 1.25rem;
-    padding: 5% 10% 0 2.5%;
-  }
-  .section-left .titulo {
-    width: 100%;
-    font-size: 3.75rem;
-    border-bottom: 0.375rem solid #004587;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  .section-left .titulo a {
-    float: right;
-  }
-  .section-left .reloj {
-    padding-top: 5%;
-    float: right;
-    font-size: 1rem;
-    width: 30%;
-  }
-  .section-left .reloj img {
-    width: 25%;
-    height: 25%;
-    margin: 1% 1% 1% 1%;
-    float: left;
-  }
-  .section-left .reloj span {
-    font-size: 1.5rem;
-    display: table;
-    margin: 5% auto;
-  }
-  .section-right {
-    flex: 1 1 50%;
-  }
-  .section-right img {
-    width: 80%;
-    height: 60vh;
-    padding-left: 10%;
-  }
-  .productos {
-    margin-top: 5%;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* background-color: white;*/
-  }
-  .producto {
-    flex: 30%;
-    text-align: center;
-    max-width: 30%;
-  }
-  .producto p {
-    margin-top: 1%;
-    margin-bottom: 1.125rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.125rem;
-  }
-  .productName {
-    color: #004587;
-    text-transform: uppercase;
-    font-weight: bold;
-    width: 50%;
-    margin: auto;
-    padding: auto;
-  }
-  .producto img {
-    width: 80%;
-    margin: 2% 5%;
-    display: block;
-    border: 1px solid #004587;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  #precio {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: darkgrey;
-  }
-  /*--------------------------------------------------
+
+#add img {
+  background-color: transparent;
+}
+
+.contenido {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.section-left {
+  flex: 1 1 50%;
+  padding: 5% 0 0 5%;
+}
+
+.section-left p {
+  text-align: justify;
+  font-size: 1.25rem;
+  padding: 5% 10% 0 2.5%;
+}
+
+.section-left .titulo {
+  width: 100%;
+  font-size: 3.75rem;
+  border-bottom: 0.375rem solid #004587;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section-left .titulo a {
+  float: right;
+}
+
+.section-left .reloj {
+  padding-top: 5%;
+  float: right;
+  font-size: 1rem;
+  width: 30%;
+}
+
+.section-left .reloj img {
+  width: 25%;
+  height: 25%;
+  margin: 1% 1% 1% 1%;
+  float: left;
+}
+
+.section-left .reloj span {
+  font-size: 1.5rem;
+  display: table;
+  margin: 5% auto;
+}
+
+.section-right {
+  flex: 1 1 50%;
+}
+
+.section-right img {
+  width: 80%;
+  height: 60vh;
+  padding-left: 10%;
+}
+
+.productos {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: white;*/
+}
+
+.producto {
+  flex: 30%;
+  text-align: center;
+  max-width: 30%;
+}
+
+.textoFondo{
+
+background-image: url("./../images/fotoProducto/11.webp");
+size: contain;
+width: 500px;
+height: 500px;
+background-size: contain;
+color: white;
+
+}
+
+.textoFondo:hover{
+color:black;
+background-color: #004587 !important;
+
+}
+
+.producto p {
+  margin-top: 1%;
+  margin-bottom: 1.125rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.125rem;
+}
+
+.productName {
+  color: #004587;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 50%;
+  margin: auto;rgb(0,154,141)
+  padding: auto;
+}
+
+.producto img {
+  width: 80%;
+  margin: 2% 5%;
+  display: block;
+  border: 1px solid #004587;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#precio {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: darkgrey;
+}
+
+/*--------------------------------------------------
 Tienda responsive
 ---------------------------------------------------*/
-  @media screen and (max-width: 1000px) {
-    .producto {
-      flex: 50%;
-      min-width: 50%;
-    }
+
+@media screen and (max-width: 1000px) {
+  .producto {
+    flex: 50%;
+    min-width: 50%;
   }
-  @media screen and (max-width: 700px) {
-    .section {
-      flex-wrap: wrap;
-    }
-    .section-left {
-      flex: 100%;
-      min-width: 100%;
-    }
-    .section-right {
-      flex: 100%;
-      min-width: 100%;
-    }
-    .titulo a {
-      margin-right: 10%;
-    }
-    .section-left .reloj span {
-      width: 40%;
-    }
-    .producto {
-      flex: 100%;
-      min-width: 100%;
-    }
+}
+
+@media screen and (max-width: 700px) {
+  .section {
+    flex-wrap: wrap;
   }
-  /*--------------------------------------------------
+  .section-left {
+    flex: 100%;
+    min-width: 100%;
+  }
+  .section-right {
+    flex: 100%;
+    min-width: 100%;
+  }
+  .titulo a {
+    margin-right: 10%;
+  }
+  .section-left .reloj span {
+    width: 40%;
+  }
+  .producto {
+    flex: 100%;
+    min-width: 100%;
+  }
+}
+
+/*--------------------------------------------------
 PRODUCTO
 ---------------------------------------------------*/
-  #productContainer {
-    margin: 18vh 5% 10% 5%;
-    border-radius: 2%;
-    box-shadow: 5px 10px #b8b5b5;
-    background-color: white;
-    display: flex;
+
+#productContainer {
+  margin: 18vh 5% 10% 5%;
+  border-radius: 2%;
+  box-shadow: 5px 10px #b8b5b5;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  overflow: hidden;
+}
+
+#productImg {
+  flex: 50%;
+  align-self: center;
+}
+
+/*Comprobarlo con otras imagenes*/
+
+#productImg img {
+  width: 100%;
+  display: block;
+}
+
+#productContainer aside {
+  font-size: 1rem;
+  flex: 45%;
+  background-color: white;
+  padding-right: 1%;
+  border-radius: 8%;
+  max-width: 60%;
+}
+
+#productContainer h1 {
+  font-size: 2.5rem;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Source Sans Pro', sans-serif;
+  /*font-family: 'Nunito', sans-serif;*/
+  padding-left: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+#productContainer h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2%;
+  word-spacing: 5%;
+  text-align: justify;
+  padding: 4%;
+  color: darkgrey;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#productContainer p {
+  font-size: 1.5rem;
+  letter-spacing: 2%;
+  word-spacing: 5%;
+  text-align: justify;
+  margin: 3%;
+  color: black;
+  font-family: 'Comfortaa', cursive;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 10% 5%;
+  justify-content: space-around;
+}
+
+#updateForm {
+  flex: 80%;
+}
+
+#deleteForm {
+  flex: 80%;
+}
+
+#updateForm input[type="number"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 1%;
+  margin-top: 6%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  float: left;
+}
+
+#updateForm input[type="image"] {
+  margin: auto;
+  padding: 2.5% 13%;
+  background-color: #004587;
+}
+
+#deleteForm input[type="image"] {
+  display: block;
+  padding: 5% 45%;
+  background-color: #004587;
+}
+
+#videoContainer {
+  flex: 100%;
+}
+
+#videoContainer iframe {
+  display: block;
+  width: 80vw;
+  height: 60vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 850px) {
+  .productContainer {
     flex-direction: row;
-    flex-wrap: wrap-reverse;
-    overflow: hidden;
-  }
-  #productImg {
-    flex: 50%;
-    align-self: center;
-  }
-  /*Comprobarlo con otras imagenes*/
-  #productImg img {
-    width: 100%;
-    display: block;
   }
   #productContainer aside {
-    font-size: 1rem;
-    flex: 45%;
-    background-color: white;
-    padding-right: 1%;
-    border-radius: 8%;
-    max-width: 60%;
-  }
-  #productContainer h1 {
-    font-size: 2.5rem;
-    /*font-family: 'Raleway', sans-serif;*/
-    font-family: 'Source Sans Pro', sans-serif;
-    /*font-family: 'Nunito', sans-serif;*/
-    padding-left: 3%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    text-align: justify;
-    text-transform: uppercase;
-  }
-  #productContainer h2 {
-    font-size: 2.5rem;
-    letter-spacing: 2%;
-    word-spacing: 5%;
-    text-align: justify;
-    padding: 4%;
-    color: darkgrey;
-    font-weight: bold;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  #productContainer p {
-    font-size: 1.5rem;
-    letter-spacing: 2%;
-    word-spacing: 5%;
-    text-align: justify;
-    margin: 3%;
-    color: black;
-    font-family: 'Comfortaa', cursive;
-  }
-  .forms {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    padding: 10% 5%;
-    justify-content: space-around;
-  }
-  #updateForm {
-    flex: 80%;
-  }
-  #deleteForm {
-    flex: 80%;
-  }
-  #updateForm input[type="number"] {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    margin-right: 1%;
-    margin-top: 6%;
-    width: 60%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #004587;
-    font-size: 1.5rem;
-    color: rgb(80, 78, 78);
-    float: left;
-  }
-  #updateForm input[type="image"] {
-    margin: auto;
-    padding: 2.5% 13%;
-    background-color: #004587;
-  }
-  #deleteForm input[type="image"] {
-    display: block;
-    padding: 5% 45%;
-    background-color: #004587;
-  }
-  #videoContainer {
     flex: 100%;
+    min-width: 100%;
+    order: 1;
   }
-  #videoContainer iframe {
-    display: block;
-    width: 80vw;
-    height: 60vw;
-    margin: auto;
-  }
-  @media screen and (max-width: 850px) {
-    .productContainer {
-      flex-direction: row;
-    }
-    #productContainer aside {
-      flex: 100%;
-      min-width: 100%;
-      order: 1;
-    }
-  }
-  /*--------------------------------------------------
+}
+
+/*--------------------------------------------------
 FORMULARIO
 ---------------------------------------------------*/
-  #formContainer {
-    background-color: #e0e4ef;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  #formContainer h1 {
-    padding-left: 5%;
-    padding-top: 18vh;
-  }
-  #newProduct {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3% 8%;
-    color: #004587;
-  }
-  .field {
-    min-width: 40%;
-    min-height: auto;
-    flex: max-content;
-    background-color: white;
-    border: 1px solid #e0e4ef;
-  }
-  .field label {
-    display: block;
-    padding: 1% 2%;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .field input[type="text"] {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 60%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #004587;
-    display: block;
-    font-size: 1.5rem;
-    color: rgb(80, 78, 78);
-  }
-  .field input[type="file"] {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 60%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #004587;
-    display: block;
-    font-size: 1.5rem;
-    color: rgb(80, 78, 78);
-  }
-  .field input[type="number"] {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 60%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #004587;
-    display: block;
-    font-size: 1.5rem;
-    color: rgb(80, 78, 78);
-  }
-  .field textarea {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 80%;
-    height: 50%;
-    margin-bottom: 5%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #004587;
-    display: block;
-    font-size: 1.5rem;
-    color: rgb(80, 78, 78);
-    /*resize: none;*/
-  }
-  /*Cada una de las opciones de radio ira guardada aqui*/
-  .radioOption {
-    display: block;
-    cursor: pointer;
-    font-size: 1.5rem;
-    user-select: none;
-    color: rgb(80, 78, 78);
-  }
-  .radioOption input {
-    float: left;
-    opacity: 0;
-    cursor: pointer;
-  }
-  /*El marcador de selección*/
-  .checkmark {
-    display: block;
-    float: left;
-    height: 1rem;
-    width: 1rem;
-    margin-top: .5rem;
-    margin-right: .5rem;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  /* Cambiar color del elemento seleccionado */
-  .radioOption input:checked~.checkmark {
-    background-color: #004587;
-  }
-  .field input[type="url"] {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    width: 60%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #004587;
-    display: block;
-    font-size: 1.5rem;
-    color: rgb(80, 78, 78);
-  }
-  .submit {
-    background-color: #004587;
-    justify-content: center;
-  }
-  .submit input[type="image"] {
-    display: block;
-    margin: auto;
-    padding: 2% 45%;
-  }
-  .submit:hover {
-    background-color: rgb(0, 69, 135, 0.7);
-  }
-  /*--------------------------------------------------
+
+#formContainer {
+  background-color: #e0e4ef;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#formContainer h1 {
+  padding-left: 5%;
+  padding-top: 18vh;
+}
+
+#newProduct {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 8%;
+  color: #004587;
+}
+
+.field {
+  min-width: 40%;
+  min-height: auto;
+  flex: max-content;
+  background-color: white;
+  border: 1px solid #e0e4ef;
+}
+
+.field label {
+  display: block;
+  padding: 1% 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.field input[type="text"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.field input[type="file"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.field input[type="number"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.field textarea {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+  /*resize: none;*/
+}
+
+/*Cada una de las opciones de radio ira guardada aqui*/
+
+.radioOption {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  user-select: none;
+  color: rgb(80, 78, 78);
+}
+
+.radioOption input {
+  float: left;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/*El marcador de selección*/
+
+.checkmark {
+  display: block;
+  float: left;
+  height: 1rem;
+  width: 1rem;
+  margin-top: .5rem;
+  margin-right: .5rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* Cambiar color del elemento seleccionado */
+
+.radioOption input:checked~.checkmark {
+  background-color: #004587;
+}
+
+.field input[type="url"] {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #004587;
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(80, 78, 78);
+}
+
+.submit {
+  background-color: #004587;
+  justify-content: center;
+}
+
+.submit input[type="image"] {
+  display: block;
+  margin: auto;
+  padding: 2% 45%;
+}
+
+.submit:hover {
+  background-color: rgb(0, 69, 135, 0.7);
+}
+
+/*--------------------------------------------------
 FOOTER
 ---------------------------------------------------*/
-  #footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 15px;
-    display: flex;
-    color: white;
-    height: auto;
-    background-color: black;
-    justify-content: space-around;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-  }
-  #info1 {
-    flex-wrap: wrap;
-    width: 30%;
-  }
-  #info2 {
-    flex-wrap: wrap;
-    width: 30%;
-  }
+
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 15px;
+  display: flex;
+  color: white;
+  height: auto;
+  background-color: black;
+  justify-content: space-around;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+#info1 {
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+#info2 {
+  flex-wrap: wrap;
+  width: 30%;
+}

@@ -32,7 +32,7 @@ var dictionary = {
         eu: "Urteko gaurik beldurgarriena!",
         en: "The most terrifying night of the year"
     },
-    " eventTime": {
+    "eventTime": {
         es: "¡Ven a celebrar Halloween a Txingudi!",
         eu: "Zatos Txingudira Halloween gaua ospatzera!",
         en: "Come tp Txingudi to celebrate Halloween!"
@@ -43,9 +43,19 @@ var dictionary = {
         en: "Txingudi shoping mall VENTAS number 80, 20305, IRUN"
     },
     "bestPromotions": {
-        es: "Las mejores promociones",
-        eu: "Promozio onenak",
-        en: "The best promotions"
+        es: "Las mejores <span class='resaltado'>promociones</span>",
+        eu: "<span class='resaltado'>Eskaintzarik</span> onenak",
+        en: "The best <span class='resaltado'>promotions</span>"
+    },
+    "visitShops": {
+        es: "Visita nuestras <span class='resaltadoy'>tiendas</span>",
+        eu: "Zatoz gure <span class='resaltadoy'>dendetara</span> onenak",
+        en: "Come to our <span class='resaltadoy'>shops</span>"
+    },
+    "weAreHere": {
+        es: " Estamos <span class='resaltadob'>aqui</span>",
+        eu: "<span class='resaltadob'>Hemen</span> gaude",
+        en: "We are <span class='resaltadob'>here</span>"
     },
 
     "schedule": {
@@ -54,9 +64,9 @@ var dictionary = {
         en: "SCHEDULE:<br>Moday to Saturday from 10:00am to 22:00pm"
     },
     "landingFormTitle": {
-        es: "Formulario de contacto",
-        eu: "Kontaktu formularioa",
-        en: "Contact Form"
+        es: "Formulario de <span class='resaltado'>contacto</span>",
+        eu: "<span class='resaltado'>Kontaktu </span>formularioa",
+        en: "<span class='resaltado'>Contact </span>Form"
     },
     "landingFormName": {
         es: "Nombre  Apellidos",

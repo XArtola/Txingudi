@@ -49,7 +49,7 @@
             <input type="image" src="{{asset('assets/images/icons/confirmWhite.png')}}">
         </div>
     </form>
-    <a href={{ URL::previous() }}>Back</a>
+   <!-- <a href={{ URL::previous() }}>Back</a>-->
 </div>
 <script>
     frmvalidator = new Validator("newProduct");
